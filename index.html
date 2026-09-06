@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- MathJax for rendering LaTeX formulas -->
+    <!-- 🧮 MathJax for rendering LaTeX formulas -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -85,7 +85,7 @@
         .flashcard-container {
             perspective: 1000px;
             width: 100%;
-            height: 300px;
+            height: 320px;
             margin-bottom: 20px;
             cursor: pointer;
         }
@@ -109,17 +109,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 35px;
+            padding: 30px;
             box-sizing: border-box;
             border-radius: 15px;
             background: var(--dynamic-card-bg);
-            font-size: 1.35rem;
+            font-size: 1.15rem;
             font-weight: 500;
             line-height: 1.5;
             letter-spacing: -0.02em;
-            white-space: pre-wrap;
             border: 1px solid var(--border-color);
             transition: background-color 0.4s ease;
+            overflow-y: auto;
         }
         html[data-theme="light"] .card-face {
             color: #1e293b; 
@@ -147,7 +147,7 @@
             font-size: 0.95rem;
             border-radius: 8px;
             cursor: pointer;
-            transition: opacity 0.2s;
+            transition: opacity 0.2s, background-color 0.2s;
             flex: 1;
         }
         button:hover { opacity: 0.9; }
@@ -235,17 +235,19 @@
         <button class="secondary" onclick="prevCard(event)">Previous</button>
         <span id="progress">0 / 0</span>
         <button class="secondary" onclick="nextCard(event)">Next</button>
-        <button onclick="shuffleDeck(event)">Shuffle 🔀</button>
+        <button id="shuffle-btn" class="secondary" onclick="toggleShuffle(event)">Shuffle: OFF 🔀</button>
     </div>
 </div>
 
 <script>
     let masterData = {};
     let activeDeck = [];
+    let originalDeck = [];
     let reviewPile = [];
     let currentIndex = 0;
     let masteredCount = 0;
     let isReviewMode = false;
+    let isShuffled = false;
     let currentTheme = 'light';
 
     const lightPastels = ['#FFEBEE', '#E8F5E9', '#E3F2FD', '#FFF3E0', '#F3E5F5', '#FFFDE7'];
@@ -263,20 +265,21 @@
     const overlayDescEl = document.getElementById('overlay-desc');
     const overlayBtnEl = document.getElementById('overlay-btn');
     const topicSelectEl = document.getElementById('topic-select');
+    const shuffleBtnEl = document.getElementById('shuffle-btn');
 
     async function loadDeck() {
-    try {
-        // Appending ?v=timestamp forces the browser to fetch the fresh file every time
-        const response = await fetch('./cards.json?v=' + new Date().getTime());
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        masterData = await response.json();
-        populateTopicDropdown();
-        selectTopic();
-    } catch (error) {
-        frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
-        console.error(error);
+        try {
+            // Append timestamp query parameter to bypass browser caching
+            const response = await fetch('./cards.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            masterData = await response.json();
+            populateTopicDropdown();
+            selectTopic();
+        } catch (error) {
+            frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
+            console.error(error);
+        }
     }
-}
 
     function populateTopicDropdown() {
         topicSelectEl.innerHTML = '';
@@ -297,10 +300,13 @@
     function selectTopic() {
         const selected = topicSelectEl.value;
         if (selected === 'all_mixed') {
-            activeDeck = Object.values(masterData).flat();
+            originalDeck = Object.values(masterData).flat();
         } else {
-            activeDeck = [...(masterData[selected] || [])];
+            originalDeck = [...(masterData[selected] || [])];
         }
+        
+        isShuffled = false;
+        updateShuffleButton();
         resetState();
     }
 
@@ -311,33 +317,40 @@
         isReviewMode = false;
         modeBadgeEl.textContent = 'Main Round';
         overlayEl.style.display = 'none';
+
+        if (isShuffled) {
+            activeDeck = shuffleArray([...originalDeck]);
+        } else {
+            activeDeck = [...originalDeck];
+        }
+
         updateStats();
         renderCard();
     }
 
-   function renderCard() {
-    cardEl.classList.remove('flipped');
-    if (activeDeck.length === 0) {
-        frontEl.innerHTML = "No cards available.";
-        backEl.innerHTML = "";
-        progressEl.textContent = "0 / 0";
-        return;
-    }
+    function renderCard() {
+        cardEl.classList.remove('flipped');
+        if (activeDeck.length === 0) {
+            frontEl.innerHTML = "No cards available.";
+            backEl.innerHTML = "";
+            progressEl.textContent = "0 / 0";
+            return;
+        }
 
-    const currentCard = activeDeck[currentIndex];
-    
-    // Replace newline characters (\n) with HTML line breaks (<br>)
-    frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
-    backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
-    
-    progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
-    applyCardColor();
+        const currentCard = activeDeck[currentIndex];
+        
+        // Convert \n newline characters to <br> HTML breaks
+        frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
+        backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
 
-    // Re-run MathJax typesetting for rendered LaTeX equations
-    if (window.MathJax && MathJax.typesetPromise) {
-        MathJax.typesetPromise([frontEl, backEl]);
+        progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
+        applyCardColor();
+
+        // Render LaTeX equations using MathJax if loaded
+        if (window.MathJax && MathJax.typesetPromise) {
+            MathJax.typesetPromise([frontEl, backEl]);
+        }
     }
-}
 
     function applyCardColor() {
         const colors = currentTheme === 'light' ? lightPastels : darkPastels;
@@ -345,9 +358,9 @@
         document.documentElement.style.setProperty('--dynamic-card-bg', color);
     }
 
-    // Advanced card click function:
-    // If on the front side -> flip to back
-    // If on the back side -> advance to next card
+    // Card Interaction:
+    // Front side -> flips to back
+    // Back side -> flips to front and advances to next card
     function handleCardClick() {
         if (cardEl.classList.contains('flipped')) {
             nextCard();
@@ -394,14 +407,43 @@
         reviewCountEl.textContent = reviewPile.length;
     }
 
-    function shuffleDeck(e) {
+    function toggleShuffle(e) {
         if (e) e.stopPropagation();
-        for (let i = activeDeck.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [activeDeck[i], activeDeck[j]] = [activeDeck[j], activeDeck[i]];
+        isShuffled = !isShuffled;
+        updateShuffleButton();
+
+        if (activeDeck.length === 0) return;
+
+        const currentCard = activeDeck[currentIndex];
+
+        if (isShuffled) {
+            activeDeck = shuffleArray([...activeDeck]);
+        } else {
+            activeDeck = isReviewMode ? [...reviewPile] : [...originalDeck];
         }
-        currentIndex = 0;
+
+        const newIndex = activeDeck.indexOf(currentCard);
+        currentIndex = newIndex !== -1 ? newIndex : 0;
+
         renderCard();
+    }
+
+    function updateShuffleButton() {
+        if (isShuffled) {
+            shuffleBtnEl.textContent = 'Shuffle: ON 🔀';
+            shuffleBtnEl.classList.remove('secondary');
+        } else {
+            shuffleBtnEl.textContent = 'Shuffle: OFF 🔀';
+            shuffleBtnEl.classList.add('secondary');
+        }
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     }
 
     function showCompletionOverlay() {
