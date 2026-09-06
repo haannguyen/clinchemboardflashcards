@@ -328,29 +328,29 @@
         renderCard();
     }
 
-    function renderCard() {
-        cardEl.classList.remove('flipped');
-        if (activeDeck.length === 0) {
-            frontEl.innerHTML = "No cards available.";
-            backEl.innerHTML = "";
-            progressEl.textContent = "0 / 0";
-            return;
-        }
-
-        const currentCard = activeDeck[currentIndex];
-        
-        // Convert \n newline characters to <br> HTML breaks
-        frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
-        backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
-
-        progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
-        applyCardColor();
-
-        // Render LaTeX equations using MathJax if loaded
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise([frontEl, backEl]);
-        }
+   function renderCard() {
+    cardEl.classList.remove('flipped');
+    if (activeDeck.length === 0) {
+        frontEl.innerHTML = "No cards available.";
+        backEl.innerHTML = "";
+        progressEl.textContent = "0 / 0";
+        return;
     }
+
+    const currentCard = activeDeck[currentIndex];
+    
+    // Replace newline characters with <br> and ensure TeX symbols like \circ are properly handled
+    frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
+    backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
+
+    progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
+    applyCardColor();
+
+    // Render LaTeX equations using MathJax
+    if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise([frontEl, backEl]);
+    }
+}
 
     function applyCardColor() {
         const colors = currentTheme === 'light' ? lightPastels : darkPastels;
