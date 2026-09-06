@@ -1,4 +1,14 @@
-[
-  { "front": "Which cardiac troponin form lacks clinical utility because it is not myocardial tissue
-specific?", "back": "TnC" }
-]
+{
+  "CCL": [
+    { "front": "1", "back": "2" },
+    { "front": "What command initializes a new local Git repository?", "back": "git init" }
+  ],
+  "CVLM": [
+    { "front": "What CSS property creates a 3D space perspective?", "back": "perspective" },
+    { "front": "What is the default position value for HTML elements?", "back": "static" }
+  ],
+  "DataScience": [
+    { "front": "What is the time complexity of looking up a key in a Hash Map?", "back": "O(1) constant time on average" },
+    { "front": "Which method joins all elements of an array into a string?", "back": "array.join()" }
+  ]
+}
