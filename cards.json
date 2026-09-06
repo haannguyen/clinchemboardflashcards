@@ -1,7 +1,127 @@
 {
   "CCL": [
-    { "front": "1", "back": "2" },
-    { "front": "What command initializes a new local Git repository?", "back": "git init" }
+    
+    {
+      "front": "List the 12 Quality System Essentials (QSEs).",
+      "back": "1. Organization and Leadership\n2. Customer focus\n3. Facilities and Safety\n4. Personnel\n5. Purchasing & Inventory Management\n6. Equipment\n7. Process Management\n8. Documents and Records\n9. Information Management\n10. Event (Nonconformance) Management\n11. Assessments\n12. Continual Improvement"
+    },
+    {
+      "front": "What occurs during the pre-analytical phase of laboratory testing?",
+      "back": "Everything before sample analysis: ordering, collection, transport, and processing."
+    },
+    {
+      "front": "What occurs during the analytical phase of laboratory testing?",
+      "back": "The actual sample analysis: instruments, reagents, calibration, and technical skill of staff."
+    },
+    {
+      "front": "What occurs during the post-analytical phase of laboratory testing?",
+      "back": "Everything after analysis: reporting results, critical value reports, and physician interpretation."
+    },
+    {
+      "front": "What are the most common pre-analytical errors?",
+      "back": "Specimen hemolysis, improper labeling, incorrect tube selection, insufficient sample volume, and incorrect order of draw."
+    },
+    {
+      "front": "What are the most common causes of analytical errors?",
+      "back": "Reagent degradation/contamination, equipment failure, calibration drift/failure, and mechanical or pipetting flaws."
+    },
+    {
+      "front": "How are analytical errors detected in the laboratory?",
+      "back": "QC (Levey-Jennings charts & Westgard rules), instrument error warnings, delta checks, and proficiency testing."
+    },
+    {
+      "front": "What is the difference between serum and plasma?",
+      "back": "Serum is the liquid portion remaining after blood coagulation (no clotting factors). Plasma is the noncellular component of anticoagulated whole blood (contains clotting factors)."
+    },
+    {
+      "front": "What additive and gel are in a Serum Separator Tube (SST)?",
+      "back": "Additive: Silica (clot activator). Gel: Polymer barrier gel."
+    },
+    {
+      "front": "What additive is in a Plasma Separator Tube (PST/mint top)?",
+      "back": "Lithium heparin (anticoagulant) and polymer barrier gel."
+    },
+    {
+      "front": "What additive is in a Lavender-top tube and how does it work?",
+      "back": "EDTA. It chelates calcium to prevent clotting while keeping blood cells intact."
+    },
+    {
+      "front": "What top color, additive, and ratio are required for coagulation studies?",
+      "back": "Light blue top; 3.2% Sodium Citrate; Exact $9:1$ blood-to-anticoagulant ratio."
+    },
+    {
+      "front": "How do you recognize a hemolyzed specimen visually and instrumentally?",
+      "back": "Visually: Pink/red serum or plasma instead of clear yellowish. Instrumentally: Automated measurement of absorbance at specific wavelengths ($H$-index)."
+    },
+    {
+      "front": "How does specimen hemolysis affect chemistry laboratory results?",
+      "back": "Falsely Elevated: $\\text{K}^+$, $\\text{LDH}$, $\\text{AST}$, $\\text{P}$, $\\text{Mg}^{2+}$.\nFalsely Decreased: $\\text{Na}^+$, $\\text{Cl}^-$ (dilution), Troponin, Bilirubin, Haptoglobin."
+    },
+    {
+      "front": "What steps should be taken to investigate suspected pseudohyperkalemia?",
+      "back": "1. Check $H$-index for hemolysis.\n2. Check CBC for elevated WBC/platelets.\n3. Check for EDTA contamination (low $\\text{Ca}^{2+}$, high $\\text{K}^+$).\n4. Check if sample sat too long before analysis."
+    },
+    {
+      "front": "What are the specimen handling requirements for Lactate testing?",
+      "back": "Avoid/minimize tourniquet, no fist clenching, collect in $\\text{NaF/KOx}$ (or LiHep if fast), place immediately in ice slurry, hand-deliver, and centrifuge within $15\\text{ min}$."
+    },
+    {
+      "front": "What are the specimen handling requirements for Ammonia testing?",
+      "back": "Collect into EDTA or Heparin, place immediately in an ice slurry, hand-deliver, and centrifuge within $15\\text{ min}$. Avoid tobacco smoke exposure."
+    },
+    {
+      "front": "What is the difference between a standard (calibrator) and a control?",
+      "back": "Calibrator: Exact known concentration used to set the instrument's signal-to-concentration response curve. Control: Specimen with an expected target range used to check ongoing accuracy and precision."
+    },
+    {
+      "front": "Can controls be used as calibrators? Why or why not?",
+      "back": "No. They must remain independent. Using a control as a calibrator eliminates the independent system check and introduces high analytical uncertainty."
+    },
+    {
+      "front": "What is a matrix effect?",
+      "back": "Interference caused by non-analyte sample components (background) affecting measurement readings, or non-commutability of synthetic/processed QC samples with patient samples."
+    },
+    {
+      "front": "What are the strengths and weaknesses of Delta Checks?",
+      "back": "Strengths: Catches misidentification, mislabeling, or contaminated draws using patient as their own control. Weaknesses: Real clinical changes trigger time-consuming manual reviews; requires prior patient data."
+    },
+    {
+      "front": "What are the strengths and weaknesses of Moving Patient Means?",
+      "back": "Strengths: Zero added reagent cost, real-time continuous monitoring. Weaknesses: Population-dependent (e.g., ER patient influx); slow to detect large sudden shifts."
+    },
+    {
+      "front": "What is the $1_{2\\text{s}}$ Westgard rule?",
+      "back": "1 control value exceeds $\\pm 2\\text{SD}$. Serves as a warning rule indicating random or systematic error."
+    },
+    {
+      "front": "What is the $1_{3\\text{s}}$ Westgard rule?",
+      "back": "1 control value exceeds $\\pm 3\\text{SD}$. Rejection rule identifying unacceptable random error or a large systematic error."
+    },
+    {
+      "front": "What is the $2_{2\\text{s}}$ Westgard rule?",
+      "back": "2 consecutive control values exceed the same $2\\text{SD}$ limit (within-run or across-runs). Rejection rule identifying systematic error."
+    },
+    {
+      "front": "Which Westgard rule provides the lowest probability of false rejection on a Power Function Graph?",
+      "back": "$1_{4\\text{s}}$"
+    },
+    {
+      "front": "How do you calculate the Coefficient of Variation (C.V.)?",
+      "back": "$$\\text{C.V.} = \\left(\\frac{\\text{SD}}{\\mu}\\right) \\times 100\\%$$"
+    },
+    {
+      "front": "Calculate C.V. for $\\text{K}^+$ (Mean $\\mu = 4.2\\text{ mEq/L}$, $\\text{SD} = 0.11$).",
+      "back": "$$\\text{C.V.} = \\left(\\frac{0.11}{4.2}\\right) \\times 100\\% = 2.6\\%$$"
+    },
+    {
+      "front": "Calculate C.V. for $\\text{Na}^+$ (Mean $\\mu = 139.7\\text{ mEq/L}$, $\\text{SD} = 1.9$).",
+      "back": "$$\\text{C.V.} = \\left(\\frac{1.9}{139.7}\\right) \\times 100\\% = 1.4\\%$$"
+    },
+    {
+      "front": "Calculate C.V. for $\\text{Ca}^{2+}$ (Mean $\\mu = 11.2\\text{ mg/dL}$, $\\text{SD} = 0.49$).",
+      "back": "$$\\text{C.V.} = \\left(\\frac{0.49}{11.2}\\right) \\times 100\\% = 4.4\\%$$"
+    }
+    
   ],
   "CVLM": [
     { "front": "What CSS property creates a 3D space perspective?", "back": "perspective" },
