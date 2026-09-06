@@ -10,7 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- 🧮 MathJax for rendering LaTeX formulas -->
+    <!-- 🧮 MathJax Configuration & Library -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
+        };
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -328,29 +341,30 @@
         renderCard();
     }
 
-   function renderCard() {
-    cardEl.classList.remove('flipped');
-    if (activeDeck.length === 0) {
-        frontEl.innerHTML = "No cards available.";
-        backEl.innerHTML = "";
-        progressEl.textContent = "0 / 0";
-        return;
+    function renderCard() {
+        cardEl.classList.remove('flipped');
+        if (activeDeck.length === 0) {
+            frontEl.innerHTML = "No cards available.";
+            backEl.innerHTML = "";
+            progressEl.textContent = "0 / 0";
+            return;
+        }
+
+        const currentCard = activeDeck[currentIndex];
+        
+        // Convert \n newline characters to <br> HTML breaks
+        frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
+        backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
+
+        progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
+        applyCardColor();
+
+        // Re-typeset MathJax LaTeX equations
+        if (window.MathJax && MathJax.typesetPromise) {
+            MathJax.typesetClear([frontEl, backEl]);
+            MathJax.typesetPromise([frontEl, backEl]).catch((err) => console.error("MathJax Error:", err));
+        }
     }
-
-    const currentCard = activeDeck[currentIndex];
-    
-    // Replace newline characters with <br> and ensure TeX symbols like \circ are properly handled
-    frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
-    backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
-
-    progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
-    applyCardColor();
-
-    // Render LaTeX equations using MathJax
-    if (window.MathJax && MathJax.typesetPromise) {
-        MathJax.typesetPromise([frontEl, backEl]);
-    }
-}
 
     function applyCardColor() {
         const colors = currentTheme === 'light' ? lightPastels : darkPastels;
