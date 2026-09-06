@@ -299,6 +299,10 @@
     {
       "front": "What are the pediatric (ages 2-17) Acceptable cutoff values for Total Cholesterol and LDL-C?",
       "back": "* Total Cholesterol: $<170\\text{ mg/dL}$\n* LDL Cholesterol: $<110\\text{ mg/dL}$"
+    },
+    {
+  "front": "What is the classic Friedewald equation for calculated LDL-C and when is it invalid?",
+  "back": "Formula (in mg/dL):\n$$\\text{LDL-C} = \\text{Total Cholesterol} - \\text{HDL-C} - \\left(\\frac{\\text{Triglycerides}}{5}\\right)$$\n\nInvalid/Unreliable when:\n1. Serum Triglycerides are $> 400\\text{ mg/dL}$\n2. LDL-C levels are very low\n3. Patient is non-fasting or has Type I/III hyperlipoproteinemia"
     }
   ],
   "DataScience": [
