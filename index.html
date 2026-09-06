@@ -265,17 +265,18 @@
     const topicSelectEl = document.getElementById('topic-select');
 
     async function loadDeck() {
-        try {
-            const response = await fetch('./cards.json');
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            masterData = await response.json();
-            populateTopicDropdown();
-            selectTopic();
-        } catch (error) {
-            frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
-            console.error(error);
-        }
+    try {
+        // Appending ?v=timestamp forces the browser to fetch the fresh file every time
+        const response = await fetch('./cards.json?v=' + new Date().getTime());
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        masterData = await response.json();
+        populateTopicDropdown();
+        selectTopic();
+    } catch (error) {
+        frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
+        console.error(error);
     }
+}
 
     function populateTopicDropdown() {
         topicSelectEl.innerHTML = '';
