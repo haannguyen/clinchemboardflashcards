@@ -124,8 +124,182 @@
     
   ],
   "CVLM": [
-    { "front": "What CSS property creates a 3D space perspective?", "back": "perspective" },
-    { "front": "What is the default position value for HTML elements?", "back": "static" }
+    {
+      "front": "What is the structural composition of cholesterol?",
+      "back": "Cholesterol is a 27-carbon steroid alcohol consisting of a tetracyclic ring system, an aliphatic side chain, and a polar hydroxyl group that makes it amphipathic."
+    },
+    {
+      "front": "What is the rate-limiting enzyme in cholesterol biosynthesis and what targets it?",
+      "back": "HMG-CoA reductase, which reduces 6-carbon HMG-CoA to mevalonate. It is the pharmacological target of statins."
+    },
+    {
+      "front": "What are the primary physiological functions of cholesterol?",
+      "back": "Modulates cell membrane fluidity and serves as a precursor for steroid hormones (cortisol, aldosterone, sex hormones), bile acids/salts, and vitamin D."
+    },
+    {
+      "front": "How does fatty acid saturation alter structural geometry?",
+      "back": "Saturated fatty acids have no double bonds and are extended/flexible. Cis-unsaturated fatty acids contain double bonds that introduce a $30^\\circ$ kink in the carbon chain."
+    },
+    {
+      "front": "What is the primary cellular metabolic pathway for fatty acid catabolism?",
+      "back": "$\\beta$-oxidation in the mitochondria, which sequentially shortens fatty acid chains by 2 carbons at a time from the C-terminal end to produce acetyl-CoA for the TCA cycle."
+    },
+    {
+      "front": "What is the structural definition and tissue distribution of triglycerides?",
+      "back": "Glycerol esters consisting of 3 fatty acids esterified to a glycerol backbone. They constitute $95\\%$ of tissue storage fat."
+    },
+    {
+      "front": "What is the fundamental structural layout of a lipoprotein particle?",
+      "back": "A nonpolar core of neutral lipids (triglycerides and cholesteryl esters) surrounded by a surface monolayer of amphipathic lipids (phospholipids and free cholesterol) and apolipoproteins."
+    },
+    {
+      "front": "What is the functional difference between structural and exchangeable apolipoproteins?",
+      "back": "Structural apolipoproteins (e.g., ApoB-100, ApoB-48) remain permanently bound with 1 molecule per particle. Exchangeable apolipoproteins (e.g., ApoA-I, ApoC-II, ApoE) dynamically transfer between different lipoproteins."
+    },
+    {
+      "front": "Why is ApoB a more reliable indicator of circulating LDL particle number than LDL-C?",
+      "back": "Because each non-HDL particle (including LDL) contains exactly one ApoB protein molecule, whereas the amount of cholesterol ester within an LDL particle varies."
+    },
+    {
+      "front": "Where are ApoB-100 and ApoB-48 synthesized, and what pathways do they serve?",
+      "back": "ApoB-100 is synthesized in the liver and functions in the endogenous pathway (VLDL, IDL, LDL). ApoB-48 is synthesized in the small intestine via mRNA editing and functions in the exogenous pathway (chylomicrons)."
+    },
+    {
+      "front": "What are the opposing regulatory functions of ApoC-II and ApoC-III?",
+      "back": "ApoC-II is an essential enzymatic cofactor for Lipoprotein Lipase (LPL) activation. ApoC-III inhibits LPL activation and blocks hepatic clearance of lipoproteins."
+    },
+    {
+      "front": "What is the physiological role of Lipoprotein Lipase (LPL)?",
+      "back": "LPL is bound to capillary endothelial cells in adipose and muscle tissue; it hydrolyzes core triglycerides in chylomicrons and VLDL to release free fatty acids for peripheral tissue uptake."
+    },
+    {
+      "front": "What is the physiological role of Hepatic Lipase (HL)?",
+      "back": "Expresses in liver hepatocytes/endothelium; it hydrolyzes triglycerides and phospholipids in IDL and HDL, converting IDL to LDL and remodeling mature HDL."
+    },
+    {
+      "front": "How is VLDL metabolized into mature LDL?",
+      "back": "Hepatic VLDL undergoes continuous triglyceride depletion by LPL to form IDL. Further lipase hydrolysis and CETP-mediated lipid exchange yield cholesterol-dense LDL containing ApoB-100 as its sole apolipoprotein."
+    },
+    {
+      "front": "What is the core physiological role of High-Density Lipoprotein (HDL)?",
+      "back": "Mediates Reverse Cholesterol Transport (RCT), removing excess cholesterol from peripheral tissues and delivering it back to the liver for excretion or reuse."
+    },
+    {
+      "front": "What is the function of ABCA1 in HDL formation?",
+      "back": "It actively pumps intracellular free cholesterol and phospholipids across the cell membrane onto lipid-poor ApoA-I to form disk-shaped nascent pre-$\\beta$-HDL."
+    },
+    {
+      "front": "How does LCAT alter HDL morphology?",
+      "back": "Lecithin:cholesterol acyltransferase (LCAT) esterifies free cholesterol into hydrophobic cholesteryl esters, packing them into the core and expanding nascent disk HDL into spherical mature HDL."
+    },
+    {
+      "front": "What metabolic lipid exchange is catalyzed by CETP?",
+      "back": "Cholesteryl Ester Transfer Protein (CETP) transfers cholesteryl esters from HDL onto ApoB-containing lipoproteins (LDL/VLDL) in exchange for triglycerides."
+    },
+    {
+      "front": "What are the clinical diagnostic criteria for Metabolic Syndrome?",
+      "back": "Presence of $\\ge 3$ of the following:\n1. Waist circumference $>40\\text{ in}$ (men) or $>35\\text{ in}$ (women)\n2. Serum $\\text{TG} \\ge 150\\text{ mg/dL}$\n3. $\\text{HDL-C} < 40\\text{ mg/dL}$ (men) or $< 50\\text{ mg/dL}$ (women)\n4. Fasting glucose $\\ge 100\\text{ mg/dL}$\n5. Blood pressure $\\ge 130/85\\text{ mmHg}$"
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type I?",
+      "back": "Familial Chylomicronemia Syndrome (LPL or ApoC-II deficiency): Marked by extremely high triglycerides with normal cholesterol, caused by elevated Chylomicrons."
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type IIa?",
+      "back": "Familial Hypercholesterolemia (LDLR, PCSK9, or ApoB defects): Marked by elevated LDL cholesterol with low/normal triglycerides, caused by elevated LDL."
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type IIb?",
+      "back": "Familial Combined Hyperlipidemia: Marked by high triglycerides and high cholesterol, caused by elevated LDL and VLDL."
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type III?",
+      "back": "Dysbetalipoproteinemia (ApoE mutation): Marked by high triglycerides and high cholesterol with increased $\\beta$-VLDL, caused by accumulation of IDL and remnant lipoproteins."
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type IV?",
+      "back": "Familial Hypertriglyceridemia: Marked by very high triglycerides and low cholesterol, caused by elevated VLDL overproduction."
+    },
+    {
+      "front": "What lipid abnormality and elevated lipoproteins define Fredrickson Type V?",
+      "back": "Polygenic Chylomicronemia: Marked by very high triglycerides with pancreatitis risk, caused by elevated Chylomicrons and VLDL."
+    },
+    {
+      "front": "Why is Lipoprotein(a) considered a 'double threat' for cardiovascular disease?",
+      "back": "It is pro-atherogenic due to its ApoB-100 core and oxidized phospholipids, and pro-thrombotic because Apo(a) shares homology with plasminogen, competing for binding sites to inhibit fibrinolysis."
+    },
+    {
+      "front": "What analytical challenge complicates Lipoprotein(a) immunoassay measurement?",
+      "back": "Large inter-individual variations in Apo(a) 'kringle IV' repeat numbers create particle size heterogeneity, causing immunoassays to underestimate small Lp(a) particles and overestimate large Lp(a) particles."
+    },
+    {
+      "front": "What is Lipoprotein-X (LpX) and when does it appear?",
+      "back": "An abnormal lipid particle with a phospholipid bilayer lacking ApoB-100 that forms during severe obstructive biliary tract disease (cholestasis). It co-quantifies as LDL-C."
+    },
+    {
+      "front": "What are the clinical manifestations of LCAT Deficiency (Fish-Eye Disease)?",
+      "back": "Accumulation of disk-like nascent HDL particles leading to profoundly low HDL-C, corneal clouding from lipid infiltration, and progressive renal disease."
+    },
+    {
+      "front": "What genetic mutation causes Abetalipoproteinemia and what are its key symptoms?",
+      "back": "Mutations in the *MTTP* gene. Causes an absence of ApoB-48/ApoB-100, severe fat malabsorption in infants, acanthocytosis (thorny RBCs), failure to thrive, and neurological impairment from vitamin E deficiency."
+    },
+    {
+      "front": "What standard enzymatic sequence is used to measure Total Cholesterol?",
+      "back": "1. Cholesterol Esterase hydrolyzes cholesterol esters to free cholesterol.\n2. Cholesterol Oxidase converts free cholesterol to cholest-4-en-3-one and $\\text{H}_2\\text{O}_2$.\n3. Peroxidase uses $\\text{H}_2\\text{O}_2$ to dye 4-aminophenazone/phenol red for absorbance measurement."
+    },
+    {
+      "front": "What is the actual analyte quantified in enzymatic triglyceride assays?",
+      "back": "Glycerol. LPL hydrolyzes triglycerides to glycerol, which is then oxidized through enzymatic reactions to generate $\\text{H}_2\\text{O}_2$ measured via a Trinder endpoint reaction."
+    },
+    {
+      "front": "What is the electrophoretic migration order of lipoproteins on agarose gel (from origin to anode)?",
+      "back": "1. Origin: Chylomicrons (slowest / stays at well)\n2. $\\beta$-band: LDL\n3. Pre-$\\beta$-band: VLDL\n4. $\\alpha$-band: HDL (fastest / migrates furthest)"
+    },
+    {
+      "front": "How does a direct homogeneous HDL cholesterol assay shield non-HDL fractions?",
+      "back": "It uses synthetic polymers, antibodies, or cyclodextrin complexing agents to mask non-HDL lipoproteins (or enzymatic blanking steps) so only HDL cholesterol reacts with the assay enzymes without requiring precipitation."
+    },
+    {
+      "front": "How is LDL-C isolated in the $\\beta$-quantification reference method?",
+      "back": "1. Ultracentrifugation removes density $<1.006\\text{ g/mL}$ fractions (VLDL/chylomicrons).\n2. HDL-C is quantified after polyanion precipitation.\n3. Calculated as: $$\\text{LDL-C} = (d > 1.006\\text{ g/mL fraction}) - \\text{HDL-C}$$"
+    },
+    {
+      "front": "What is the Sampson/NIH equation for calculated LDL-C?",
+      "back": "$$\\text{LDL-C} = \\frac{\\text{TC}}{0.948} - \\frac{\\text{HDL-C}}{0.971} - \\left(\\frac{\\text{TG}}{8.56} + \\frac{\\text{TG} \\times \\text{non-HDL-C}}{2140} - \\frac{\\text{TG}^2}{16100}\\right) - 9.44$$"
+    },
+    {
+      "front": "Why is the classic Friedewald formula unreliable for certain patients?",
+      "back": "The calculation ($\\text{LDL-C} = \\text{TC} - \\text{HDL-C} - \\frac{\\text{TG}}{5}$) becomes inaccurate when serum triglycerides are elevated ($>400\\text{ mg/dL}$) or when LDL-C levels are very low."
+    },
+    {
+      "front": "What roles do monocytes and foam cells play in atherosclerotic plaque development?",
+      "back": "Circulating monocytes migrate into the vascular intima and become macrophages. Macrophages ingest trapped, oxidized ApoB lipoproteins via scavenger receptors, transforming into lipid-laden foam cells that undergo necrosis to form the plaque core."
+    },
+    {
+      "front": "How do statins reduce systemic circulating LDL-C?",
+      "back": "They competitively inhibit HMG-CoA reductase, reducing hepatic cholesterol synthesis. The depleted liver cholesterol pool triggers up-regulation of surface LDL-receptors, increasing clearance of systemic LDL."
+    },
+    {
+      "front": "What clinical cutoff for high-sensitivity C-reactive protein (hs-CRP) signifies elevated ASCVD risk?",
+      "back": "An $\\text{hs-CRP} \\ge 2.0\\text{ mg/L}$ indicates higher chronic vascular inflammation and elevated risk for cardiovascular events."
+    },
+    {
+      "front": "How is Non-HDL Cholesterol calculated and why is it clinically useful?",
+      "back": "Calculated as: $$\\text{Non-HDL-C} = \\text{Total Cholesterol} - \\text{HDL-C}$$\nIt measures total atherogenic ApoB-containing particles, remains accurate in non-fasting samples, and is unaffected by high triglyceride levels."
+    },
+    {
+      "front": "What are the adult Desirable reference ranges for Total Cholesterol, Triglycerides, and LDL-C?",
+      "back": "* Total Cholesterol: $<200\\text{ mg/dL}$\n* Triglycerides: $<150\\text{ mg/dL}$\n* LDL Cholesterol: $<100\\text{ mg/dL}$"
+    },
+    {
+      "front": "What are the adult reference cutoffs for HDL Cholesterol in males vs. females?",
+      "back": "* Males: $\\ge 40\\text{ mg/dL}$\n* Females: $\\ge 50\\text{ mg/dL}$"
+    },
+    {
+      "front": "What are the pediatric (ages 2-17) Acceptable cutoff values for Total Cholesterol and LDL-C?",
+      "back": "* Total Cholesterol: $<170\\text{ mg/dL}$\n* LDL Cholesterol: $<110\\text{ mg/dL}$"
+    }
   ],
   "DataScience": [
     { "front": "What is the time complexity of looking up a key in a Hash Map?", "back": "O(1) constant time on average" },
