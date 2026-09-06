@@ -315,26 +315,29 @@
         renderCard();
     }
 
-    function renderCard() {
-        cardEl.classList.remove('flipped');
-        if (activeDeck.length === 0) {
-            frontEl.textContent = "No cards available.";
-            backEl.textContent = "";
-            progressEl.textContent = "0 / 0";
-            return;
-        }
-
-        const currentCard = activeDeck[currentIndex];
-        frontEl.textContent = currentCard.front;
-        backEl.textContent = currentCard.back;
-        progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
-        applyCardColor();
-
-        // Typeset LaTeX math formulas if MathJax is loaded
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise([frontEl, backEl]);
-        }
+   function renderCard() {
+    cardEl.classList.remove('flipped');
+    if (activeDeck.length === 0) {
+        frontEl.innerHTML = "No cards available.";
+        backEl.innerHTML = "";
+        progressEl.textContent = "0 / 0";
+        return;
     }
+
+    const currentCard = activeDeck[currentIndex];
+    
+    // Replace newline characters (\n) with HTML line breaks (<br>)
+    frontEl.innerHTML = currentCard.front.replace(/\n/g, '<br>');
+    backEl.innerHTML = currentCard.back.replace(/\n/g, '<br>');
+    
+    progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
+    applyCardColor();
+
+    // Re-run MathJax typesetting for rendered LaTeX equations
+    if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise([frontEl, backEl]);
+    }
+}
 
     function applyCardColor() {
         const colors = currentTheme === 'light' ? lightPastels : darkPastels;
