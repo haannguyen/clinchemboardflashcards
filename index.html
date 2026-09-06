@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ha An's Flashcards</title>
+    <title>Multi-Topic Flashcards</title>
     
-    <!-- 🌐 Google Fonts Import (Inter) -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -77,7 +76,6 @@
             letter-spacing: -0.01em;
             text-align: left;
         }
-        /* 3D Card Setup */
         .flashcard-container {
             perspective: 1000px;
             width: 100%;
@@ -124,7 +122,6 @@
             transform: rotateY(180deg);
             border: 2px solid var(--primary-color);
         }
-        /* Controls Menu */
         .controls, .score-actions {
             display: flex;
             justify-content: space-between;
@@ -160,7 +157,6 @@
             min-width: 60px;
             opacity: 0.7;
         }
-        /* Modal Overlay for Transitions */
         .overlay {
             position: absolute;
             top: 0;
@@ -170,7 +166,7 @@
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 15px;
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -178,7 +174,6 @@
             box-sizing: border-box;
             z-index: 10;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            display: none;
         }
         .overlay h2 {
             margin-top: 0;
@@ -196,7 +191,6 @@
 <body>
 
 <div class="container">
-    <!-- End-of-Deck Loop Prompt Modal -->
     <div class="overlay" id="review-overlay">
         <h2 id="overlay-title">Deck Completed! 🎉</h2>
         <p id="overlay-desc">You've reached the end of this study session.</p>
@@ -211,7 +205,6 @@
         <button class="secondary" style="max-width: 120px;" onclick="toggleTheme()">Theme 🌓</button>
     </div>
 
-    <!-- 🗂️ Dynamic Topic Menu Selector -->
     <div class="deck-selector-container">
         <select id="topic-select" onchange="selectTopic()"></select>
     </div>
@@ -225,7 +218,7 @@
 
     <div class="score-actions">
         <button class="danger" onclick="markCard(false, event)">Need Review ❌</button>
-        <button class="success" onclick="markCard(true, event)">Mastered  ✅</button>
+        <button class="success" onclick="markCard(true, event)">Mastered ✅</button>
     </div>
 
     <div class="controls">
@@ -237,7 +230,7 @@
 </div>
 
 <script>
-    let masterData = {}; // Stores complete categorized JSON data object
+    let masterData = {};
     let activeDeck = [];
     let reviewPile = [];
     let currentIndex = 0;
@@ -263,21 +256,18 @@
 
     async function loadDeck() {
         try {
-            const response = await fetch('./cards.json');
+            const response = await fetch('./card.json'); // Updated path matching your file
             masterData = await response.json();
             populateTopicDropdown();
             selectTopic();
         } catch (error) {
-            frontEl.textContent = "Error loading cards.json. Check file placement and structural syntax formatting.";
+            frontEl.textContent = "Error loading card.json. Check file placement and CORS settings.";
             console.error(error);
         }
     }
 
-    // 🗄️ Generates dropdown list options automatically from the JSON dictionary properties
     function populateTopicDropdown() {
         topicSelectEl.innerHTML = '';
-        
-        // Add default global mixing configuration item
         const allOption = document.createElement('option');
         allOption.value = 'all_mixed';
         allOption.textContent = 'All Topics (Mixed)';
@@ -291,3 +281,138 @@
         }
     }
 
+    function selectTopic() {
+        const selected = topicSelectEl.value;
+        if (selected === 'all_mixed') {
+            activeDeck = Object.values(masterData).flat();
+        } else {
+            activeDeck = [...(masterData[selected] || [])];
+        }
+        resetState();
+    }
+
+    function resetState() {
+        currentIndex = 0;
+        masteredCount = 0;
+        reviewPile = [];
+        isReviewMode = false;
+        modeBadgeEl.textContent = 'Main Round';
+        overlayEl.style.display = 'none';
+        updateStats();
+        renderCard();
+    }
+
+    function renderCard() {
+        cardEl.classList.remove('flipped');
+        if (activeDeck.length === 0) {
+            frontEl.textContent = "No cards available.";
+            backEl.textContent = "";
+            progressEl.textContent = "0 / 0";
+            return;
+        }
+
+        const currentCard = activeDeck[currentIndex];
+        frontEl.textContent = currentCard.front;
+        backEl.textContent = currentCard.back;
+        progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
+        applyCardColor();
+    }
+
+    function applyCardColor() {
+        const colors = currentTheme === 'light' ? lightPastels : darkPastels;
+        const color = colors[currentIndex % colors.length];
+        document.documentElement.style.setProperty('--dynamic-card-bg', color);
+    }
+
+    function flipCard() {
+        cardEl.classList.toggle('flipped');
+    }
+
+    function prevCard(e) {
+        if (e) e.stopPropagation();
+        if (currentIndex > 0) {
+            currentIndex--;
+            renderCard();
+        }
+    }
+
+    function nextCard(e) {
+        if (e) e.stopPropagation();
+        if (currentIndex < activeDeck.length - 1) {
+            currentIndex++;
+            renderCard();
+        } else {
+            showCompletionOverlay();
+        }
+    }
+
+    function markCard(isMastered, e) {
+        if (e) e.stopPropagation();
+        if (activeDeck.length === 0) return;
+
+        const card = activeDeck[currentIndex];
+        if (isMastered) {
+            masteredCount++;
+        } else if (!reviewPile.includes(card)) {
+            reviewPile.push(card);
+        }
+
+        updateStats();
+        nextCard();
+    }
+
+    function updateStats() {
+        scoreEl.textContent = masteredCount;
+        reviewCountEl.textContent = reviewPile.length;
+    }
+
+    function shuffleDeck(e) {
+        if (e) e.stopPropagation();
+        for (let i = activeDeck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [activeDeck[i], activeDeck[j]] = [activeDeck[j], activeDeck[i]];
+        }
+        currentIndex = 0;
+        renderCard();
+    }
+
+    function showCompletionOverlay() {
+        overlayEl.style.display = 'flex';
+        if (reviewPile.length > 0) {
+            overlayTitleEl.textContent = 'Deck Completed! 🎉';
+            overlayDescEl.textContent = `You have ${reviewPile.length} card(s) marked for review.`;
+            overlayBtnEl.textContent = 'Start Review Loop';
+        } else {
+            overlayTitleEl.textContent = 'Perfect Score! 🌟';
+            overlayDescEl.textContent = 'You mastered all cards in this topic.';
+            overlayBtnEl.textContent = 'Restart Session';
+        }
+    }
+
+    function handleOverlayAction() {
+        overlayEl.style.display = 'none';
+        if (reviewPile.length > 0) {
+            activeDeck = [...reviewPile];
+            reviewPile = [];
+            isReviewMode = true;
+            modeBadgeEl.textContent = 'Review Round';
+        } else {
+            selectTopic();
+            return;
+        }
+        currentIndex = 0;
+        updateStats();
+        renderCard();
+    }
+
+    function toggleTheme() {
+        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        applyCardColor();
+    }
+
+    // Initialize application
+    loadDeck();
+</script>
+</body>
+</html>
