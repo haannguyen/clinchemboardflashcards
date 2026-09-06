@@ -265,12 +265,12 @@
       "back": "1. Ultracentrifugation removes density $<1.006\\text{ g/mL}$ fractions (VLDL/chylomicrons).\n2. HDL-C is quantified after polyanion precipitation.\n3. Calculated as: $$\\text{LDL-C} = (d > 1.006\\text{ g/mL fraction}) - \\text{HDL-C}$$"
     },
     {
-      "front": "What is the Sampson/NIH equation for calculated LDL-C?",
-      "back": "$$\\text{LDL-C} = \\frac{\\text{TC}}{0.948} - \\frac{\\text{HDL-C}}{0.971} - \\left(\\frac{\\text{TG}}{8.56} + \\frac{\\text{TG} \\times \\text{non-HDL-C}}{2140} - \\frac{\\text{TG}^2}{16100}\\right) - 9.44$$"
-    },
+  "front": "What is the Sampson/NIH equation for calculated LDL-C?",
+  "back": "Formula (in mg/dL):\n$\\text{LDL-C} = \\frac{\\text{TC}}{0.948} - \\frac{\\text{HDL-C}}{0.971} - \\left(\\frac{\\text{TG}}{8.56} + \\frac{\\text{TG} \\times \\text{non-HDL-C}}{2140} - \\frac{\\text{TG}^2}{16100}\\right) - 9.44$"
+},
     {
-      "front": "Why is the classic Friedewald formula unreliable for certain patients?",
-      "back": "The calculation ($\\text{LDL-C} = \\text{TC} - \\text{HDL-C} - \\frac{\\text{TG}}{5}$) becomes inaccurate when serum triglycerides are elevated ($>400\\text{ mg/dL}$) or when LDL-C levels are very low."
+      "front": "What is the classic Friedewald equation for calculated LDL-C and when is it invalid?",
+      "back": "Formula (in mg/dL):\n$\\text{LDL-C} = \\text{TC} - \\text{HDL-C} - (\\text{TG} / 5)$\n\nInvalid when:\n1. Serum Triglycerides $> 400\\text{ mg/dL}$\n2. LDL-C levels are very low\n3. Patient is non-fasting or has Type I/III dyslipidemia"
     },
     {
       "front": "What roles do monocytes and foam cells play in atherosclerotic plaque development?",
