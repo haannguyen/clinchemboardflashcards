@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ha An's Flashcards</title>
+    <title>Multi-Topic Flashcards</title>
     
+    <!-- 🌐 Google Fonts Import (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -76,6 +77,7 @@
             letter-spacing: -0.01em;
             text-align: left;
         }
+        /* 3D Card Setup */
         .flashcard-container {
             perspective: 1000px;
             width: 100%;
@@ -122,6 +124,7 @@
             transform: rotateY(180deg);
             border: 2px solid var(--primary-color);
         }
+        /* Controls Menu */
         .controls, .score-actions {
             display: flex;
             justify-content: space-between;
@@ -157,6 +160,7 @@
             min-width: 60px;
             opacity: 0.7;
         }
+        /* Modal Overlay for Transitions */
         .overlay {
             position: absolute;
             top: 0;
@@ -191,6 +195,7 @@
 <body>
 
 <div class="container">
+    <!-- End-of-Deck Loop Prompt Modal -->
     <div class="overlay" id="review-overlay">
         <h2 id="overlay-title">Deck Completed! 🎉</h2>
         <p id="overlay-desc">You've reached the end of this study session.</p>
@@ -205,6 +210,7 @@
         <button class="secondary" style="max-width: 120px;" onclick="toggleTheme()">Theme 🌓</button>
     </div>
 
+    <!-- 🗂️ Dynamic Topic Menu Selector -->
     <div class="deck-selector-container">
         <select id="topic-select" onchange="selectTopic()"></select>
     </div>
@@ -256,18 +262,22 @@
 
     async function loadDeck() {
         try {
-            const response = await fetch('./card.json'); // Updated path matching your file
+            const response = await fetch('./cards.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             masterData = await response.json();
             populateTopicDropdown();
             selectTopic();
         } catch (error) {
-            frontEl.textContent = "Error loading card.json. Check file placement and CORS settings.";
+            frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
             console.error(error);
         }
     }
 
+    // 🗄️ Generates dropdown list options automatically from the JSON dictionary properties
     function populateTopicDropdown() {
         topicSelectEl.innerHTML = '';
+        
+        // Add default global mixing configuration item
         const allOption = document.createElement('option');
         allOption.value = 'all_mixed';
         allOption.textContent = 'All Topics (Mixed)';
@@ -411,7 +421,7 @@
         applyCardColor();
     }
 
-    // Initialize application
+    // Load initial data on startup
     loadDeck();
 </script>
 </body>
