@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <!-- MathJax for rendering LaTeX formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         :root {
             --bg-color: #f4f7f6;
@@ -215,7 +219,7 @@
         <select id="topic-select" onchange="selectTopic()"></select>
     </div>
 
-    <div class="flashcard-container" onclick="flipCard()">
+    <div class="flashcard-container" onclick="handleCardClick()">
         <div class="flashcard" id="card">
             <div class="card-face card-front" id="front-text">Fetching data...</div>
             <div class="card-face card-back" id="back-text">Fetching data...</div>
@@ -273,11 +277,9 @@
         }
     }
 
-    // 🗄️ Generates dropdown list options automatically from the JSON dictionary properties
     function populateTopicDropdown() {
         topicSelectEl.innerHTML = '';
         
-        // Add default global mixing configuration item
         const allOption = document.createElement('option');
         allOption.value = 'all_mixed';
         allOption.textContent = 'All Topics (Mixed)';
@@ -326,6 +328,11 @@
         backEl.textContent = currentCard.back;
         progressEl.textContent = `${currentIndex + 1} / ${activeDeck.length}`;
         applyCardColor();
+
+        // Typeset LaTeX math formulas if MathJax is loaded
+        if (window.MathJax && MathJax.typesetPromise) {
+            MathJax.typesetPromise([frontEl, backEl]);
+        }
     }
 
     function applyCardColor() {
@@ -334,8 +341,15 @@
         document.documentElement.style.setProperty('--dynamic-card-bg', color);
     }
 
-    function flipCard() {
-        cardEl.classList.toggle('flipped');
+    // Advanced card click function:
+    // If on the front side -> flip to back
+    // If on the back side -> advance to next card
+    function handleCardClick() {
+        if (cardEl.classList.contains('flipped')) {
+            nextCard();
+        } else {
+            cardEl.classList.add('flipped');
+        }
     }
 
     function prevCard(e) {
@@ -421,7 +435,6 @@
         applyCardColor();
     }
 
-    // Load initial data on startup
     loadDeck();
 </script>
 </body>
