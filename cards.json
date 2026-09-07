@@ -513,7 +513,654 @@
     "front": "In a forest plot meta-analysis of Odds Ratios, what does an overall confidence interval that does not cross 1.0 signify?",
     "back": "An overall 95% confidence interval that stays entirely below 1.0 (or above 1.0) indicates a statistically significant difference between the intervention and control groups."
   },
-    
+    {
+    "front": "What is the difference between physiological and analytical interferences in laboratory testing?",
+    "back": "• Physiological: Occurs in vivo due to biological processes or disease states altering analyte concentrations (e.g., elevated bilirubin reflecting liver disease or intravascular hemolysis)[cite: 5].\n• Analytical: Occurs in vitro during or after sample collection where a substance interferes with the measurement method or instrument physically or chemically (e.g., spectral overlap from free hemoglobin)[cite: 5]."
+  },
+  {
+    "front": "Which serum index is most associated with physiological interference?",
+    "back": "Icterus (high bilirubin), as elevated levels reflect an underlying disease state such as liver disease, biliary obstruction, or intravascular hemolysis[cite: 5]."
+  },
+  {
+    "front": "What is the most common cause of unacceptable specimens in a routine chemistry laboratory?",
+    "back": "Hemolysis[cite: 5]."
+  },
+  {
+    "front": "List common preanalytical causes of specimen hemolysis.",
+    "back": "• Syringe draw with excessive suction/pressure[cite: 5].\n• Line draws instead of venipuncture[cite: 5].\n• Small gauge needles, fragile veins, or wet alcohol on skin[cite: 5].\n• Tube underfilling (excess EDTA ruptures RBC membranes)[cite: 5].\n• Shaking/vigorous mixing or high-speed pneumatic tube transport[cite: 5].\n• Centrifuging unclotted samples or respinning gel-separator tubes[cite: 5]."
+  },
+  {
+    "front": "What non-preanalytical/non-analytical factors can cause pseudohyperkalemia?",
+    "back": "• Severe thrombocytosis (>1,000,000/µL releasing K+ during clotting)[cite: 5].\n• Severe leukocytosis/fragile WBCs (e.g., leukemia) leaking K+ into plasma/serum[cite: 5].\n• Familial pseudohyperkalemia / leaky red cell syndrome[cite: 5].\n• Using plasma reference intervals for serum specimens (serum K+ is ~0.4 mmol/L higher)[cite: 5]."
+  },
+  {
+    "front": "Name a cause of pseudohyperkalemia that is NOT associated with hemolysis (free hemoglobin).",
+    "back": "Order of draw contamination from potassium-EDTA ($K_2\text{EDTA}$ / $K_3\text{EDTA}$) tubes, or IV catheter contamination from benzalkonium-heparin[cite: 5]."
+  },
+  {
+    "front": "What patient factors and collection options should be considered for recurrent hemolyzed samples?",
+    "back": "• Lipid emulsions / TPN therapy: Consider ultracentrifugation or blood gas syringe collection with HCL processing[cite: 5].\n• Intravascular hemolysis / fragile RBCs: Perform hand delivery, run point-of-care (POC) direct ISE testing, or evaluate intravascular markers (low haptoglobin, high LDH)[cite: 5].\n• Fragile WBCs (e.g., leukemia): Evaluate for reverse pseudohyperkalemia[cite: 5]."
+  },
+  {
+    "front": "What are the concentration cutoffs for plasma/serum free hemoglobin, and when is hemolysis visible?",
+    "back": "• Upper reference limit: $20\text{ mg/L}$ in plasma; $50\text{ mg/L}$ in serum[cite: 5].\n• Visually detectable hemolysis: Free hemoglobin $>0.3\text{ g/L}$ ($18.8\text{ mmol/L}$)[cite: 5]."
+  },
+  {
+    "front": "Which analytes falsely INCREASE due to cellular release in hemolyzed specimens?",
+    "back": "Potassium ($K^+$), Lactate Dehydrogenase (LDH), Aspartate Aminotransferase (AST), Alanine Aminotransferase (ALT), Phosphorus, Magnesium, Folate, and Urea[cite: 5]."
+  },
+  {
+    "front": "Which analytes falsely DECREASE due to dilutional effects in hemolyzed specimens?",
+    "back": "Sodium ($Na^+$), Chloride ($Cl^-$), Glucose, Albumin, and Alkaline Phosphatase (ALP)[cite: 5]."
+  },
+  {
+    "front": "Which hormones decrease in hemolyzed samples due to enzymatic proteolysis?",
+    "back": "Insulin, ACTH, Glucagon, Gastrin, Calcitonin, and Parathyroid Hormone (PTH)[cite: 5]."
+  },
+    {
+    "front": "What is the difference between plasma and plasma water, and why is this distinction clinically important?",
+    "back": "• Plasma: ~93% aqueous solution and 7% solids (proteins and lipids)[cite: 6].\n• Plasma Water: The purely aqueous fraction where electrolytes and solutes are dissolved[cite: 6].\n• Clinical Significance: Indirect ISE dilutes samples assuming a 93% water fraction; increased solids (hyperlipidemia/hyperproteinemia) reduce the aqueous fraction, causing falsely low sodium results (pseudohyponatremia / electrolyte exclusion effect)[cite: 6]."
+  },
+  {
+    "front": "How is Osmolality defined and measured?",
+    "back": "Osmolality is the total number of solute particles per kilogram of solvent ($\text{mOsm/kg H}_2\text{O}$)[cite: 6]. It is measured in the laboratory via freezing point depression (1 mOsm/kg lowers the freezing point by $0.001858^\circ\text{C}$)[cite: 6]."
+  },
+  {
+    "front": "What primary molecules contribute to plasma osmolality?",
+    "back": "Sodium ($\text{Na}^+$) and its accompanying counter-anions (chloride and bicarbonate), Glucose, and Blood Urea Nitrogen (BUN)[cite: 6]."
+  },
+  {
+    "front": "What is the formula for calculated osmolality and the osmol gap?",
+    "back": "• Calculated Osmolality = $2 \times [\text{Na}^+] + \left(\frac{[\text{Glucose}]}{18}\right) + \left(\frac{[\text{BUN}]}{2.8}\right)$[cite: 6]\n• Osmol Gap = $\text{Measured Osmolality} - \text{Calculated Osmolality}$[cite: 6]\n• Reference: Normal osmol gap is $<10\text{ mOsm/kg}$[cite: 6]."
+  },
+  {
+    "front": "What causes an elevated Osmol Gap ($>10\\text{ mOsm/kg}$)?",
+    "back": "The presence of unmeasured exogenous low-molecular-weight volatile solutes, such as toxic alcohols (methanol, ethylene glycol, isopropanol), ethanol, acetone, or propylene glycol[cite: 6]."
+  },
+  {
+    "front": "Compare Direct ISE vs. Indirect ISE for sodium measurement.",
+    "back": "• Direct ISE: Measures undiluted sample (e.g., blood gas analyzers, POC)[cite: 6]. Free from the electrolyte exclusion effect/pseudohyponatremia, but requires higher sample volumes and maintenance[cite: 6].\n• Indirect ISE: Dilutes sample prior to measurement (high-throughput chemistry analyzers)[cite: 6]. Uses small sample volume, but prone to pseudohyponatremia in hyperlipidemic/hyperproteinemic samples[cite: 6]."
+  },
+  {
+    "front": "How is Potassium ($K^+$) measured, and what ionophore is used?",
+    "back": "Measured via indirect potentiometry using an Ion Selective Electrode (ISE) with a membrane containing valinomycin (a neutral-carrier mushroom-ring antibiotic that selectively transports $\text{K}^+$ ions)[cite: 6]."
+  },
+  {
+    "front": "How does storage temperature affect Potassium ($K^+$) concentration in uncentrifuged blood tubes over time?",
+    "back": "• Refrigerated: $\text{Na}^+/\text{K}^+$-ATP pumps shut down due to cold, while passive diffusion continues, causing a steep, rapid rise in extracellular $\text{K}^+$[cite: 6].\n• Ambient: $\text{K}^+$ initial slight decrease (active cell uptake), followed by a gradual increase as cells exhaust energy and leak $\text{K}^+$[cite: 6]."
+  },
+  {
+    "front": "How is Chloride measured via ISE, and what substances cause positive analytical interference?",
+    "back": "Measured by indirect potentiometry using quaternary ammonium chloride ion-exchangers[cite: 6]. Interfering ions with similar or higher hydration energies include bromide (e.g., KBr therapy), iodide, thiocyanate, salicylate, bicarbonate, and heparin[cite: 6]."
+  },
+  {
+    "front": "What is the enzymatic reaction sequence used to photometrically measure Bicarbonate ($\text{HCO}_3^-$)?",
+    "back": "1. $\text{HCO}_3^- + \text{Phosphoenolpyruvate (PEP)} \xrightarrow{\text{PEPC}} \text{Oxaloacetate} + \text{Phosphate}$[cite: 6]\n2. $\text{Oxaloacetate} + \text{NADH} \xrightarrow{\text{Malate Dehydrogenase}} \text{Malate} + \text{NAD}^+$[cite: 6]\n• Measurement: Rate of decrease in absorbance from NADH consumption (415–505 nm) is proportional to $\text{HCO}_3^-$ concentration[cite: 6]."
+  },
+  {
+    "front": "How is serum Anion Gap calculated, and what is its primary clinical utility?",
+    "back": "• Formula: $\text{Anion Gap} = [\text{Na}^+] - ([\text{Cl}^-] + [\text{HCO}_3^-])$[cite: 6]\n• Utility: Differentiates metabolic acidosis into High Anion Gap vs. Normal Anion Gap (hyperchloremic) types, detects unmeasured organic anions/toxins, and monitors treatment of DKA or lactic acidosis[cite: 6]."
+  },
+  {
+    "front": "How are Total Calcium and Ionized Calcium ($Ca^{2+}$) measured in the clinical laboratory?",
+    "back": "• Total Calcium: Photometric complexation assay with 5-nitro-5'-methyl-BAPTA (NM-BAPTA) under alkaline conditions, followed by reaction with EDTA[cite: 6].\n• Ionized Calcium: Direct ISE on undiluted sample measuring physiologically active unbound calcium (~50–55% of total calcium)[cite: 6]."
+  },
+  {
+    "front": "How does blood sample pH affect Ionized Calcium ($Ca^{2+}$) results?",
+    "back": "Ionized calcium has an inverse relationship with pH[cite: 6]. Increasing pH increases negative charges on albumin, causing more $\text{Ca}^{2+}$ to bind protein and falsely decreasing free/ionized $\text{Ca}^{2+}$ (samples should be collected anaerobically or normalized/corrected to pH 7.4)[cite: 6]."
+  },
+  {
+    "front": "What colorimetric methodology is used to measure Magnesium?",
+    "back": "Reaction with xylidyl blue in an alkaline solution containing EGTA (to mask calcium interference), forming a purple complex[cite: 6]. Concentration is measured by the decrease in absorbance at 600 nm[cite: 6]."
+  },
+  {
+    "front": "What photometric methodology is used to measure Inorganic Phosphorus?",
+    "back": "Reaction of phosphate with ammonium molybdate in an acidic medium to form an unreduced ammonium phosphomolybdate complex measured photometrically at 340 nm[cite: 6]."
+  },
+  {
+    "front": "What preanalytical and analytical interferences affect Phosphorus measurements?",
+    "back": "• Diurnal variation (lowest in morning, highest late evening) and postprandial drop (fasting preferred)[cite: 6].\n• Hemolysis (releases intracellular organic phosphates hydrolyzed by phosphatases)[cite: 6].\n• Therapeutics: Mannitol inhibits complex formation; liposomal drugs (AmBisome) hydrolyze to release phosphate[cite: 6].\n• Paraproteins / IgM monoclonal gammopathies causing sample precipitation or turbidity[cite: 6]."
+  },
+"front": "What are the adult reference intervals and Mayo Clinic critical value thresholds for Sodium?",
+    "back": "• Reference Interval: 135–145 mmol/L\n• Critical Thresholds: ≤120 mmol/L and ≥160 mmol/L"
+  },
+  {
+    "front": "What are the adult reference intervals and Mayo Clinic critical value thresholds for Potassium?",
+    "back": "• Reference Interval: 3.6–5.2 mmol/L\n• Critical Thresholds: ≤2.5 mmol/L and ≥6.0 mmol/L"
+  },
+  {
+    "front": "What are the adult reference intervals and critical values for Chloride and Bicarbonate?",
+    "back": "• Chloride Reference Interval: 98–107 mmol/L (No critical value)\n• Bicarbonate Reference Interval: 22–29 mmol/L (No critical value)"
+  },
+  {
+    "front": "What are the adult reference intervals and Mayo Clinic critical value thresholds for Magnesium?",
+    "back": "• Reference Interval: 1.7–2.3 mg/dL\n• Critical Thresholds: ≤1.0 mg/dL and ≥9.0 mg/dL"
+  },
+  {
+    "front": "What are the adult reference intervals and Mayo Clinic critical value thresholds for Total and Ionized Calcium?",
+    "back": "• Total Calcium: 8.6–10.0 mg/dL (Critical: ≤6.5 mg/dL, ≥13.0 mg/dL)\n• Ionized Calcium: 4.57–5.43 mg/dL (Critical: ≤3.0 mg/dL, ≥6.5 mg/dL)"
+  },
+  {
+    "front": "What are the adult reference intervals and Mayo Clinic critical value thresholds for Phosphorus?",
+    "back": "• Reference Interval: 2.5–4.5 mg/dL\n• Critical Threshold: ≤1.0 mg/dL"
+  },
+  {
+    "front": "What neurological symptoms and concentrations are associated with severe Hyponatremia?",
+    "back": "• <120 mmol/L: Weakness\n• <100 mmol/L: Bulbar/pseudobuIbar palsy\n• 90–105 mmol/L: Severe neurological impairment, seizures, coma, brain swelling, and death"
+  },
+  {
+    "front": "What serum sodium concentrations trigger symptoms in Acute vs. Chronic Hypernatremia?",
+    "back": "• Acute Hypernatremia: Symptoms appear around 160 mmol/L\n• Chronic Hypernatremia: Brain adaptation delays symptoms until sodium exceeds 175 mmol/L"
+  },
+  {
+    "front": "What three main physiological mechanisms control water balance and sodium concentration?",
+    "back": "1. Hypothalamic Thirst Center: Stimulated by hyperosmolality or hypovolemia\n2. Antidiuretic Hormone (ADH/Vasopressin): Promotes renal water reabsorption\n3. Renin-Angiotensin-Aldosterone System (RAAS): Promotes renal sodium retention and water reabsorption"
+  },
+  {
+    "front": "What role do Natriuretic Peptides (ANP and BNP) play in fluid balance?",
+    "back": "They act as negative regulators against the RAAS axis to promote natriuresis (sodium excretion) and lower blood pressure/blood volume."
+  },
+  {
+    "front": "What serum potassium concentrations are associated with life-threatening clinical manifestations?",
+    "back": "• Hypokalemia: <3.0 mmol/L causes severe neuromuscular symptoms; <2.5 mmol/L is potentially life-threatening\n• Hyperkalemia: >6.0 mmol/L causes severe symptoms/cardiac risks; >10.0 mmol/L is fatal"
+  },
+  {
+    "front": "How do the kidneys regulate potassium excretion via Aldosterone?",
+    "back": "Potassium filtered at the glomerulus is reabsorbed in proximal tubules and then secreted in distal tubules in exchange for $\\text{Na}^+$ under the influence of aldosterone."
+  },
+  {
+    "front": "How does serum Chloride concentration vary with Sodium and Bicarbonate?",
+    "back": "• Directly proportional to Sodium (maintains electrical neutrality during volume shifts)\n• Inversely proportional to Bicarbonate (shifts inversely during metabolic acid-base disorders to maintain neutral charge)"
+  },
+  {
+    "front": "What is the Chloride Shift?",
+    "back": "An electrochemical compensation mechanism where RBCs exchange plasma $\\text{Cl}^-$ for intracellular $\\text{HCO}_3^-$ as blood passes between peripheral tissues and lungs."
+  },
+  {
+    "front": "What clinical signs are characteristic of severe Hypocalcemia?",
+    "back": "Neuromuscular excitability (tingling, tetany), Chvostek sign (facial twitching), Trousseau sign (carpopedal spasm), and prolonged QT interval on ECG."
+  },
+  {
+    "front": "What classic mnemonic summarizes the symptoms of Hypercalcemia?",
+    "back": "Stones (nephrolithiasis), Bones (bone pain/resorption), Groans (GI abdominal pain/constipation), and Psychic Moans (confusion, lethargy, coma)."
+  },
+  {
+    "front": "What neuromuscular effects occur in Hypomagnesemia vs. Hypermagnesemia?",
+    "back": "• Hypomagnesemia: Neuromuscular excitability (tremors, cramps, tetany, seizures)\n• Hypermagnesemia: Neuromuscular depression (loss of tendon reflexes, flaccid paralysis, hypoventilation/respiratory arrest at >10 mg/dL)"
+  },
+  {
+    "front": "What triggers Refeeding Syndrome, and how does it cause Hypophosphatemia?",
+    "back": "Carbohydrate administration in starved/malnourished patients triggers massive insulin release, driving extracellular phosphate into cells for glycolysis and causing severe hypophosphatemia."
+  },
+  {
+    "front": "When should blood for Serum Phosphate testing be collected, and why?",
+    "back": "In the morning in a fasting state, because phosphate exhibits a strong biphasic circadian rhythm (peaking late afternoon and late evening) and rises postprandially."
+  },
+  {
+    "front": "What is the difference between Arginine Vasopressin Deficiency (AVP-D) and Resistance (AVP-R)?",
+    "back": "• AVP-D (Central DI): Hypothalamic/pituitary failure to synthesize or secrete vasopressin\n• AVP-R (Nephrogenic DI): Renal unresponsiveness to circulating vasopressin at $V_2$ receptors or aquaporin-2 channels"
+  },
+  {
+    "front": "How are AVP-D and AVP-R differentiated using the Desmopressin (DDAVP) water deprivation test?",
+    "back": "After fluid restriction, exogenous desmopressin is administered:\n• Concentrated urine (sharp rise in urine osmolality) confirms AVP-D\n• Unconcentrated urine (persistent low urine osmolality) confirms AVP-R"
+  },
+  {
+    "front": "How does the Copeptin assay help differentiate AVP-D from AVP-R?",
+    "back": "Copeptin is co-secreted 1:1 with AVP:\n• Stimulated copeptin >21.4 pmol/L confirms AVP-R (high AVP release with renal resistance)\n• Stimulated copeptin <4.9 pmol/L indicates AVP-D (lack of AVP release)"
+  },
+  {
+    "front": "What are the laboratory features and common causes of SIADH?",
+    "back": "• Features: Low serum sodium (hyponatremia), low plasma osmolality, inappropriately high urine osmolality, and elevated urinary sodium\n• Causes: Small cell lung carcinoma (ectopic), CNS strokes/trauma, pulmonary infections, and drugs (SSRIs, carbamazepine)"
+  },
+{
+    "front": "Case 1: pH 7.32, pCO2 20 mmHg, HCO3 15 mmol/L, Na 145 mmol/L, Cl 105 mmol/L. What is the primary disorder and compensation?",
+    "back": "Primary disorder: Metabolic acidosis (low pH, low HCO3) with respiratory alkalosis compensation (low pCO2)[cite: 8]."
+  },
+  {
+    "front": "Case 1: Calculate the Anion Gap (Na 145, Cl 105, HCO3 15) and list common causes.",
+    "back": "• Anion Gap = $145 - (105 + 15) = 25\\text{ mmol/L}$ (High Anion Gap Metabolic Acidosis / HAGMA)[cite: 8].\n• Causes (MUD PILES): Methanol, Uremia, DKA, Paraldehyde, INH/Iron, Lactate, Ethylene glycol, Salicylates[cite: 8]."
+  },
+  {
+    "front": "Case 2: pH 7.20, pCO2 40 mmHg, HCO3 15 mmol/L, Na 145 mmol/L, Cl 105 mmol/L. Classify this acid-base disorder.",
+    "back": "Uncompensated metabolic acidosis (low pH, normal pCO2, low HCO3) with a high anion gap ($25\\text{ mmol/L}$) caused by added organic acids or toxins[cite: 8]."
+  },
+  {
+    "front": "Case 3: pH 7.53, pCO2 52 mmHg, HCO3 42 mmol/L, K 2.2 mmol/L, Cl 86 mmol/L in a patient with vomiting. Classify the disorder.",
+    "back": "Metabolic alkalosis with compensatory respiratory acidosis[cite: 8]. Gastric HCl loss (vomiting) leads to hypochloremia and compensatory bicarbonate retention[cite: 8]."
+  },
+  {
+    "front": "Case 4: pH 7.25, pCO2 70 mmHg, pO2 30 mmHg, HCO3 28 mmol/L in a COPD patient with pneumonia. Classify the disorder.",
+    "back": "Pure acute-on-chronic respiratory acidosis (low pH, markedly elevated pCO2, severe hypoxemia)[cite: 8]."
+  },
+  {
+    "front": "What are the adult arterial reference intervals for pH, pCO2, pO2, and HCO3?",
+    "back": "• pH: 7.35–7.45[cite: 8]\n• pCO2: 35–48 mmHg (male), 32–45 mmHg (female)[cite: 8]\n• pO2: 83–108 mmHg[cite: 8]\n• HCO3: 22–26 mmol/L[cite: 8]"
+  },
+  {
+    "front": "How do arterial and venous reference ranges compare for pH and pCO2?",
+    "back": "• Arterial: pH 7.35–7.45, pCO2 32–48 mmHg[cite: 8]\n• Venous: pH 7.32–7.43, pCO2 41–51 mmHg[cite: 8]"
+  },
+  {
+    "front": "In evaluating Normal Anion Gap (hyperchloremic) Metabolic Acidosis, what step differentiates intestinal loss from renal causes?",
+    "back": "Check for intestinal fluid loss (e.g., severe diarrhea, ileostomy, enteric fistula) vs. testing Urine pH to evaluate for Renal Tubular Acidosis (RTA)[cite: 8]."
+  },
+  {
+    "front": "In normal anion gap metabolic acidosis with high urine pH (>5.5), what is the primary diagnostic consideration?",
+    "back": "Distal Renal Tubular Acidosis (Type 1 RTA), which may be associated with nephrocalcinosis or nephrolithiasis[cite: 8]."
+  },
+{
+    "front": "What are the three primary parameters measured by a blood gas analyzer electrode system?",
+    "back": "• pH (via pH glass electrode)[cite: 9]\n• pCO2 (via Severinghaus electrode)[cite: 9]\n• pO2 (via Clark electrode)[cite: 9]"
+  },
+  {
+    "front": "How are HCO3- and Base Excess (BE) determined in a standard blood gas panel?",
+    "back": "• HCO3- is calculated from pH and pCO2 using the Henderson-Hasselbalch equation[cite: 9].\n• Base Excess (BE) is calculated based on pH and pCO2 using a nomogram/formula[cite: 9]."
+  },
+  {
+    "front": "What key dyshemoglobins and hemoglobin parameters are measured using CO-oximetry (absorption spectroscopy)?",
+    "back": "• Total Hb[cite: 9]\n• % O2Hb (Oxyhemoglobin)[cite: 9]\n• % COHb (Carboxyhemoglobin; normal <1.5% non-smokers, <9% smokers)[cite: 9]\n• % MetHb (Methemoglobin; normal <3%)[cite: 9]\n• SaO2 (Oxygen saturation)[cite: 9]"
+  },
+  {
+    "front": "How is estimated expected PaO2 calculated for individuals breathing room air based on age?",
+    "back": "$$\\text{PaO}_2 \\text{ (estimated)} = 109 - 0.27 \\times (\\text{age in years})$$[cite: 9]"
+  },
+  {
+    "front": "What arterial pO2 values define mild, moderate, and severe hypoxemia?",
+    "back": "• Normal / Adequate: >80 mmHg[cite: 9]\n• Mild Hypoxemia: 60–80 mmHg[cite: 9]\n• Moderate Hypoxemia: 40–60 mmHg[cite: 9]\n• Severe Hypoxemia: <40 mmHg[cite: 9]"
+  },
+  {
+    "front": "What are the pH classification cutoffs for acidemia, normal, and alkalemia?",
+    "back": "• Normal: 7.35–7.45[cite: 9]\n• Acidemia: <7.35[cite: 9]\n• Alkalemia: >7.45[cite: 9]"
+  },
+  {
+    "front": "In primary acid-base disturbances, what pCO2 and HCO3- values indicate respiratory vs. metabolic acidosis/alkalosis?",
+    "back": "• Respiratory Acidosis: pCO2 >45 mmHg[cite: 9]\n• Respiratory Alkalosis: pCO2 <35 mmHg[cite: 9]\n• Metabolic Acidosis: HCO3- <22 mmol/L (or BE <-2)[cite: 9]\n• Metabolic Alkalosis: HCO3- >28 mmol/L (or BE >+2)[cite: 9]"
+  },
+  {
+    "front": "What are the compensation rules for Acute vs. Chronic Respiratory Acidosis?",
+    "back": "• Acute Resp Acidosis: HCO3- increases by 1–1.2 mmol/L for every 10 mmHg increase in pCO2 above 40[cite: 9].\n• Chronic Resp Acidosis: HCO3- increases by 3–4 mmol/L for every 10 mmHg increase in pCO2 above 40[cite: 9]."
+  },
+  {
+    "front": "What are the compensation rules for Acute vs. Chronic Respiratory Alkalosis?",
+    "back": "• Acute Resp Alkalosis: HCO3- decreases by 2.5 mmol/L for every 10 mmHg decrease in pCO2 below 40[cite: 9].\n• Chronic Resp Alkalosis: HCO3- decreases by 5 mmol/L for every 10 mmHg decrease in pCO2 below 40[cite: 9]."
+  },
+  {
+    "front": "What are the immediate respiratory compensation rules for Metabolic Acidosis and Alkalosis?",
+    "back": "• Metabolic Acidosis: Every 10 mmol/L decrease in HCO3- produces a 10 mmHg decrease in pCO2[cite: 9].\n• Metabolic Alkalosis: Every 14 mmol/L increase in HCO3- produces a 10 mmHg increase in pCO2[cite: 9]."
+  },
+  {
+    "front": "What is the expected Anion Gap formula and reference value?",
+    "back": "• Formula: $\\text{Anion Gap} = [\\text{Na}^+] - ([\\text{Cl}^-] + [\\text{HCO}_3^-])$[cite: 9]\n• Normal value: ~10 mmol/L (unmeasured anions minus unmeasured cations)[cite: 9]"
+  },
+  {
+    "front": "List common causes of High Anion Gap Metabolic Acidosis (MUD PILES) and their accumulated organic acids.",
+    "back": "• Methanol (Formic acid)[cite: 9]\n• Uremia (Phosphoric/sulfuric acid)[cite: 9]\n• DKA / Starvation / Alcoholic (Acetoacetic & $\\beta$-hydroxybutyric acid)[cite: 9]\n• Paraldehyde (Formic/lactic acid)[cite: 9]\n• INH / Iron[cite: 9]\n• Lactic Acidosis (Lactic acid)[cite: 9]\n• Ethylene Glycol (Glycolic & oxalic acid)[cite: 9]\n• Salicylates (Salicylic, lactic, ketoacids)[cite: 9]"
+  },
+  {
+    "front": "List common causes of Normal Anion Gap (Hyperchloremic) Metabolic Acidosis.",
+    "back": "Renal tubular acidosis (RTA), enteric drainage/diarrhea/fistulas, urinary diversion, carbonic anhydrase inhibitors, early renal disease, and dilution acidosis[cite: 9]."
+  },
+  {
+    "front": "How does venous blood admixture alter blood gas pO2 values?",
+    "back": "Falsely decreases PaO2 in proportion to the amount of venous blood mixed in (detectable by mismatch with patient's pulse oximetry or arterial status)[cite: 9]."
+  },
+  {
+    "front": "What are the storage guidelines for blood gas specimens according to CLSI and Mayo practice?",
+    "back": "• If analyzed within 15–30 minutes: Keep at room temperature (do not ice)[cite: 9].\n• If analysis is delayed >15–30 min: Store on ice (up to 1 hour)[cite: 9].\n• Note: Do not report electrolytes if the sample is stored on ice for >45 minutes[cite: 9]."
+  },
+  {
+    "front": "How do air bubbles affect blood gas pO2, pCO2, and pH results?",
+    "back": "Air bubbles ($pO_2 \\approx 158\\text{ mmHg}$, $pCO_2 \\approx 0$) cause a false increase in $PaO_2$, a false decrease in $PaCO_2$, and a false increase in pH[cite: 9]. Expel bubbles within 2 minutes without vigorous agitation[cite: 9]."
+  },
+  {
+    "front": "How does liquid heparin anticoagulant excess alter blood gas results?",
+    "back": "Dilutional effect: Causes a false decrease in pCO2 (1% dilution = ~1% decrease in pCO2) and false decreases in Hb/Hct[cite: 9]. pH and pO2 remain relatively unchanged[cite: 9]."
+  },
+  {
+    "front": "How does temperature affect blood gas parameters if analyzed at 37°C without correction in a febrile vs. hypothermic patient?",
+    "back": "Elevated patient body temperature increases pCO2 and pO2 while decreasing pH; hypothermia decreases pCO2 and pO2 while increasing pH[cite: 9]."
+  },
+{
+    "front": "What are the primary synthetic, excretory, and metabolic functions of the liver?",
+    "back": "• Synthetic: Albumin, coagulation factors (II, VII, IX, X, C, S, antithrombin), proteins (transthyretin, AAT, AFP, ceruloplasmin), and urea[cite: 10].\n• Excretory: Bilirubin and bile acid metabolism (cholesterol homeostasis)[cite: 10].\n• Metabolic: Ammonia clearance, glycogen storage, and gluconeogenesis[cite: 10]."
+  },
+  {
+    "front": "Which liver tests classify as markers of liver injury vs. markers of liver synthetic/excretory function?",
+    "back": "• Markers of Injury: Alkaline phosphatase (ALP), ALT, AST, Gamma-Glutamyltransferase (GGT), and LDH[cite: 10].\n• Markers of Function: Bilirubin (excretion), Ammonia (metabolism), Albumin (synthesis), and Prothrombin Time (PT/synthesis)[cite: 10]."
+  },
+  {
+    "front": "What liver enzyme patterns are typically observed in Inflammatory, Obstructive, and Cirrhotic liver diseases?",
+    "back": "• Inflammatory (Hepatocellular): Massive transaminase elevation (ALT > AST, >100× normal); mild ALP elevation[cite: 10].\n• Obstructive (Cholestatic): Dominant ALP and GGT elevation; total/direct bilirubin elevated; mild transaminase elevation[cite: 10].\n• Cirrhotic: Near-normal or mildly elevated enzymes (1–4× normal, AST > ALT); best monitored by low albumin, prolonged PT, and low platelets[cite: 10]."
+  },
+  {
+    "front": "What is the clinical significance of serum Ammonia and Prothrombin Time (PT) in liver disease assessment?",
+    "back": "• Ammonia: Inability of the liver to clear gut-derived ammonia leads to accumulation and hepatic encephalopathy[cite: 10].\n• Prothrombin Time (PT): Measures vitamin K–dependent factors (II, VII, IX, X); factor VII's short half-life (6 hours) makes PT a key marker in acute liver failure[cite: 10]."
+  },
+  {
+    "front": "Why are liver enzyme assays not strictly standardized across laboratories?",
+    "back": "Liver enzyme assays measure catalytic activity (Units/L) rather than molar mass concentration[cite: 10]. Activity varies based on reaction conditions, subtrates, buffers, pH, and temperature, making universal reference materials difficult to define[cite: 10]."
+  },
+  {
+    "front": "What is the role of Pyridoxal 5'-phosphate (P5P / Vitamin B6) in transaminase (AST/ALT) assays?",
+    "back": "P5P is an essential coenzyme for AST and ALT[cite: 10]. Because patients with chronic liver disease or malnutrition may be B6-deficient, exogenously added P5P in assay reagents ensures full enzyme reactivation and accurate measurement[cite: 10]."
+  },
+  {
+    "front": "How does neuraminidase treatment in high-resolution gel electrophoresis differentiate Bone from Liver ALP isoenzymes?",
+    "back": "Neuraminidase cleaves terminal sialic acid residues[cite: 10]. Because Bone ALP contains more sialic acid than Liver ALP, neuraminidase significantly reduces the negative charge and anodal mobility of Bone ALP, separating the two bands on electrophoresis[cite: 10]."
+  },
+  {
+    "front": "Outline the steps of bilirubin synthesis, conjugation, and excretion.",
+    "back": "1. Heme breakdown (85% from RBCs) creates water-insoluble unconjugated (indirect) bilirubin bound to albumin[cite: 10].\n2. UDP-glucuronosyltransferase (UGT1A1) in hepatocytes conjugates it to glucuronide[cite: 10].\n3. Conjugated (direct) bilirubin is excreted into bile, enters the gut, and is converted by gut bacteria into urobilinogens[cite: 10]."
+  },
+  {
+    "front": "How are Total and Direct Bilirubin measured using the diazo method on chemistry analyzers?",
+    "back": "• Total Bilirubin: Measured with a solubilizing accelerant (e.g., caffeine) to release albumin-bound unconjugated bilirubin, reacting with diazonium salt to form red azobilirubin[cite: 10].\n• Direct Bilirubin: Water-soluble conjugated bilirubin reacts directly with diazonium salt in acid buffer without an accelerant[cite: 10]."
+  },
+  {
+    "front": "What causes physiological jaundice of the newborn, and how does phototherapy work?",
+    "back": "• Cause: Increased RBC breakdown combined with low baseline expression of hepatic UGT1A1 enzyme in neonates[cite: 10].\n• Phototherapy: Blue-green light converts unconjugated bilirubin into water-soluble photoisomers (photobilirubin) excreted in bile/urine without conjugation[cite: 10]."
+  },
+  {
+    "front": "Compare Gilbert, Crigler-Najjar, Dubin-Johnson, and Rotor syndromes by primary bilirubin fraction elevated.",
+    "back": "• Gilbert Syndrome: Elevated Unconjugated (mild UGT1A1 reduction)[cite: 10].\n• Crigler-Najjar Syndrome: Elevated Unconjugated (severe/absent UGT1A1)[cite: 10].\n• Dubin-Johnson Syndrome: Elevated Conjugated (defective biliary excretion)[cite: 10].\n• Rotor Syndrome: Elevated Conjugated (defective hepatic reuptake/storage)[cite: 10]."
+  },
+  {
+    "front": "What is Lucey-Driscoll Syndrome?",
+    "back": "Transient familial neonatal hyperbilirubinemia caused by a circulating maternal steroid inhibitor that competitively inhibits infant UGT1A1 activity, resolving within weeks[cite: 10]."
+  },
+  {
+    "front": "Compare the laboratory features of Alcoholic Hepatitis vs. Toxic/Ischemic Hepatitis.",
+    "back": "• Alcoholic Hepatitis: AST > ALT (ratio >2), AST usually <10× upper limit of normal, marked bilirubin elevation, elevated GGT[cite: 10].\n• Toxic/Ischemic Hepatitis: Extreme AST/ALT elevations (>100× normal, AST > ALT transiently), markedly elevated LDH (10–40×), prolonged PT, and lower initial peak bilirubin (<5 mg/dL)[cite: 10]."
+  },
+  {
+    "front": "Interpret: AST 12,500 IU/L, ALT 7,300 IU/L, Alk Phos 125 IU/L, Total Bili 1.9 mg/dL, PT 22.0 s.",
+    "back": "Toxic or Ischemic Hepatitis (e.g., acetaminophen toxicity or acute shock liver), characterized by massive AST/ALT elevation (>100×) and prolonged PT[cite: 10]."
+  },
+  {
+    "front": "Interpret: AST 280 IU/L, ALT 95 IU/L, Alk Phos 85 IU/L, Total Bili 12.9 mg/dL, Direct Bili 7.2 mg/dL, PT 12.0 s.",
+    "back": "Alcoholic Hepatitis, characterized by an AST:ALT ratio >2, moderate transaminase elevation (<10× normal), severe conjugated hyperbilirubinemia, and normal Alk Phos[cite: 10]."
+  },
+  {
+    "front": "Interpret: AST 140 IU/L, ALT 150 IU/L, Alk Phos 380 IU/L, Total Bili 3.8 mg/dL, Direct Bili 2.4 mg/dL, PT 12.8 s.",
+    "back": "Acute Biliary Tract Obstruction (Cholestasis), indicated by dominant Alk Phos elevation (>2.5× normal) accompanied by direct hyperbilirubinemia[cite: 10]."
+  },
+  {
+    "front": "What are the exocrine products of the pancreas?",
+    "back": "Pancreatic acinar cells produce ~1.5–2.0 L/day of pancreatic juice rich in bicarbonate ions and digestive enzymes: trypsin, chymotrypsin (proteases), amylase (carbohydrates), and lipase (lipids)[cite: 10]."
+  },
+  {
+    "front": "How is Serum Amylase measured photometrically, and what are its assay limitations?",
+    "back": "• Method: Amylase cleaves ethylidene-G7PNP into fragments hydrolyzed by $\\alpha$-glucosidase to release $p$-nitrophenol (measured at 415 nm)[cite: 10].\n• Limitations: Lacks pancreatic specificity (salivary amylase cross-reacts), pH sensitive, and interfered with by lipemia or EDTA/citrate anticoagulants[cite: 10]."
+  },
+  {
+    "front": "How is Serum Lipase measured photometrically, and what are its advantages over Amylase?",
+    "back": "• Method: Cleavage of a chromogenic ester substrate by pancreatic lipase yields methylresorufin dye[cite: 10].\n• Advantages: Higher specificity for pancreatic origin; remains elevated longer (8–14 days vs. 3–5 days for amylase)[cite: 10]."
+  },
+  {
+    "front": "What diagnostic pattern of serum Amylase and Lipase is characteristic of Acute Pancreatitis?",
+    "back": "Amylase rises within 2–12 hours (peaks 48 hours, normalizes in 3–5 days)[cite: 10]. Lipase rises within 4–8 hours (peaks 24 hours, stays elevated 8–14 days)[cite: 10]. A Lipase/Amylase ratio >5 suggests alcohol-induced etiology[cite: 10]."
+  },
+{
+    "front": "What are the major biological functions of Vitamin D?",
+    "back": "Essential for intestinal calcium absorption to maintain normal bone mass, while also supporting immune health and neuromuscular/brain cell function[cite: 11]."
+  },
+  {
+    "front": "What are the primary sources and causes of Vitamin D deficiency?",
+    "back": "• Normal Sources: 90% skin synthesis via UV light, 10% diet[cite: 11].\n• Causes of Deficiency: Lack of sun exposure, darker skin pigmentation, and intestinal malabsorption (e.g., post-gastric bypass, Crohn's disease, ulcerative colitis)[cite: 11]."
+  },
+  {
+    "front": "What are the clinical consequences of prolonged Vitamin D deficiency in children vs. adults?",
+    "back": "• Children: Rickets[cite: 11].\n• Adults: Osteomalacia (soft, weak bones)[cite: 11]."
+  },
+  {
+    "front": "Describe the structure, half-life, and physiological actions of Parathyroid Hormone (PTH).",
+    "back": "An 84-amino-acid peptide secreted by parathyroid chief cells in response to low serum free calcium[cite: 11]. It has a half-life of <5 minutes and acts to increase bone resorption, increase renal calcium reabsorption, and stimulate renal 1-alpha-hydroxylase to produce $1,25(\\text{OH})_2\\text{D}$[cite: 11]."
+  },
+  {
+    "front": "How do sandwich immunoassays measure Intact PTH, and what analytical challenge occurs in kidney failure?",
+    "back": "They use double-antibody sandwich electrochemiluminescence (e.g., Roche cobas) detecting both (1-84) full-length PTH and (7-84) fragments[cite: 11]. In renal failure, non-intact C-terminal PTH fragments accumulate to very high levels, which can interfere with accurate measurement[cite: 11]."
+  },
+  {
+    "front": "Outline the metabolic pathway of Vitamin D activation.",
+    "back": "1. Ingestion/Skin Synthesis $\\rightarrow$ Vitamin $D_2/D_3$[cite: 11].\n2. Liver (25-hydroxylase) $\\rightarrow$ 25-Hydroxyvitamin D [$25(\\text{OH})\\text{D}$][cite: 11].\n3. Kidneys (1-alpha-hydroxylase, stimulated by PTH) $\\rightarrow$ 1,25-Dihydroxyvitamin D [$1,25(\\text{OH})_2\\text{D}$][cite: 11].\n4. Target Action $\\rightarrow$ Increases intestinal Calcium/Phosphorus absorption[cite: 11]."
+  },
+{
+    "front": "What key clinical findings define an Acute Myocardial Infarction (AMI) according to the 4th Universal Definition?",
+    "back": "Acute myocardial injury (rise/fall of cTn with $\\ge 1$ value $>99\\text{th}$ percentile) plus at least one of:\n• Ischemic symptoms\n• New ischemic ECG changes or pathological Q waves\n• Imaging showing new loss of myocardium/wall motion abnormality\n• Identification of intracoronary thrombus[cite: 12]"
+  },
+  {
+    "front": "How do NSTEMI, STEMI, and Unstable Angina differ by ECG and biomarker findings?",
+    "back": "• STEMI: Persistent ST-elevation on ECG; elevated troponin[cite: 12].\n• NSTEMI: No persistent ST-elevation; elevated troponin[cite: 12].\n• Unstable Angina: No persistent ST-elevation; normal troponin[cite: 12]."
+  },
+  {
+    "front": "What are the subunits of the Cardiac Troponin (cTn) complex and their functions?",
+    "back": "• TnC: Calcium-binding subunit (lacks cardiac specificity)[cite: 12].\n• TnI: Actomyosin-ATP-inhibiting subunit (highly cardiac-specific)[cite: 12].\n• TnT: Tropomyosin-binding subunit (cardiac-specific, but elevated in renal failure)[cite: 12]."
+  },
+  {
+    "front": "What imprecision threshold (CV) is required at the 99th percentile URL for a troponin assay?",
+    "back": "Coefficient of Variation (CV) $\\le 10\\%$ at the 99th percentile upper reference limit[cite: 12]."
+  },
+  {
+    "front": "What are the 99th percentile URL cutoffs for the 5th generation hs-cTnT assay (Roche) by sex?",
+    "back": "• Females: $\\le 10\\text{ ng/L}$[cite: 12]\n• Males: $\\le 15\\text{ ng/L}$[cite: 12]"
+  },
+  {
+    "front": "What delta criteria indicate acute myocardial damage at 2 hours and 6 hours on the Mayo hs-cTnT panel?",
+    "back": "• 2-Hour Delta: $\\ge 10\\text{ ng/L}$ change[cite: 12]\n• 6-Hour Delta: $\\ge 12\\text{ ng/L}$ change[cite: 12]"
+  },
+  {
+    "front": "How does hemolysis interference affect cTnI versus cTnT assay results?",
+    "back": "• cTnI: Causes false-positive (falsely elevated) results[cite: 12].\n• cTnT: Causes false-negative (falsely decreased) results[cite: 12]."
+  },
+  {
+    "front": "How does high concentration biotin in a patient sample interfere with streptavidin-biotin sandwich troponin assays?",
+    "back": "Excess free biotin competes with biotinylated immunocomplexes for binding sites on streptavidin-coated microparticles, causing falsely decreased troponin results[cite: 12]."
+  },
+  {
+    "front": "What non-ischemic conditions can cause elevated baseline or chronic troponin levels?",
+    "back": "Chronic renal failure, heart failure, sepsis, pulmonary embolism, myocarditis, amyloidosis, cardiotoxic chemotherapy, and critical illness[cite: 12]."
+  },
+  {
+    "front": "What are the tissue distributions of the three Creatine Kinase (CK) isoenzymes?",
+    "back": "• CK-1 (BB): Brain (97%)[cite: 12]\n• CK-2 (MB): Cardiac muscle (20%)[cite: 12], Skeletal muscle (1%)[cite: 12]\n• CK-3 (MM): Skeletal muscle (99%)[cite: 12], Cardiac muscle (79%)[cite: 12]"
+  },
+{
+    "front": "What are the three primary physiological functions of the kidney?",
+    "back": "• Filtration and Excretion: Filters blood to excrete metabolic end-products as urine[cite: 13].\n• Homeostasis: Regulates extracellular fluid concentrations of $H^+$, $Na^+$, $K^+$, phosphate, and other ions[cite: 13].\n• Hormone Production: Produces erythropoietin (EPO), calcitriol ($1,25(\\text{OH})_2\\text{D}$), and the enzyme renin[cite: 13]."
+  },
+  {
+    "front": "What is the structural definition of a nephron, and how many are in each kidney?",
+    "back": "• Definition: The functional unit of the kidney, consisting of the glomerulus, proximal tubule, loop of Henle, distal tubule, and collecting duct[cite: 13].\n• Quantity: Up to 1.5 million nephrons per kidney[cite: 13]."
+  },
+  {
+    "front": "Outline the main functions of each section of the nephron during urine formation.",
+    "back": "• Glomerulus/Bowman's Capsule: Ultrafiltration driven by pressure differentials[cite: 13].\n• Proximal Tubule: Mass reabsorption of water, electrolytes, glucose, amino acids, and half of nitrogenous waste[cite: 13].\n• Loop of Henle: Establishes medullary hypertonicity (descending limb permeable to water; ascending limb actively pumps $Na^+/Cl^-$)[cite: 13].\n• Distal Tubule: Active tubular secretion (wastes, drugs) and hormone-regulated $Na^+/HCO_3^-$ reabsorption and $H^+$ secretion[cite: 13].\n• Collecting Duct: Water reabsorption under ADH control to concentrate urine[cite: 13]."
+  },
+  {
+    "front": "What diagnostic criteria define Acute Kidney Injury (AKI)?",
+    "back": "Any one of the following:\n• $SCr$ increase $\\ge 0.3\\text{ mg/dL}$ ($\\ge 26\\mu\\text{mol/L}$) within 48 hours[cite: 13].\n• $SCr$ increase $\\ge 1.5\\times$ baseline within the prior 7 days[cite: 13].\n• Urine output $< 0.5\\text{ mL/kg/h}$ for $> 6$ hours (oliguria)[cite: 13]."
+  },
+  {
+    "front": "How is Chronic Kidney Disease (CKD) defined and classified?",
+    "back": "• Definition: Kidney structure/function abnormalities present for $> 3$ months (e.g., GFR $< 60\\text{ mL/min/1.73m}^2$ or albuminuria $\\ge 30\\text{ mg/24h}$)[cite: 13].\n• Classification: Grid matrix combining GFR categories (G1–G5) and Albuminuria categories (A1–A3)[cite: 13]."
+  },
+  {
+    "front": "What chemical and enzymatic assay principles are used to measure creatinine in the laboratory?",
+    "back": "• Jaffé Method: Reaction with alkaline picrate to form an orange-red complex[cite: 13].\n• Enzymatic Method: Multi-step cascade using creatininase, creatinase, sarcosine oxidase (SOD), and peroxidase (POD) to generate a quinone imine chromogen[cite: 13]."
+  },
+  {
+    "front": "What is Cystatin C, and how is it measured in the laboratory?",
+    "back": "• Definition: A 13 kDa protein produced by all nucleated cells at a constant rate, eliminated solely via glomerular filtration[cite: 13].\n• Assay Method: Particle-enhanced immunoturbidimetric assay (latex particles coated with anti-cystatin C antibodies agglutinate with cystatin C, measured at 546 nm)[cite: 13]."
+  },
+  {
+    "front": "What are the key clinical advantages and disadvantages of Cystatin C over Creatinine for estimating GFR?",
+    "back": "• Advantages: Independent of muscle mass, age, sex, race, and diet; detects early renal decline faster than creatinine[cite: 13].\n• Disadvantages: More expensive; altered by active inflammation, thyroid disease, or obesity; cannot be measured in urine (reabsorbed/degraded in proximal tubule)[cite: 13]."
+  },
+  {
+    "front": "What is the official NKDEP/NIDDK recommendation for adult eGFR calculations?",
+    "back": "The 2021 CKD-EPI equations, which eliminate race coefficients (using age, sex, serum creatinine, and optionally serum cystatin C)[cite: 13]."
+  },
+  {
+    "front": "Classify common causes of elevated Blood Urea Nitrogen (BUN) into Prerenal, Renal, and Postrenal categories.",
+    "back": "• Prerenal: Dehydration/water depletion, cardiac decompensation, high-protein diet, increased catabolism[cite: 13].\n• Renal: Acute tubular necrosis, glomerulonephritis, nephrosclerosis, polycystic kidney disease[cite: 13].\n• Postrenal: Urinary tract obstruction (kidney stones, prostatic hypertrophy, tumors)[cite: 13]."
+  },
+  {
+    "front": "How do you convert BUN (mg/dL) to total Urea (mg/dL)?",
+    "back": "$$\\text{Urea (mg/dL)} = \\text{BUN (mg/dL)} \\times 2.14$$ \n*(Based on molecular weights: Urea = 60.06 g/mol vs. Nitrogen component = 28 g/mol)*[cite: 13]."
+  },
+  {
+    "front": "What is the formula for calculating 24-hour Creatinine Clearance (CrCl), and why does it overestimate GFR?",
+    "back": "• Formula: $$\\text{CrCl (mL/min)} = \\frac{U_{\\text{Cr}} \\times V}{P_{\\text{Cr}} \\times 1440}$$ *(where $V$ is total 24h urine volume in mL, $1440$ is minutes/day)*[cite: 13].\n• Overestimation: Overestimates true GFR by 10–20% because creatinine is actively secreted by proximal tubule cells in addition to being filtered[cite: 13]."
+  },
+{
+    "front": "What are the timeline definitions for normal gestational length, trimesters, and term pregnancy?",
+    "back": "• Total Gestational Length: ~40 weeks measured from the first day of the last menstrual period (LMP)[cite: 14].\n• Trimesters: Divided into 3 time intervals[cite: 14].\n• Term Pregnancy: Defined as 37 weeks or more[cite: 14]."
+  },
+  {
+    "front": "Outline the physiological sequence of early human fertilization and embryonic implantation.",
+    "back": "1. Ovulation occurs on day 14 of the cycle[cite: 14].\n2. Fertilization of the ovum in the fallopian tube produces a zygote[cite: 14].\n3. After forming 50–60 cells, a primitive yolk sac cavity develops into a blastocyst[cite: 14].\n4. Implantation into the uterine wall occurs ~5 days after fertilization[cite: 14].\n5. Exterior trophoblast cells invade the endometrium to form chorionic villi and the placenta[cite: 14].\n6. The zygote becomes an embryo (surrounded by amniotic fluid in the amnion) and transitions to a fetus by week 10 following organogenesis[cite: 14]."
+  },
+  {
+    "front": "Describe the endocrine changes across the Follicular Phase, Ovulation, and Luteal Phase of the menstrual cycle.",
+    "back": "• Follicular Phase (Days 1–14): FSH stimulates follicle growth and selection; the dominant follicle secretes estradiol[cite: 14].\n• Ovulation: Peak estradiol triggers hypothalamic GnRH release, driving the LH surge to induce ovulation[cite: 14].\n• Luteal Phase (Days 15–28): The corpus luteum produces progesterone and estradiol, suppressing FSH and LH[cite: 14]. If pregnancy occurs, hCG maintains the corpus luteum[cite: 14]."
+  },
+  {
+    "front": "What maternal physiological changes are expected in blood volume, coagulation, and liver/lipid biochemistry during normal pregnancy?",
+    "back": "• Blood Volume: Plasma volume increases (+48%) more than RBC volume (+30%), causing dilutional relative anemia (defined as $Hb < 11\\text{ g/dL}$)[cite: 14].\n• Coagulation: Increased clotting factors and fibrinogen; decreased platelets (prothrombotic state)[cite: 14].\n• Biochemistry: Mild 2–3× URL increase in Alkaline Phosphatase (placental origin); 10–15% decrease in albumin/total protein; marked increases in total cholesterol, triglycerides, and LDL[cite: 14]."
+  },
+  {
+    "front": "How do maternal renal and thyroid parameters adapt during normal pregnancy?",
+    "back": "• Renal: GFR increases, lowering baseline serum creatinine and BUN, while causing mild physiological glycosuria and proteinuria[cite: 14].\n• Thyroid/Endocrine: Thyroxine-binding globulin (TBG) doubles, slightly increasing total $T_4/T_3$; TSH is suppressed in early pregnancy due to structural homology with hCG[cite: 14]."
+  },
+  {
+    "front": "What is the structural composition of Human Chorionic Gonadotropin (hCG) and its early kinetic pattern?",
+    "back": "• Structure: Heterodimeric glycoprotein with an $\\alpha$-subunit (14.5 kDa, shared with FSH, LH, TSH) and a unique $\\beta$-subunit (22.2 kDa)[cite: 14].\n• Early Kinetics: Logarithmic doubling every 1.5 days for the first 5 weeks; peaks at ~8–11 weeks (~100,000 IU/L), then plateaus at ~10,000 IU/L in the 2nd/3rd trimesters[cite: 14]."
+  },
+  {
+    "front": "How do quantitative serial serum hCG levels aid in diagnosing Ectopic Pregnancy, Miscarriage, and Gestational Trophoblastic Disease (GTD)?",
+    "back": "• Ectopic Pregnancy: Subnormal rise (fails to double every 1.5 days); suspected if hCG $>1,000\text{--}2,000\\text{ IU/L}$ without a visible intrauterine gestational sac[cite: 14].\n• Miscarriage: Rapidly falling serial hCG levels[cite: 14].\n• GTD (Molar Pregnancy): Abnormally elevated hCG (often $>100,000\\text{ IU/L}$) disproportionate to gestational age[cite: 14]."
+  },
+  {
+    "front": "What is 'Phantom hCG' and how is it clinically/analytically resolved?",
+    "back": "• Definition: False-positive elevated serum hCG results caused by interference from human anti-mouse antibodies (HAMA) or heterophile antibodies[cite: 14].\n• Resolution: Testing a paired urine hCG sample (HAMA/heterophile antibodies do not cross into urine), running serial dilutions, using heterophile blocking tubes, or testing on an alternate analyzer[cite: 14]."
+  },
+  {
+    "front": "What serum progesterone levels correlate with viable vs. nonviable early pregnancies?",
+    "back": "• Nonviable / Ectopic / Impending Abortion: Typically $5\text{--}15\\text{ ng/mL}$ (average $\\sim 10\\text{ ng/mL}$)[cite: 14].\n• Viable Intrauterine Pregnancy: $>25\\text{ ng/mL}$[cite: 14]."
+  },
+  {
+    "front": "Define Preeclampsia, Eclampsia, and HELLP syndrome along with key diagnostic thresholds.",
+    "back": "• Preeclampsia: New-onset gestational hypertension plus proteinuria ($\\ge 0.3\\text{ g/24h}$ or urine protein/creatinine ratio $> 0.1\\text{ mg/dL}$) or end-organ damage[cite: 14].\n• Eclampsia: Preeclampsia with new-onset seizures[cite: 14].\n• HELLP Syndrome: Hemolysis ($LDH \\ge 600\\text{ U/L}$), Elevated Liver enzymes ($AST/ALT > 2\\times$ URL), and Low Platelets ($< 100,000/\\mu\\text{L}$)[cite: 14]."
+  },
+  {
+    "front": "What is the clinical role of Fetal Fibronectin (fFN) in assessing preterm birth risk?",
+    "back": "fFN acts as biological glue binding the amniotic sac to the uterine wall[cite: 14]. A negative cervicovaginal swab ($<50\\text{ ng/mL}$) has a high negative predictive value (95–99%) for ruling out spontaneous preterm delivery within 7–14 days[cite: 14]."
+  },
+  {
+    "front": "How is Preterm Premature Rupture of Membranes (PPROM) clinically and diagnostically confirmed?",
+    "back": "Confirmed by direct visualization of fluid pooling, ultrasound showing oligohydramnios, Nitrazine paper testing (alkaline amniotic fluid pH 7.0–7.5 turns yellow paper blue), microscopic fern test, or detecting PAMG-1 protein in cervicovaginal secretions[cite: 14]."
+  },
+{
+    "front": "What are the three most common types of diabetes mellitus?",
+    "back": "• Type 1 Diabetes (5–10%): Absolute insulin deficiency caused by autoimmune destruction of pancreatic beta cells[cite: 15].\n• Type 2 Diabetes (90–95%): Progressive non-autoimmune beta-cell dysfunction combined with peripheral insulin resistance[cite: 15].\n• Gestational Diabetes (GDM, ~7% of pregnancies): Carbohydrate intolerance first recognized during pregnancy (screened at 24–28 weeks)[cite: 15]."
+  },
+  {
+    "front": "What diagnostic criteria define Diabetes Mellitus in non-pregnant adults?",
+    "back": "• $\\text{HbA}_{1c} \\ge 6.5\\%$[cite: 15]\n• Fasting Plasma Glucose (8h) $\\ge 126\\text{ mg/dL}$ ($7.0\\text{ mmol/L}$)[cite: 15]\n• 2-Hour Plasma Glucose $\\ge 200\\text{ mg/dL}$ ($11.1\\text{ mmol/L}$) during a 75g OGTT[cite: 15]\n• Random Plasma Glucose $\\ge 200\\text{ mg/dL}$ ($11.1\\text{ mmol/L}$) with classic symptoms of hyperglycemia or hyperglycemic crisis[cite: 15]"
+  },
+  {
+    "front": "What criteria define Prediabetes (Impaired Fasting Glucose, Impaired Glucose Tolerance, and HbA1c)?",
+    "back": "• $\\text{HbA}_{1c}$: $5.7\\%\text{--}6.4\\%$[cite: 15]\n• Impaired Fasting Glucose (IFG): Fasting plasma glucose $100\text{--}125\\text{ mg/dL}$ ($5.6\text{--}6.9\\text{ mmol/L}$)[cite: 15]\n• Impaired Glucose Tolerance (IGT): 2-hour OGTT glucose $140\text{--}199\\text{ mg/dL}$ ($7.8\text{--}11.0\\text{ mmol/L}$)[cite: 15]"
+  },
+  {
+    "front": "How is Gestational Diabetes Mellitus (GDM) diagnosed using a 1-step 75g OGTT at 24–28 weeks?",
+    "back": "Diagnosis is made if ANY ONE threshold is met or exceeded:\n• Fasting: $\\ge 92\\text{ mg/dL}$ ($5.1\\text{ mmol/L}$)[cite: 15]\n• 1-Hour: $\\ge 180\\text{ mg/dL}$ ($10.0\\text{ mmol/L}$)[cite: 15]\n• 2-Hour: $\\ge 153\\text{ mg/dL}$ ($8.5\\text{ mmol/L}$)[cite: 15]"
+  },
+  {
+    "front": "What is HbA1c and what period of glycemic control does it reflect?",
+    "back": "HbA1c is formed by non-enzymatic glycation of the N-terminal valine of the hemoglobin $\\beta$-chain[cite: 15]. It reflects average blood glucose levels over the preceding 8–12 weeks (the average lifespan of an erythrocyte)[cite: 15]."
+  },
+  {
+    "front": "How do altered RBC lifespans affect HbA1c results?",
+    "back": "• Low RBC Turnover / Increased Lifespan (e.g., untreated iron, B12, or folate deficiency anemias): Falsely INCREASES HbA1c[cite: 15].\n• High RBC Turnover / Decreased Lifespan (e.g., hemolytic anemia, EPO therapy, acute blood loss recovery): Falsely DECREASES HbA1c[cite: 15]."
+  },
+  {
+    "front": "Compare Ion-Exchange HPLC, Boronate Affinity Chromatography, Immunoassay, and Enzymatic methods for measuring HbA1c.",
+    "back": "• Ion-Exchange HPLC: Separates based on charge differences; susceptible to hemoglobin variant co-elution[cite: 15].\n• Boronate Affinity: Binds cis-diols of glycated hemoglobin; measures total glycated hemoglobin with least variant interference[cite: 15].\n• Immunoassay: Antibodies target N-terminal glycated amino acids; susceptible to high HbF (>7-15%) and N-terminal $\\beta$-chain variants (HbS, HbC)[cite: 15].\n• Enzymatic: Protease digestion liberates fructosyl-valine; highly specific with minimal variant interference[cite: 15]."
+  },
+  {
+    "front": "What is Estimated Average Glucose (eAG), and what formula converts HbA1c to eAG?",
+    "back": "eAG converts HbA1c percentage into a mg/dL value matching patient self-monitoring glucose meters[cite: 15].\n$$\\text{eAG (mg/dL)} = (28.7 \\times \\text{HbA}_{1c}) - 46.7$$[cite: 15]"
+  },
+  {
+    "front": "What is Fructosamine, when is it clinically indicated, and what time frame does it monitor?",
+    "back": "• Definition: Ketoamine formed by non-enzymatic glycation of serum proteins (mainly albumin)[cite: 15].\n• Indication: Used when HbA1c is unreliable due to hemoglobinopathies, altered RBC lifespan, or to evaluate short-term treatment changes[cite: 15].\n• Time Frame: Reflects glycemic control over 1–3 weeks[cite: 15]."
+  },
+  {
+    "front": "How do C-peptide and Insulin concentrations differentiate Exogenous Insulin administration from an Insulinoma?",
+    "back": "• Exogenous Insulin: High serum insulin with LOW/suppressed C-peptide (and insulin-to-C-peptide molar ratio $>1$)[cite: 15].\n• Insulinoma: High serum insulin paired with HIGH C-peptide and proinsulin during fasting hypoglycemia[cite: 15]."
+  },
+  {
+    "front": "What urine albumin-to-creatinine ratio (ACR) defines normal, microalbuminuria, and overt proteinuria?",
+    "back": "• Normal: $<17\\text{ mg/g}$ (males), $<25\\text{ mg/g}$ (females) [or $<30\\text{ mg/day}$][cite: 15].\n• Microalbuminuria (Incipient Nephropathy): $17\text{--}299\\text{ mg/g}$ (males), $25\text{--}299\\text{ mg/g}$ (females) [or $30\text{--}300\\text{ mg/day}$][cite: 15].\n• Overt Proteinuria: $\\ge 300\\text{ mg/g}$ creatinine [or $>300\\text{ mg/day}$][cite: 15]."
+  },
+  {
+    "front": "What three clinical criteria constitute Whipple's Triad for diagnosing true hypoglycemia?",
+    "back": "1. Symptoms consistent with hypoglycemia (neuroglycopenic/adrenergic)[cite: 15].\n2. Low measured plasma glucose concentration ($<55\\text{ mg/dL}$)[cite: 15].\n3. Rapid relief of symptoms when plasma glucose is restored to normal[cite: 15]."
+  },
+{
+    "front": "What are the core functions of the three main peripheral blood cell lines (RBCs, WBCs, and Platelets)?",
+    "back": "• Red Blood Cells (RBCs): Mature circulating red blood cells carry oxygen to tissues[cite: 17].\n• White Blood Cells (WBCs): Lymphocytes and granulocytes (neutrophils, basophils, eosinophils, monocytes) fight off foreign invaders and differentiate self from non-self[cite: 17].\n• Platelets: Activate the coagulation cascade and form the initial plug in hemostasis[cite: 17]."
+  },
+  {
+    "front": "How is Hemoglobin (Hgb) measured in the laboratory, and what is its normal reference range?",
+    "back": "• Assay Principle: Hemoglobin is converted to cyanmethemoglobin, which absorbs maximally at 540 nm[cite: 17].\n• Normal Range: $12\text{--}16\\text{ g/dL}$[cite: 17]."
+  },
+  {
+    "front": "What is Hematocrit (Hct), and how is it calculated from red cell indices?",
+    "back": "• Definition: The percentage of total blood volume represented by packed red cells[cite: 17].\n• Calculation Formula: $$\\text{Hct (\\%)} = \\frac{\\text{RBC} \\times \\text{MCV}}{10}$$[cite: 17]\n• Normal Range: $35\text{--}45\\%$[cite: 17]."
+  },
+  {
+    "front": "What are the formulas and definitions for MCV, MCHC, and MCH?",
+    "back": "• Mean Cell Volume (MCV): Average volume of RBCs in femtoliters ($10^{-15}\\text{ L}$) derived from the RBC histogram[cite: 17]. Normal: $78\text{--}100\\text{ fL}$[cite: 17].\n• Mean Cell Hemoglobin Concentration (MCHC): Concentration of Hb in red cells[cite: 17]. Formula: $$\\text{MCHC (g/dL)} = \\frac{\\text{Hgb}}{\\text{Hct}} \\times 100$$[cite: 17]\n• Mean Cell Hemoglobin Content (MCH): Hb content in picograms per red cell[cite: 17]. Formula: $$\\text{MCH (pg)} = \\frac{\\text{Hgb}}{\\text{RBC}} \\times 10$$[cite: 17]"
+  },
+  {
+    "front": "How is the Red Cell Distribution Width (RDW) calculated from the RBC histogram?",
+    "back": "RDW represents the coefficient of variation of the red cell volume distribution[cite: 17]:\n$$\\text{RDW (\\%)} = \\frac{\\text{S.D.}}{\\text{Mean}} \\times 100$$\n• Normal Range: $11.8\text{--}15.6\\%$[cite: 17]."
+  },
+  {
+    "front": "What are Reticulocytes, and how are they measured?",
+    "back": "• Definition: Immature red cells containing residual RNA that reflect the rate of new RBC production in the bone marrow[cite: 17].\n• Measurement: Measured using an RNA-specific fluorescent dye[cite: 17]."
+  },
+  {
+    "front": "What specimen tube is required for automated Cell Counting (CBC)?",
+    "back": "• Preferred Specimen: Whole blood, uncentrifuged, anticoagulated with $K_2\\text{EDTA}$ (purple/lavender cap)[cite: 17].\n• Acceptable Alternative: Sodium citrate (blue cap) is acceptable for platelet count (accounting for a slight dilution effect)[cite: 17].\n• Unacceptable Specimen: Heparinized specimens (green cap tubes) must not be used[cite: 17]."
+  },
+  {
+    "front": "What three main physical principles drive automated cell counter measurements?",
+    "back": "1. Resistance / Electrical Impedance (Coulter Principle): Used for RBC, WBC, and Platelet counts and sizing[cite: 17].\n2. Conductivity: High-frequency current measuring nuclear content, granularity, and chemical composition for WBC differentials[cite: 17].\n3. Light Scatter (Laser / Flow Cytometry): Forward scatter measures cell volume, while side scatter measures internal complexity for WBC differentials and platelet/reticulocyte counts[cite: 17]."
+  },
+  {
+    "front": "How does electrical impedance (Coulter Principle) count and size cells?",
+    "back": "• Cell Count: As cells pass through an aperture, they interrupt electrical current (impedance), creating voltage pulses. The number of pulses equals the cell count[cite: 17].\n• Cell Volume: The height of the voltage pulse is directly proportional to the cell volume in femtoliters[cite: 17]."
+  },
+  {
+    "front": "What size threshold gates distinguish Platelets, WBCs, and RBCs on an impedance oscilloscope?",
+    "back": "• Platelets: $2\text{--}20\\text{ fL}$[cite: 17]\n• White Blood Cells (WBC): $>35\\text{ fL}$[cite: 17]\n• Red Blood Cells (RBC): $36\text{--}360\\text{ fL}$[cite: 17]"
+  },
+  {
+    "front": "What technical factors cause false increases and false decreases in automated WBC counts?",
+    "back": "• False Increases: Nucleated RBCs (nRBCs), large platelets, platelet clumping, cryoglobulins, fibrin, unlysed RBCs, or fragmented WBCs[cite: 17].\n• False Decreases: Clotting or smudge cells[cite: 17]."
+  },
+  {
+    "front": "What technical factors cause false increases and false decreases in automated RBC counts?",
+    "back": "• False Increases: Giant platelets, cryoglobulins, or severe leukocytosis ($\text{WBC} > 10\\%$ of RBC count)[cite: 17].\n• False Decreases: Auto-agglutination, in vitro hemolysis, microcytic RBCs, or specimen clotting[cite: 17]."
+  },
+  {
+    "front": "What technical factors cause false increases and false decreases in automated Platelet counts?",
+    "back": "• False Increases: Extreme microcytic RBCs, WBC fragments, RBC inclusions, cryoglobulins, or hemolysis[cite: 17].\n• False Decreases: Specimen clotting, giant platelets, platelet clumping, or platelet satellitosis[cite: 17]."
+  }
+
   ],
   "CVLM": [
     {
