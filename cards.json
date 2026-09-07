@@ -120,7 +120,399 @@
     {
       "front": "Calculate C.V. for $\\text{Ca}^{2+}$ (Mean $\\mu = 11.2\\text{ mg/dL}$, $\\text{SD} = 0.49$).",
       "back": "$$\\text{C.V.} = \\left(\\frac{0.49}{11.2}\\right) \\times 100\\% = 4.4\\%$$"
-    }
+    },
+    {
+    "front": "What are 5 reasons for changing methods in the clinical laboratory?",
+    "back": "1. New technologies with improved precision, accuracy, or sensitivity.\n2. Expanded assays from the manufacturer.\n3. Upgrading to automation for higher throughput.\n4. Reagent or equipment upgrade/replacement.\n5. Updated clinical guidelines or policy changes."
+  },
+  {
+    "front": "What is the Analytical Measurable Range (AMR)?",
+    "back": "The range of analyte values that a method can directly measure without any modification (e.g., dilution or concentration) with acceptable accuracy and precision. It is defined by the lowest and highest calibrators used."
+  },
+  {
+    "front": "What is the Clinical Reportable Range (CRR)?",
+    "back": "The expanded range of analyte values that can be measured using dilution, concentration, or other pretreatments, allowing the reporting of extreme values outside the instrument's direct AMR."
+  },
+  {
+    "front": "Define Linearity in clinical laboratory operations.",
+    "back": "The range of values for which there is a linear relationship between analyte concentration and signal."
+  },
+  {
+    "front": "Define Analytical Sensitivity.",
+    "back": "The ability of an analytical method to assess small variations in the concentration of an analyte, often in relation to the limit of detection."
+  },
+  {
+    "front": "Define Analytical Specificity.",
+    "back": "The ability of an assay procedure to determine specifically the concentration of the target analyte in the presence of potentially interfering substances or factors in the sample matrix."
+  },
+  {
+    "front": "What is Precision?",
+    "back": "The closeness of agreement between independent measurement results obtained under stipulated conditions, usually expressed as standard deviation (SD) or coefficient of variation (%CV)."
+  },
+  {
+    "front": "What is the difference between Accuracy and Trueness?",
+    "back": "Accuracy is the closeness of agreement of a single measurement with the true value. Trueness is the closeness of agreement between the average of a large number of measurements and the true value."
+  },
+  {
+    "front": "What is Recovery in method evaluation?",
+    "back": "The proportion of a known amount of target analyte added to a sample that is correctly detected by the analytical assay, used to test matrix effects."
+  },
+  {
+    "front": "What is Calibration Verification (Verification of AMR) and how often is it required?",
+    "back": "Testing known materials (calibrators/controls) across the reportable range to confirm existing calibration remains valid. Required at least every 6 months, or after major reagent changes or instrument maintenance."
+  },
+  {
+    "front": "How does Hemolysis affect the Roche Elecsys Ferritin assay?",
+    "back": "Hemoglobin (H index) $\\le 40\\text{ mcg/L}$ has no effect. If $>40\\text{ mcg/L}$, find an alternate (non-hemolyzed) sample or cancel due to hemolysis (issue a redraw if a Mayo Clinic patient)."
+  },
+  {
+    "front": "How is Lipemia handled for the Roche Elecsys Ferritin assay?",
+    "back": "Lipemia (L index) up to $100\\text{ mcg/L}$ has no effect. If $>100\\text{ mcg/L}$ (up to $2,000\\text{ mcg/L}$), ultracentrifuge the sample and comment 'Visible lipemia, centrifuged prior to analysis'."
+  },
+  {
+    "front": "What is the interference limit and required action for Biotin in the Elecsys Ferritin assay?",
+    "back": "Maximum allowed concentration is $50\\text{ ng/mL}$. If higher, cancel the test due to interfering substance. Samples should not be drawn until at least 8 hours after high biotin doses ($>5\\text{ mg/day}$). "
+  },
+  {
+    "front": "What is the difference between Limit of Detection (LOD) and Limit of Quantitation (LOQ/Functional Sensitivity)?",
+    "back": "LOD is the lowest value exceeding blank measurements (separates signal from background noise). LOQ/Functional Sensitivity is the lowest value reliably measured with acceptable precision and accuracy (e.g., %CV $\\le 20\\%$)."
+  },
+  {
+    "front": "According to CLSI EP17-A2, how are LoB, LoD, and LLOQ defined/calculated?",
+    "back": "• $\\text{LoB} = \\text{Mean}_{blank} + 1.645(\\text{SD}_{blank})$\n• $\\text{LoD} = \\text{LoB} + 1.645(\\text{SD}_{low\\,conc})$\n• $\\text{LLOQ} = \\text{Lowest concentration with } \\%\\text{CV} \\le 20\\%$"
+  },
+  {
+    "front": "What is a Bland-Altman plot and what does it evaluate?",
+    "back": "A plot of measurement differences against the average results of two methods. It evaluates whether concentration-dependent bias or non-linearity exists, and shows changes in random error across concentrations."
+  },
+  {
+    "front": "What does a Bland-Altman plot with increasing scatter at higher concentrations indicate?",
+    "back": "It indicates an increasing random error at higher analyte concentrations."
+  },
+  {
+    "front": "How is a Reference Interval defined, and how many reference individuals are required to establish a new one?",
+    "back": "It is the central $95\\%$ expected values from a healthy reference population. Establishing a new range for a LDT requires a minimum of $n = 120$ qualified reference individuals per partition (e.g., age, sex)."
+  },
+  {
+    "front": "How is a previously established Reference Interval verified?",
+    "back": "Test a minimum of $n = 20$ qualified reference individuals per partition. The reference interval is verified if at least $18$ out of $20$ ($90\\%$) fall within the expected range."
+  },
+  {
+    "front": "What is Reference Interval Transference?",
+    "back": "Adopting an established reference interval from a package insert or literature when a new method has similar precision, interferences, calibrators, comparable values, and a matching reference population."
+  },
+  {
+    "front": "What are the core steps to validate accuracy and precision for a new TSH method?",
+    "back": "• Accuracy: Test $>40$ patient samples across the reportable range vs. reference method; plot Deming regression (target slope $\\approx 1.0$, y-intercept $\\approx 0.0$).\n• Precision: Run QC (low, normal, high) in duplicate, twice daily for 5 days to evaluate within-run and between-run %CV."
+  },
+  {
+    "front": "Why can the correlation coefficient ($r$) from linear regression be deceptive?",
+    "back": "It measures relative data range vs. random error (data quality), not method quality. It is insensitive to slope and y-intercept bias, meaning an assay with high bias can still yield a high $r$ value ($>0.98$)."
+  },
+  {
+    "front": "Why do some analytes have lower $r$ values than others?",
+    "back": "Analytes with broad analytical ranges (e.g., glucose, LDH) naturally yield high $r$ values ($>0.98$). Analytes with narrow physiological ranges (e.g., sodium, basophil counts) yield lower $r$ values."
+  },
+  {
+    "front": "What are the 2 options when changing methods if a constant bias exists between them?",
+    "back": "1. Adjust clinical reference intervals by shifting upper/lower limits by the bias amount.\n2. Apply a mathematical correction factor formula in the analyzer/LIS software to adjust raw patient results automatically."
+  },
+  {
+    "front": "In linear regression analysis for method comparison, what do slope $\\neq 1.0$ and y-intercept $\\neq 0.0$ indicate?",
+    "back": "• Slope $\\neq 1.0$: Proportional bias (error increases proportionally with analyte concentration).\n• Y-intercept $\\neq 0.0$: Constant bias (a fixed difference exists across all concentration levels)."
+  },
+    {
+    "front": "How are Limit of Blank (LOB) and Limit of Detection (LOD) conceptually distinguished?",
+    "back": "LOB determines the level where a method is sure the result is not a false positive. LOD determines the level where the measurement is reasonably certain the result does not yield a false negative."
+  },
+  {
+    "front": "What experimental sample collection is recommended by CLSI EP-17A2 to determine LOB and LOD?",
+    "back": "Collect 60 measurements of blank material and 60 measurements of analyte in patient matrix at a low concentration (typically up to $4 \\times \\text{LOB}$)."
+  },
+  {
+    "front": "How do you evaluate AMR and Linearity when validating a new TSH method?",
+    "back": "Create a dilution series forming a linear gradient from very high TSH to 0 (blank), measure each in duplicate, and plot expected vs. observed recovery."
+  },
+  {
+    "front": "What action should be taken if more than 10% of samples fall outside the proposed range during a 20-sample reference interval verification?",
+    "back": "Investigate the cause; if verification fails again, perform a full 120-donor study to establish a custom reference range."
+  },
+    {
+    "front": "What defines the upper and lower limits of the Analytical Measurable Range (AMR)?",
+    "back": "The lowest and highest calibrators used by the method."
+  },
+  {
+    "front": "What is the primary tube type and additive used for coagulation testing?",
+    "back": "Light blue top tubes containing 3.2% sodium citrate, maintaining an exact 9:1 blood-to-anticoagulant ratio."
+  },
+  {
+    "front": "How does sodium citrate function as an anticoagulant in coagulation tubes?",
+    "back": "Sodium citrate reversibly binds (chelates) calcium, which prevents the coagulation cascade from proceeding until calcium is added back in the laboratory."
+  },
+  {
+    "front": "What effect does underfilling a light blue top citrate tube have on coagulation results?",
+    "back": "Underfilling disrupts the 9:1 blood-to-anticoagulant ratio, resulting in excess relative citrate that chelates added assay calcium and falsely prolongs PT and aPTT clotting times."
+  },
+  {
+    "front": "How does hemolysis interfere with coagulation testing?",
+    "back": "RBCs release thromboplastin-like substances and ADP that prematurely activate clotting factors. Hemolysis also alters light transmission in optical systems, causing falsely shortened clotting times or test failure."
+  },
+  {
+    "front": "What methodology is used for Activated Partial Thromboplastin Time (aPTT) on the ACL TOP 700 CTS?",
+    "back": "Coagulometric (turbidimetric) clot detection measured at 671 nm following activation of the intrinsic pathway with phospholipid and silica, triggered by adding calcium."
+  },
+  {
+    "front": "What are the clinical utility and reference range for aPTT?",
+    "back": "Used to monitor unfractionated heparin (UFH), screen for intrinsic/common factor deficiencies, and detect inhibitors (e.g., lupus anticoagulant). Normal range: 25–37 seconds (Critical high: ≥150 seconds)."
+  },
+  {
+    "front": "What coagulation factors are evaluated by the intrinsic pathway in an aPTT test?",
+    "back": "Factors XII, XI, IX, and VIII (which then feed into the common pathway factors X, V, II, and I)."
+  },
+  {
+    "front": "What methodology and clinical utility apply to the D-Dimer test on the ACL TOP 700 CTS?",
+    "back": "Turbidimetric immunoassay measuring latex particle agglutination. Used to exclude Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE), and evaluate Disseminated Intravascular Coagulation (DIC)."
+  },
+  {
+    "front": "What are the diagnostic reference cutoffs for D-Dimer?",
+    "back": "Reference range: ≤500 ng/mL to exclude DVT/PE. For patients >50 years old, an age-adjusted cutoff is recommended: age (years) × 10 ng/mL."
+  },
+  {
+    "front": "How is Fibrinogen measured on the ACL TOP 700 CTS and what is its reference range?",
+    "back": "Turbidimetric clot detection (Clauss method) adding excess thrombin to diluted plasma; log(clotting time) is inversely proportional to log(fibrinogen concentration). Reference range: 200–393 mg/dL (Critical low: ≤60 mg/dL)."
+  },
+  {
+    "front": "What methodology and clinical utility apply to Prothrombin Time (PT)?",
+    "back": "Coagulometric clot detection using recombinant tissue factor (thromboplastin) and calcium to activate the extrinsic pathway. Used for screening factor deficiencies (I, II, V, VII, X) and monitoring warfarin/oral anticoagulant therapy."
+  },
+  {
+    "front": "What are the reference range and therapeutic INR cutoffs for PT/INR?",
+    "back": "Reference PT: 9.4–12.5 seconds; INR: 0.9–1.1. Standard warfarin therapeutic range: INR 2.0–3.0; High intensity: 2.5–3.5; Critical high INR: ≥5.0."
+  },
+  {
+    "front": "What methodology is used for the Heparin anti-Xa assay on the ACL TOP 700 CTS?",
+    "back": "A one-stage chromogenic assay where heparin-antithrombin complex neutralizes Factor Xa, and residual Factor Xa cleaves a synthetic substrate releasing paranitroaniline (pNA) monitored at 405 nm (inversely proportional to heparin concentration)."
+  },
+  {
+    "front": "What are the adult therapeutic ranges for UFH and LMWH via Heparin Anti-Xa?",
+    "back": "• UFH therapeutic range: 0.3–0.7 IU/mL.\n• LMWH therapeutic range: 0.5–1.0 IU/mL (twice daily) or 1.0–2.0 IU/mL (once daily), sampled 4–6 hours post-subcutaneous dose."
+  },
+  {
+    "front": "What viscoelastic testing platforms are used in the HCL, and what do they measure?",
+    "back": "Haemonetics TEG 6s (resonant frequency via vibration) and TEG 5000 (mechanical cup-and-pin torsion wire). They measure dynamic clot formation kinetics, clot strength, and fibrinolysis in whole blood."
+  },
+  {
+    "front": "In Thromboelastography (TEG), what do R time, K value, Angle, and MA represent?",
+    "back": "• R time: Clot initiation time (prolonged by factor deficiencies/anticoagulants).\n• K value & Angle: Rate of fibrin polymerization and clot kinetics.\n• MA (Maximum Amplitude): Maximum clot strength (dependent on platelets and fibrinogen)."
+  },
+  {
+    "front": "In TEG interpretation, what parameters indicate hyperfibrinolysis?",
+    "back": "Ly30 > 8.0% or Ly60 > 15.0% reflect excessive clot breakdown after reaching MA."
+  },
+  {
+    "front": "Which coagulation pathways are evaluated by the PT and aPTT tests, respectively?",
+    "back": "• PT evaluates the extrinsic and common pathways.\n• aPTT evaluates the intrinsic and common pathways."
+  },
+  {
+    "front": "What are the relative advantages and disadvantages of optical vs. mechanical clot detection?",
+    "back": "• Optical: Provides detailed Clot Signature Curves/kinetics, but susceptible to interference from icteric, lipemic, or hemolyzed samples.\n• Mechanical: Immune to optical sample interferences, but does not yield detailed kinetic curves."
+  },
+  {
+    "front": "What is the formula for calculating the International Normalized Ratio (INR)?",
+    "back": "$$\\text{INR} = \\left( \\frac{\\text{PT}_{Patient}}{\\text{MNPT}} \\right)^{\\text{ISI}}$$\nWhere MNPT is Mean Normal Prothrombin Time and ISI is the International Sensitivity Index."
+  },
+  {
+    "front": "What is Mean Normal Prothrombin Time (MNPT)?",
+    "back": "The geometric mean of PT values derived from a minimum of 20 (ideally 60+) healthy, medication-free individuals on a local instrument system."
+  },
+  {
+    "front": "Describe the 4 phases of a Clot Signature Curve (Clot Waveform Analysis).",
+    "back": "1. Baseline: Liquid state, constant baseline absorbance.\n2. Acceleration: Fibrin monomer polymerization onset.\n3. Deceleration: Rapid thrombin burst forming dense fibrin network.\n4. Endpoint: Complete clot stabilization plateau."
+  },
+  {
+    "front": "According to CLSI H54-A, how is local PT/INR ISI verified for a new reagent lot?",
+    "back": "By testing certified reference plasmas (INR 1.5–4.5) in duplicate over 2–3 days, plotting local PT vs. assigned PT via orthogonal regression, and ensuring calculated INRs match true values within ±15%."
+  },
+  {
+    "front": "Compare the key clinical characteristics of Warfarin and Heparin.",
+    "back": "• Warfarin: Oral vitamin K antagonist (factors II, VII, IX, X), slow onset, monitored via PT/INR, reversed by Vitamin K / 4F-PCC.\n• Heparin: IV/SubQ indirect thrombin inhibitor (via antithrombin), immediate onset, monitored via aPTT or Anti-Xa, reversed by protamine sulfate."
+  },
+  {
+    "front": "Why does Low Molecular Weight Heparin (LMWH) require an Anti-Xa assay rather than an aPTT for monitoring?",
+    "back": "LMWH chains are too short to bridge antithrombin to thrombin (Factor IIa), making it selective for Factor Xa (3:1 to 4:1 ratio); thus, it does not reliably prolong the aPTT."
+  },
+  {
+    "front": "What are Direct Oral Anticoagulants (DOACs), and how are they monitored when necessary?",
+    "back": "Direct Factor Xa inhibitors (apixaban, rivaroxaban) or Direct Thrombin Inhibitors (dabigatran). They do not require routine monitoring, but can be measured using drug-specific Anti-Xa assays or dilute thrombin time (dTT)/Ecarin clotting time."
+  },
+    {
+    "front": "How does negative feedback work in the hypothalamic-pituitary-target organ axis?",
+    "back": "Increasing blood levels of a peripheral target organ hormone act on both the hypothalamus and anterior pituitary to inhibit further secretion of releasing and stimulating hormones, maintaining homeostasis[cite: 3]."
+  },
+  {
+    "front": "What is the difference between primary, secondary, and tertiary endocrine disorders?",
+    "back": "• Primary: Defect in the target organ itself (e.g., thyroid fails to make T4 despite high TSH)[cite: 3].\n• Secondary: Defect in the pituitary gland (e.g., pituitary fails to produce TSH)[cite: 3].\n• Tertiary: Defect in the hypothalamus (e.g., hypothalamus fails to produce TRH)[cite: 3]."
+  },
+  {
+    "front": "What are the hypothalamic hormones, their pituitary targets, and their main functions?",
+    "back": "• Dopamine: Inhibits anterior pituitary prolactin secretion (inhibits lactation)[cite: 3].\n• TRH: Stimulates TSH release (stimulates T3/T4 synthesis)[cite: 3].\n• CRH: Stimulates ACTH release (stimulates cortisol release)[cite: 3].\n• Somatostatin (GHIH): Inhibits GH secretion[cite: 3].\n• GHRH: Stimulates GH secretion (promotes growth/IGF-1)[cite: 3].\n• GnRH: Stimulates LH & FSH release (regulates gonadal functions)[cite: 3]."
+  },
+  {
+    "front": "Where are oxytocin and ADH (vasopressin) synthesized and released, and what are their actions?",
+    "back": "Synthesized in the hypothalamus, stored and released by the posterior pituitary[cite: 3].\n• Oxytocin: Stimulates uterine contractions and milk ejection[cite: 3].\n• ADH: Stimulates renal water retention and vasoconstriction to maintain blood pressure[cite: 3]."
+  },
+  {
+    "front": "What are the clinical symptoms of hyperprolactinemia in females vs. males?",
+    "back": "• Females: Anovulation, menstrual irregularity, amenorrhea (absent periods), and galactorrhea[cite: 3].\n• Males: Low testosterone, reduced libido, central weight gain, and occasionally galactorrhea[cite: 3]."
+  },
+  {
+    "front": "What are common physiological and non-physiological causes of hyperprolactinemia?",
+    "back": "• Physiological: Pregnancy, lactation, stress, exercise, and sleep[cite: 3].\n• Non-physiological: Prolactinomas/pituitary adenomas, stalk interruption, chronic kidney disease, PCOS, and dopamine-blocking drugs (e.g., antipsychotics like haloperidol, risperidone)[cite: 3]."
+  },
+  {
+    "front": "Describe the chemical structure and synthesis of thyroid hormones.",
+    "back": "Iodinated tyrosine derivatives (T4 has 4 iodines; T3 has 3)[cite: 3]. Synthesis occurs in thyroid follicular cells where iodide is oxidized and bound to thyroglobulin (organification) in colloid, then coupled to form T3 and T4[cite: 3]."
+  },
+  {
+    "front": "How are T3 and T4 secreted into circulation and transported?",
+    "back": "TSH stimulates endocytosis of colloid; lysosomes cleave T3/T4 from thyroglobulin to release them[cite: 3]. >99% in blood is bound to proteins (TBG, albumin, transthyretin); only the free fraction is biologically active[cite: 3]."
+  },
+  {
+    "front": "Why is T4 considered a prohormone to T3?",
+    "back": "T4 is produced exclusively by the thyroid and converted peripherally to T3 by deiodination[cite: 3]. T3 is the biologically active hormone[cite: 3]. T4 serves as a circulating reservoir with a longer half-life (6–7 days vs. 1–1.5 days)[cite: 3]."
+  },
+  {
+    "front": "What is the mathematical relationship between Free T4 (FT4) and TSH concentrations?",
+    "back": "An inverse log-linear relationship[cite: 3]. Small changes in FT4 result in large, exponential inverse changes in TSH, making TSH the most sensitive screening marker for thyroid dysfunction[cite: 3]."
+  },
+  {
+    "front": "What are the clinical symptoms and lab findings in Primary vs. Secondary Hypothyroidism?",
+    "back": "• Symptoms: Weight gain, cold intolerance, bradycardia, lethargy, goiter, slow muscle relaxation[cite: 3].\n• Primary Lab Values: Low FT4, High TSH[cite: 3].\n• Secondary Lab Values: Low FT4, Low or inappropriately normal TSH[cite: 3]."
+  },
+  {
+    "front": "What are common causes of hypothyroidism?",
+    "back": "Hashimoto's thyroiditis (autoimmune), congenital defects, idiopathic atrophy, pituitary tumors, thyroid surgery/radiation, iodine deficiency, and medications (e.g., lithium)[cite: 3]."
+  },
+  {
+    "front": "What are the clinical symptoms and lab findings in Primary Hyperthyroidism (Graves' disease)?",
+    "back": "• Symptoms: Weight loss, heat intolerance, tachycardia/arrhythmias, tremor, warm/moist skin, goiter, thyroid eye disease[cite: 3].\n• Primary Lab Values: High FT4/FT3, Low (suppressed) TSH[cite: 3]."
+  },
+  {
+    "front": "How do oral contraceptives affect thyroid hormone levels?",
+    "back": "Estrogen in oral contraceptives increases Thyroid-Binding Globulin (TBG) production by the liver, raising Total T4 levels while Free T4 levels remain normal[cite: 3]. Pregnancy causes a similar physiological effect[cite: 3]."
+  },
+  {
+    "front": "How is the Free Thyroxine Index (FTI or FTI4) calculated and what does it measure?",
+    "back": "Calculated as: $\\text{Free Thyroxine Index} = \\text{Total T4} \\times \\text{T-uptake}$[cite: 3]. It is a calculated estimate of FT4 that adjusts Total T4 for variations in TBG binding capacity[cite: 3]."
+  },
+  {
+    "front": "What is the reference gold standard for Free T4 measurement and its limitations?",
+    "back": "• Gold Standard: Equilibrium Dialysis paired with Isotope Dilution Liquid Chromatography-Tandem Mass Spectrometry (ED ID-LC-MS/MS)[cite: 3].\n• Limitations: Labor-intensive, susceptible to buffer/dialysis artifacts, ion suppression effects, and primarily available as laboratory-developed tests (LDTs)[cite: 3]."
+  },
+  {
+    "front": "What is Euthyroid Sick Syndrome (Non-Thyroidal Illness Syndrome)?",
+    "back": "Abnormal thyroid function tests in patients with severe non-thyroidal illness/trauma/surgery without intrinsic thyroid disease[cite: 3]. Typical pattern: Low Total/Free T3, high reverse T3 (rT3), and normal or low T4 and TSH[cite: 3]."
+  },
+  {
+    "front": "Define cretinism, myxedema, and myxedema coma.",
+    "back": "• Cretinism: Untreated congenital hypothyroidism causing developmental delay, short stature, and low basal metabolism[cite: 3].\n• Myxedema: Severe hypothyroidism with dermal accumulation of mucopolysaccharides causing doughy skin[cite: 3].\n• Myxedema Coma: Life-threatening crisis of severe hypothyroidism featuring hypothermia, bradycardia, hypotension, and altered mental status[cite: 3]."
+  },
+  {
+    "front": "Why can pregnant women in early gestation present with transient hyperthyroidism/thyrotoxicosis?",
+    "back": "High concentrations of Human Chorionic Gonadotropin (hCG) cross-react with and stimulate TSH receptors due to structural homology with TSH, causing increased T3/T4 release and suppressed TSH[cite: 3]."
+  },
+  {
+    "front": "What are the primary diagnostic uses for anti-TPO, anti-Tg, and TRAb autoantibodies?",
+    "back": "• Anti-TPO & Anti-Tg: Main markers for Hashimoto's thyroiditis (present in ~90% and 20–50% of cases, respectively)[cite: 3].\n• TSH Receptor Antibodies (TRAb / TSI): Diagnostic markers for Graves' disease (stimulating antibodies)[cite: 3]."
+  },
+    {
+    "front": "How is Diagnostic Sensitivity defined and calculated?",
+    "back": "The proportion of subjects with the target disease who yield a positive laboratory test result.\n$$\\text{Sensitivity} = \\frac{\\text{True Positives}}{\\text{True Positives} + \\text{False Negatives}}$$"
+  },
+  {
+    "front": "How is Diagnostic Specificity defined and calculated?",
+    "back": "The proportion of subjects without the target disease who yield a negative laboratory test result.\n$$\\text{Specificity} = \\frac{\\text{True Negatives}}{\\text{True Negatives} + \\text{False Positives}}$$"
+  },
+  {
+    "front": "How is Positive Predictive Value (PPV) defined and calculated?",
+    "back": "The proportion of subjects with a positive test result who actually have the disease.\n$$\\text{PPV} = \\frac{\\text{True Positives}}{\\text{True Positives} + \\text{False Positives}}$$"
+  },
+  {
+    "front": "How is Negative Predictive Value (NPV) defined and calculated?",
+    "back": "The proportion of subjects with a negative test result who are free of the disease.\n$$\\text{NPV} = \\frac{\\text{True Negatives}}{\\text{True Negatives} + \\text{False Negatives}}$$"
+  },
+  {
+    "front": "What is a Receiver Operating Characteristic (ROC) curve?",
+    "back": "A graphical plot of diagnostic Sensitivity (y-axis) versus (1 − Specificity) (x-axis) across all possible decision cutoff values for a continuous test."
+  },
+  {
+    "front": "How do changes in disease prevalence affect PPV and NPV?",
+    "back": "• Increasing prevalence increases PPV and decreases NPV.\n• Decreasing prevalence decreases PPV and increases NPV (even highly specific tests yield low PPV in rare disease populations)."
+  },
+  {
+    "front": "Why can a diagnostic test with 95% specificity have a PPV under 2% in a general screening population?",
+    "back": "When disease prevalence is extremely low (e.g., 0.1%), the absolute number of false positives in the healthy population far exceeds the true positives in the diseased population."
+  },
+  {
+    "front": "Define Odds Ratio (OR) in clinical diagnostic studies.",
+    "back": "The ratio of the odds of presence of a outcome/disease given a exposure/test result to the odds of its absence.\n$$\\text{Diagnostic OR} = \\frac{\\text{Sensitivity} \\times \\text{Specificity}}{(1 - \\text{Sensitivity}) \\times (1 - \\text{Specificity})}$$"
+  },
+  {
+    "front": "How are Positive and Negative Likelihood Ratios (LR+, LR-) defined and calculated?",
+    "back": "• $\\text{LR+} = \\frac{\\text{Sensitivity}}{1 - \\text{Specificity}} = \\frac{\\text{True Positive Rate}}{\\text{False Positive Rate}}$\n• $\\text{LR-} = \\frac{1 - \\text{Sensitivity}}{\\text{Specificity}} = \\frac{\\text{False Negative Rate}}{\\text{True Negative Rate}}$"
+  },
+  {
+    "front": "How is the upper limit of normal determined for non-parametric clinical data when only high values are clinically significant?",
+    "back": "The upper reference limit is set at the 97.5th percentile rank (central 95 percentile) of the healthy reference population ($r = 0.975 \\times [N + 1]$), excluding the top 2.5% highest values."
+  },
+  {
+    "front": "In a forest plot meta-analysis of Odds Ratios, what does an overall confidence interval that does not cross 1.0 signify?",
+    "back": "An overall 95% confidence interval that stays entirely below 1.0 (or above 1.0) indicates a statistically significant difference between the intervention and control groups."
+  },
+    {
+    "front": "How is Diagnostic Sensitivity defined and calculated?",
+    "back": "The proportion of subjects with the target disease who yield a positive laboratory test result.\n$$\\text{Sensitivity} = \\frac{\\text{True Positives}}{\\text{True Positives} + \\text{False Negatives}}$$"
+  },
+  {
+    "front": "How is Diagnostic Specificity defined and calculated?",
+    "back": "The proportion of subjects without the target disease who yield a negative laboratory test result.\n$$\\text{Specificity} = \\frac{\\text{True Negatives}}{\\text{True Negatives} + \\text{False Positives}}$$"
+  },
+  {
+    "front": "How is Positive Predictive Value (PPV) defined and calculated?",
+    "back": "The proportion of subjects with a positive test result who actually have the disease.\n$$\\text{PPV} = \\frac{\\text{True Positives}}{\\text{True Positives} + \\text{False Positives}}$$"
+  },
+  {
+    "front": "How is Negative Predictive Value (NPV) defined and calculated?",
+    "back": "The proportion of subjects with a negative test result who are free of the disease.\n$$\\text{NPV} = \\frac{\\text{True Negatives}}{\\text{True Negatives} + \\text{False Negatives}}$$"
+  },
+  {
+    "front": "What is a Receiver Operating Characteristic (ROC) curve?",
+    "back": "A graphical plot of diagnostic Sensitivity (y-axis) versus (1 − Specificity) (x-axis) across all possible decision cutoff values for a continuous test."
+  },
+  {
+    "front": "How do changes in disease prevalence affect PPV and NPV?",
+    "back": "• Increasing prevalence increases PPV and decreases NPV.\n• Decreasing prevalence decreases PPV and increases NPV (even highly specific tests yield low PPV in rare disease populations)."
+  },
+  {
+    "front": "Why can a diagnostic test with 95% specificity have a PPV under 2% in a general screening population?",
+    "back": "When disease prevalence is extremely low (e.g., 0.1%), the absolute number of false positives in the healthy population far exceeds the true positives in the diseased population."
+  },
+  {
+    "front": "Define Odds Ratio (OR) in clinical diagnostic studies.",
+    "back": "The ratio of the odds of presence of a outcome/disease given a exposure/test result to the odds of its absence.\n$$\\text{Diagnostic OR} = \\frac{\\text{Sensitivity} \\times \\text{Specificity}}{(1 - \\text{Sensitivity}) \\times (1 - \\text{Specificity})}$$"
+  },
+  {
+    "front": "How are Positive and Negative Likelihood Ratios (LR+, LR-) defined and calculated?",
+    "back": "• $\\text{LR+} = \\frac{\\text{Sensitivity}}{1 - \\text{Specificity}} = \\frac{\\text{True Positive Rate}}{\\text{False Positive Rate}}$\n• $\\text{LR-} = \\frac{1 - \\text{Sensitivity}}{\\text{Specificity}} = \\frac{\\text{False Negative Rate}}{\\text{True Negative Rate}}$"
+  },
+  {
+    "front": "How is the upper limit of normal determined for non-parametric clinical data when only high values are clinically significant?",
+    "back": "The upper reference limit is set at the 95th percentile rank of the healthy reference population ($r = 0.95 \\times [N + 1]$), excluding the top 5% highest values."
+  },
+  {
+    "front": "In a forest plot meta-analysis of Odds Ratios, what does an overall confidence interval that does not cross 1.0 signify?",
+    "back": "An overall 95% confidence interval that stays entirely below 1.0 (or above 1.0) indicates a statistically significant difference between the intervention and control groups."
+  },
     
   ],
   "CVLM": [
