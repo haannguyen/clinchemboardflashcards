@@ -1,0 +1,522 @@
+[
+  {
+    "front": "What is the formula for calculating Return on Investment (ROI)?",
+    "back": "$$\\text{ROI} = \\frac{\\text{Net Gain} - \\text{Investment Cost}}{\\text{Investment Cost}} \\times 100\\%$$\nWhere Net Gain = Cost Avoidance + New Revenue, and Investment Cost includes capital equipment, construction, validation, and other startup costs."
+  },
+  {
+    "front": "What is the formula for calculating 5-year laboratory ROI?",
+    "back": "$$\\text{ROI}_{5\\text{-year}} = \\frac{(\\text{Cost Avoidance} + \\text{New Revenue})_{5\\text{-year}} - \\text{Investment}}{\\text{Investment}} \\times 100\\%$$\nWhere Cost Avoidance is the savings from replacing send-out testing with in-house testing, New Revenue is income from new testing services, and Investment includes instrument and implementation costs."
+  },
+  {
+    "front": "What is the formula for calculating Cost per Reportable Result (CPR)?",
+    "back": "$$\\text{CPR} = \\frac{\\text{Total Cost}}{\\text{Reportable Results}}$$\nWhere Total Cost includes direct costs (reagents, QC, labor, maintenance, depreciation) and indirect costs (overhead, management, clerical support). Reportable Results exclude QC, calibrations, proficiency testing, repeats, and reagent waste."
+  },
+  {
+    "front": "What is the formula for calculating Full-Time Equivalent (FTE)?",
+    "back": "$$\\text{FTE} = \\frac{\\text{Hours Worked Per Year}}{2080}$$\nWhere 2080 hours represents 40 hours per week multiplied by 52 weeks per year for one full-time employee."
+  },
+  {
+    "front": "What is the formula for calculating labor cost using FTE?",
+    "back": "$$\\text{Labor Cost} = \\text{FTE} \\times (\\text{Salary} + \\text{Benefits})$$\nWhere Salary + Benefits represents the total annual compensation of a full-time employee, and FTE is the fraction of effort allocated to the testing service."
+  },
+  {
+    "front": "What is the formula for calculating the Anion Gap?",
+    "back": "$$\\text{Anion Gap} = [Na^+] - ([Cl^-] + [HCO_3^-])$$\nA normal anion gap is typically about 8–12 mmol/L (without potassium). Some laboratories include potassium: AG = ([Na+] + [K+]) − ([Cl−] + [HCO3−])."
+  },
+  {
+    "front": "What is the formula for albumin-adjusted calcium (corrected calcium)?",
+    "back": "$$\\text{Corrected Ca} (mg/dL) = \\text{Measured Ca} + 0.8\\times(4.0 - \\text{Albumin})$$\nAlbumin is in g/dL. In SI units: $$\\text{Corrected Ca} (mmol/L)=\\text{Measured Ca}+0.02\\times(40-\\text{Albumin})$$ where albumin is in g/L."
+  },
+  {
+    "front": "What is the formula for calculating bicarbonate using the Henderson-Hasselbalch equation?",
+    "back": "$$[HCO_3^-] = 0.03 \\times PCO_2 \\times 10^{(pH-6.1)}$$\nWhere PCO2 is measured in mmHg."
+  },
+  {
+    "front": "What is the formula for calculating Base Excess (BE)?",
+    "back": "$$BE = 0.93\\times\\left([HCO_3^-]-24.4+14.8\\times(pH-7.40)\\right)$$\nPositive values indicate excess base (metabolic alkalosis), while negative values indicate base deficit (metabolic acidosis)."
+  },
+  {
+    "front": "What is the relationship between BUN and urea?",
+    "back": "$$\\text{Urea (mg/dL)} = \\text{BUN}\\times2.14$$\n$$\\text{BUN (mg/dL)} = \\frac{\\text{Urea}}{2.14}$$\nBUN measures only the nitrogen component of urea."
+  },
+  {
+    "front": "How do you convert between mass concentration and molar concentration?",
+    "back": "$$\\text{mmol/L} = \\frac{\\text{mg/dL}\\times10}{\\text{Molecular Weight}}$$\n$$\\text{mg/dL} = \\frac{\\text{mmol/L}\\times\\text{Molecular Weight}}{10}$$"
+  },
+  {
+    "front": "What is the formula for corrected sodium in hyperglycemia?",
+    "back": "$$\\text{Corrected Na} = \\text{Measured Na} + 1.6\\times\\frac{(\\text{Glucose}-100)}{100}$$\nGlucose is in mg/dL. Some studies support using 2.4 instead of 1.6 when severe hyperglycemia is present."
+  },
+  {
+    "front": "What is the CKD-EPI 2021 creatinine equation for eGFR?",
+    "back": "$$eGFR = 142\\times\\min\\left(\\frac{Scr}{\\kappa},1\\right)^{\\alpha}\\times\\max\\left(\\frac{Scr}{\\kappa},1\\right)^{-1.200}\\times0.9938^{Age}\\times1.012\\;\\text{(if female)}$$\nWhere κ = 0.7 for females and 0.9 for males; α = −0.241 for females and −0.302 for males. eGFR estimates GFR but may be less accurate in extremes of muscle mass, acute kidney injury, pregnancy, or unusual diets."
+  },
+  {
+    "front": "What is the formula for calculating globulins?",
+    "back": "$$\\text{Globulins} = \\text{Total Protein} - \\text{Albumin}$$"
+  },
+  {
+    "front": "What is the formula for calculating the International Normalized Ratio (INR)?",
+    "back": "$$\\text{INR} = \\left( \\frac{\\text{PT}_{Patient}}{\\text{MNPT}} \\right)^{\\text{ISI}}$$\nWhere MNPT is Mean Normal Prothrombin Time and ISI is the International Sensitivity Index."
+  },
+  {
+    "front": "What is the Friedewald equation for LDL cholesterol?",
+    "back": "$$LDL-C = \\text{Total Cholesterol} - HDL-C - \\frac{Triglycerides}{5}$$\nAll values in mg/dL. In mmol/L: $$LDL-C = TC - HDL-C - \\frac{TG}{2.2}$$. Not reliable when triglycerides exceed 400 mg/dL."
+  },
+  {
+    "front": "What is the formula for calculated serum osmolality?",
+    "back": "$$\\text{Calculated Osmolality} = 2\\times[Na^+] + \\frac{Glucose}{18} + \\frac{BUN}{2.8}$$\nAll concentrations are in mg/dL."
+  },
+  {
+    "front": "What is the formula for the Osmolar Gap?",
+    "back": "$$\\text{Osmolar Gap} = \\text{Measured Osmolality} - \\text{Calculated Osmolality}$$\nA normal osmolar gap is generally less than 10 mOsm/kg."
+  },
+  {
+    "front": "What is the formula for percent transferrin saturation (%TSAT)?",
+    "back": "$$\\%TSAT = \\frac{\\text{Serum Iron}}{TIBC}\\times100$$\nWhere TIBC (Total Iron Binding Capacity) approximates the amount of iron that transferrin can bind."
+  },
+  {
+    "front": "How is Total Iron Binding Capacity (TIBC) estimated from transferrin?",
+    "back": "$$TIBC (\\mu g/dL) \\approx \\text{Transferrin} (mg/dL) \\times 1.25$$"
+  },
+  {
+    "front": "How are urine drug concentrations normalized to creatinine?",
+    "back": "$$\\text{Normalized Drug Concentration} = \\frac{\\text{Drug Concentration}}{\\text{Urine Creatinine}}$$\nOften reported as drug amount per gram creatinine."
+  },
+  {
+    "front": "What is the formula for creatinine clearance?",
+    "back": "$$CrCl = \\frac{U_{Cr}\\times V}{P_{Cr}}$$\nWhere UCr = urine creatinine concentration, V = urine flow rate, and PCr = plasma creatinine concentration."
+  },
+  {
+    "front": "What is the Cockcroft-Gault equation for creatinine clearance?",
+    "back": "$$CrCl = \\frac{(140-Age)\\times Weight\\; (kg)}{72\\times SCr}\\times0.85\\;\\text{(if female)}$$\nSerum creatinine (SCr) is in mg/dL."
+  },
+  {
+    "front": "What is the formula for volume of distribution (Vd)?",
+    "back": "$$V_d = \\frac{\\text{Amount of Drug in Body}}{\\text{Plasma Drug Concentration}}$$"
+  },
+  {
+    "front": "What is the formula for maintenance dose?",
+    "back": "$$\\text{Maintenance Dose Rate} = Clearance \\times Target\\ Concentration$$\nFor intermittent dosing: $$MD = \\frac{Cl\\times Css\\times\\tau}{F}$$ where τ is dosing interval and F is bioavailability."
+  },
+  {
+    "front": "How is time to steady state related to half-life?",
+    "back": "$$\\text{Time to Steady State} \\approx 4\\text{–}5\\times t_{1/2}$$\nApproximately 94–97% of steady state is reached after 4–5 half-lives."
+  },
+  {
+    "front": "What is the formula for drug half-life?",
+    "back": "$$t_{1/2}=\\frac{0.693}{k}$$\nWhere k is the elimination rate constant."
+  },
+  {
+    "front": "What is the half-life formula using volume of distribution and clearance?",
+    "back": "$$t_{1/2} = \\frac{0.693\\times V_d}{Cl}$$\nWhere Vd is volume of distribution and Cl is clearance."
+  },
+  {
+    "front": "What is the formula for calculating the Mean?",
+    "back": "$$\\bar{x}=\\frac{\\sum x_i}{n}$$\nWhere xᵢ represents each observation and n is the total number of observations."
+  },
+  {
+    "front": "What is the definition of Median?",
+    "back": "The median is the middle value of an ordered dataset. For an even number of observations: $$\\text{Median}=\\frac{x_{n/2}+x_{n/2+1}}{2}$$"
+  },
+  {
+    "front": "What is the definition of Mode?",
+    "back": "The mode is the value that occurs most frequently in a dataset."
+  },
+  {
+    "front": "What is the formula for Standard Deviation (SD)?",
+    "back": "$$SD=\\sqrt{\\frac{\\sum (x_i-\\bar{x})^2}{n-1}}$$\nWhere x̄ is the mean and n is the number of observations."
+  },
+  {
+    "front": "What is the formula for Coefficient of Variation (CV)?",
+    "back": "$$CV(\\%)=\\frac{SD}{Mean}\\times100$$\nCV is a measure of relative imprecision."
+  },
+  {
+    "front": "What is the formula for Standard Deviation Index (SDI)?",
+    "back": "$$SDI=\\frac{Lab\\ Result-Peer\\ Group\\ Mean}{Peer\\ Group\\ SD}$$\nUsed in proficiency testing to compare laboratory performance."
+  },
+  {
+    "front": "What is the formula for a 95% Confidence Interval?",
+    "back": "$$CI=\\bar{x}\\pm1.96\\times\\frac{SD}{\\sqrt{n}}$$\nFor normally distributed data."
+  },
+  {
+    "front": "How is a QC target value determined?",
+    "back": "$$Target\\ Mean=\\frac{\\sum x_i}{n}$$\nThe QC target is usually established from replicate measurements of control material."
+  },
+  {
+    "front": "How are QC limits calculated for a Levey-Jennings chart?",
+    "back": "$$\\pm1SD=Mean\\pm SD$$\n$$\\pm2SD=Mean\\pm2SD$$\n$$\\pm3SD=Mean\\pm3SD$$\nControl limits are plotted around the target mean."
+  },
+  {
+    "front": "What is the 1-2s Westgard rule?",
+    "back": "One control result exceeds ±2 SD from the mean. This is a warning rule."
+  },
+  {
+    "front": "What is the 1-3s Westgard rule?",
+    "back": "One control result exceeds ±3 SD from the mean. Reject the run."
+  },
+  {
+    "front": "What is the 2-2s Westgard rule?",
+    "back": "Two consecutive control results exceed the same ±2 SD limit. Indicates systematic error."
+  },
+  {
+    "front": "What is the R-4s Westgard rule?",
+    "back": "Difference between two controls within the same run exceeds 4 SD. Indicates random error."
+  },
+  {
+    "front": "What is the 4-1s Westgard rule?",
+    "back": "Four consecutive control results exceed the same ±1 SD limit. Indicates systematic error."
+  },
+  {
+    "front": "What is the 10x Westgard rule?",
+    "back": "Ten consecutive control results fall on the same side of the mean. Indicates bias."
+  },
+  {
+    "front": "What is the formula for Multiples of the Median (MoM)?",
+    "back": "$$MoM=\\frac{Patient\\ Result}{Population\\ Median}$$\nCommonly used in maternal serum screening."
+  },
+  {
+    "front": "What is the formula for a Simple Moving Average?",
+    "back": "$$Moving\\ Average=\\frac{\\sum_{i=1}^{n}x_i}{n}$$\nUsed in patient-based real-time quality control."
+  },
+  {
+    "front": "What is the formula for an Exponentially Weighted Moving Average (EWMA)?",
+    "back": "$$EWMA_t=\\lambda x_t+(1-\\lambda)EWMA_{t-1}$$\nWhere λ is the weighting factor."
+  },
+  {
+    "front": "What is the formula for the Student's t-test?",
+    "back": "$$t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{\\frac{s_1^2}{n_1}+\\frac{s_2^2}{n_2}}}$$\nUsed to determine whether the means of two groups are significantly different."
+  },
+  {
+    "front": "What is the formula for the paired t-test?",
+    "back": "$$t = \\frac{\\bar{d}}{s_d/\\sqrt{n}}$$\nWhere d̄ is the mean difference between paired observations and sd is the standard deviation of the differences."
+  },
+  {
+    "front": "What is the formula for the F-test?",
+    "back": "$$F = \\frac{s_1^2}{s_2^2}$$\nUsed to compare variances between two populations. The larger variance is usually placed in the numerator."
+  },
+  {
+    "front": "What is the formula for one-way ANOVA?",
+    "back": "$$F = \\frac{MS_{Between}}{MS_{Within}}$$\nWhere MS = Mean Square. ANOVA evaluates whether at least one group mean differs from the others."
+  },
+  {
+    "front": "What is the formula for the Chi-square test?",
+    "back": "$$\\chi^2 = \\sum \\frac{(O-E)^2}{E}$$\nWhere O = observed frequency and E = expected frequency."
+  },
+  {
+    "front": "What is the equation for simple linear regression?",
+    "back": "$$y = bx + a$$\nWhere b is the slope and a is the intercept."
+  },
+  {
+    "front": "What is the formula for the slope in ordinary least squares regression?",
+    "back": "$$b = \\frac{\\sum (x-\\bar{x})(y-\\bar{y})}{\\sum (x-\\bar{x})^2}$$"
+  },
+  {
+    "front": "What is the formula for the intercept in linear regression?",
+    "back": "$$a = \\bar{y} - b\\bar{x}$$"
+  },
+  {
+    "front": "What is the formula for the correlation coefficient (r)?",
+    "back": "$$r = \\frac{\\sum (x-\\bar{x})(y-\\bar{y})}{\\sqrt{\\sum(x-\\bar{x})^2\\sum(y-\\bar{y})^2}}$$\nMeasures the strength of linear association."
+  },
+  {
+    "front": "What is the formula for Deming regression slope?",
+    "back": "$$b = \\frac{S_{yy}-\\lambda S_{xx} + \\sqrt{(S_{yy}-\\lambda S_{xx})^2+4\\lambda S_{xy}^2}}{2S_{xy}}$$\nDeming regression accounts for analytical error in both methods. λ is the ratio of variances."
+  },
+  {
+    "front": "What is Passing-Bablok regression?",
+    "back": "Passing-Bablok regression is a robust non-parametric method comparison technique. The slope is the median of all pairwise slopes: $$Slope = Median\\left(\\frac{y_j-y_i}{x_j-x_i}\\right)$$"
+  },
+  {
+    "front": "What is the formula for a z-score when comparing populations?",
+    "back": "$$z = \\frac{x-\\mu}{\\sigma}$$\nMeasures how many standard deviations an observation is from the population mean."
+  },
+  {
+    "front": "What is the formula for pooled standard deviation?",
+    "back": "$$s_p = \\sqrt{\\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}}$$\nUsed when comparing two populations with equal variances."
+  },
+  {
+    "front": "What is the concept behind parametric statistical tests?",
+    "back": "Parametric tests assume a normal (Gaussian) distribution and commonly use mean and standard deviation. Examples include the t-test, F-test, ANOVA, and Pearson correlation."
+  },
+  {
+    "front": "What is the concept behind non-parametric statistical tests?",
+    "back": "Non-parametric tests do not assume a specific distribution and commonly use ranks or medians. Examples include Mann-Whitney U, Wilcoxon signed-rank, Kruskal-Wallis, and Passing-Bablok regression."
+  },
+  {
+    "front": "How are reference intervals determined using parametric statistics?",
+    "back": "$$Reference\\ Interval = Mean \\pm 1.96\\times SD$$\nAssumes a Gaussian distribution and captures approximately 95% of healthy individuals."
+  },
+  {
+    "front": "How are reference intervals determined using non-parametric statistics?",
+    "back": "$$Reference\\ Interval = 2.5^{th}\\ Percentile\\ to\\ 97.5^{th}\\ Percentile$$\nUsed when the population distribution is unknown or non-Gaussian."
+  },
+  {
+    "front": "What is the formula for an addition dilution?",
+    "back": "$$C_1V_1 = C_2V_2$$\nWhere C1 and V1 are the initial concentration and volume, and C2 and V2 are the final concentration and volume."
+  },
+  {
+    "front": "What is the formula for a serial dilution?",
+    "back": "$$DF_{Total}=DF_1\\times DF_2\\times DF_3\\cdots$$\nThe total dilution factor equals the product of each individual dilution factor."
+  },
+  {
+    "front": "What is the formula for Bias?",
+    "back": "$$Bias = Measured\\ Value - True\\ Value$$\n$$\\%Bias = \\frac{Measured\\ Value - Target\\ Value}{Target\\ Value}\\times100$$"
+  },
+  {
+    "front": "What is the formula for Allowable Total Error (TEa)?",
+    "back": "$$TE = Bias + z\\times CV$$\nTEa represents the maximum allowable analytical error for a test."
+  },
+  {
+    "front": "What is the formula for Percent Recovery?",
+    "back": "$$\\%Recovery=\\frac{Measured\\ Value}{Expected\\ Value}\\times100$$"
+  },
+  {
+    "front": "What is the formula for Sigma Metric?",
+    "back": "$$Sigma=\\frac{TEa-|Bias|}{CV}$$\nHigher Sigma values indicate better analytical performance."
+  },
+  {
+    "front": "What is a Receiver Operating Characteristic (ROC) curve?",
+    "back": "$$Sensitivity=\\frac{TP}{TP+FN}$$\n$$Specificity=\\frac{TN}{TN+FP}$$\nROC curves plot Sensitivity versus (1 − Specificity)."
+  },
+  {
+    "front": "What is the formula for a Delta Check?",
+    "back": "$$\\Delta=Current\\ Result-Previous\\ Result$$\nUsed to detect significant patient result changes."
+  },
+  {
+    "front": "What is the formula for Relative Change Value (RCV)?",
+    "back": "$$RCV=\\sqrt{2}\\times Z\\times\\sqrt{CV_A^2+CV_I^2}$$\nWhere CVA = analytical variation, CVI = within-subject biological variation."
+  },
+  {
+    "front": "What is the formula for Total Biological Variation?",
+    "back": "$$CV_T=\\sqrt{CV_A^2+CV_I^2+CV_G^2}$$\nWhere CVG is between-subject biological variability."
+  },
+  {
+    "front": "How are SI and conventional units converted?",
+    "back": "$$SI=Conventional\\times Conversion\\ Factor$$\n$$Conventional=SI\\div Conversion\\ Factor$$"
+  },
+  {
+    "front": "What is the formula for molarity?",
+    "back": "$$Molarity(M)=\\frac{Moles}{Liters}$$"
+  },
+  {
+    "front": "What is the formula for moles?",
+    "back": "$$Moles=\\frac{Mass(g)}{Molecular\\ Weight}$$"
+  },
+  {
+    "front": "What is the formula for percent weight/volume concentration?",
+    "back": "$$\\%w/v=\\frac{g\\ solute}{mL\\ solution}\\times100$$"
+  },
+  {
+    "front": "What is the formula for percent volume/volume concentration?",
+    "back": "$$\\%v/v=\\frac{mL\\ solute}{mL\\ solution}\\times100$$"
+  },
+  {
+    "front": "What is the formula for buffer pH (Henderson-Hasselbalch)?",
+    "back": "$$pH=pK_a+\\log\\left(\\frac{[A^-]}{[HA]}\\right)$$"
+  },
+  {
+    "front": "What is the formula for converting RPM to Relative Centrifugal Force (RCF)?",
+    "back": "$$RCF=1.118\\times10^{-5}\\times r\\times RPM^2$$\nWhere r is the rotor radius in centimeters."
+  },
+  {
+    "front": "What is the Ideal Gas Law?",
+    "back": "$$PV=nRT$$\nWhere P = pressure, V = volume, n = moles, R = gas constant, and T = temperature in Kelvin."
+  },
+  {
+    "front": "What is Beer's Law?",
+    "back": "$$A=\\varepsilon bc$$\nWhere A = absorbance, ε = molar absorptivity, b = path length, and c = concentration."
+  },
+  {
+    "front": "What is the Henderson-Hasselbalch equation for blood gases?",
+    "back": "$$pH=6.1+\\log\\left(\\frac{[HCO_3^-]}{0.03\\times PCO_2}\\right)$$"
+  },
+  {
+    "front": "What is Henry's Law for calculating dissolved CO2?",
+    "back": "$$[CO_2]=0.03\\times PCO_2$$\nWhere PCO2 is measured in mmHg."
+  },
+  {
+    "front": "How is total CO2 (tCO2) estimated from PCO2 and bicarbonate?",
+    "back": "$$tCO_2\\approx [HCO_3^-]+(0.03\\times PCO_2)$$"
+  },
+  {
+    "front": "What is the formula for calculating pH from hydrogen ion concentration?",
+    "back": "$$pH=-\\log[H^+]$$"
+  },
+  {
+    "front": "How is hydrogen ion concentration calculated from pH?",
+    "back": "$$[H^+]=10^{-pH}$$"
+  },
+{
+  "front": "What is the formula for Diagnostic Odds Ratio (DOR)?",
+  "back": "$$DOR=\\frac{Sensitivity\\times Specificity}{(1-Sensitivity)\\times(1-Specificity)}$$\nEquivalent form: $$DOR=\\frac{TP\\times TN}{FP\\times FN}$$\nHigher DOR values indicate better overall test discrimination. A DOR of 1 indicates that the test does not distinguish between diseased and non-diseased individuals."
+},
+  {
+    "front": "What is the formula for mean bias in a Bland-Altman analysis?",
+    "back": "$$Mean\\ Bias=\\frac{\\sum(New\\ Method-Reference\\ Method)}{n}$$\nMean bias estimates constant systematic error."
+  },
+  {
+    "front": "What are the Bland-Altman limits of agreement?",
+    "back": "$$Mean\\ Bias\\pm1.96SD$$\nApproximately 95% of differences should fall within these limits."
+  },
+  {
+    "front": "What is the formula for percent recovery?",
+    "back": "$$\\%Recovery=\\frac{Measured\\ Value}{Expected\\ Value}\\times100$$"
+  },
+  {
+    "front": "What is the formula for coefficient of variation (CV)?",
+    "back": "$$CV=\\frac{SD}{Mean}\\times100$$\nMeasures analytical imprecision."
+  },
+  {
+    "front": "What is the formula for total imprecision?",
+    "back": "$$CV_{Total}=\\sqrt{CV_{Within}^2+CV_{Between}^2}$$"
+  },
+  {
+    "front": "What is the formula for clinical sensitivity?",
+    "back": "$$Sensitivity=\\frac{TP}{TP+FN}\\times100$$"
+  },
+  {
+    "front": "What is the formula for clinical specificity?",
+    "back": "$$Specificity=\\frac{TN}{TN+FP}\\times100$$"
+  },
+  {
+    "front": "What is the formula for diagnostic accuracy?",
+    "back": "$$Accuracy=\\frac{TP+TN}{TP+TN+FP+FN}\\times100$$"
+  },
+  {
+    "front": "What is the formula for the Limit of Blank (LoB)?",
+    "back": "$$LoB=Mean_{Blank}+1.645SD_{Blank}$$"
+  },
+  {
+    "front": "What is the formula for the Limit of Detection (LoD)?",
+    "back": "$$LoD=LoB+1.645SD_{Low\\ Concentration\\ Sample}$$"
+  },
+  {
+    "front": "What is the formula for Sigma Metric?",
+    "back": "$$\\sigma=\\frac{TE_a-|Bias|}{CV}$$\nWhere TEa, Bias, and CV are expressed in the same units."
+  },
+  {
+    "front": "What is the formula for carryover?",
+    "back": "$$Carryover(\\%)=\\frac{L1-L3}{H3-L3}\\times100$$\nWhere H = high sample and L = low sample."
+  },
+  {
+    "front": "How is analyte stability calculated?",
+    "back": "$$Stability(\\%)=\\frac{Stored\\ Result}{Baseline\\ Result}\\times100$$"
+  },
+  {
+    "front": "How is a parametric reference interval calculated?",
+    "back": "$$Reference\\ Interval=Mean\\pm1.96SD$$"
+  },
+  {
+    "front": "How is a non-parametric reference interval calculated?",
+    "back": "$$Reference\\ Interval=2.5th\\ Percentile\\ to\\ 97.5th\\ Percentile$$"
+  },
+  {
+    "front": "What is the formula for Positive Predictive Value (PPV)?",
+    "back": "$$PPV=\\frac{TP}{TP+FP}\\times100$$"
+  },
+  {
+    "front": "What is the formula for Negative Predictive Value (NPV)?",
+    "back": "$$NPV=\\frac{TN}{TN+FN}\\times100$$"
+  },
+  {
+    "front": "What is the formula for Positive Likelihood Ratio (LR+)?",
+    "back": "$$LR+=\\frac{Sensitivity}{1-Specificity}$$"
+  },
+  {
+    "front": "What is the formula for Negative Likelihood Ratio (LR−)?",
+    "back": "$$LR-=\\frac{1-Sensitivity}{Specificity}$$"
+  },
+  {
+    "front": "What is the formula for Hazard Ratio (HR)?",
+    "back": "$$HR=\\frac{Hazard\\ Rate\\ in\\ Treatment\\ Group}{Hazard\\ Rate\\ in\\ Control\\ Group}$$"
+  },
+  {
+    "front": "What is the formula for clearance of a substance?",
+    "back": "$$Clearance = \\frac{U \\times V}{P}$$\nWhere U = concentration of the substance in urine, V = urine flow rate, and P = concentration of the same substance in plasma."
+  },
+  {
+    "front": "What is the formula for creatinine clearance?",
+    "back": "$$CrCl = \\frac{U_{Cr} \\times V}{P_{Cr}}$$\nWhere UCr = urine creatinine concentration, V = urine flow rate, and PCr = plasma creatinine concentration."
+  },
+  {
+    "front": "How is urine flow rate calculated for creatinine clearance?",
+    "back": "$$V = \\frac{Urine\\ Volume\\ (mL)}{Collection\\ Time\\ (min)}$$\nFor a 24-hour urine collection: $$V = \\frac{Urine\\ Volume\\ (L)\\times1000}{1440}$$"
+  },
+  {
+    "front": "How is urine creatinine converted to compatible units for creatinine clearance calculations?",
+    "back": "$$U_{Cr}(\\mu mol/L)=U_{Cr}(mmol/L)\\times1000$$\nUrine creatinine is often reported in mmol/L, while plasma creatinine is usually reported in μmol/L."
+  },
+  {
+    "front": "What is the full creatinine clearance equation using common laboratory units?",
+    "back": "$$CrCl=\\frac{U_{Cr}(mmol/L)\\times1000\\times Urine\\ Volume(L)\\times1000}{P_{Cr}(\\mu mol/L)\\times1440}$$\nThis yields creatinine clearance in mL/min from a 24-hour urine collection."
+  },
+  {
+    "front": "What is the Cockcroft-Gault equation for estimating creatinine clearance in men?",
+    "back": "$$CrCl = \\frac{(140-Age)\\times Weight\\,(kg)\\times1.3}{Serum\\ Creatinine\\,(\\mu mol/L)}$$\nThis equation estimates creatinine clearance (mL/min) from age, body weight, and serum creatinine."
+  },
+  {
+    "front": "What is the Cockcroft-Gault equation for estimating creatinine clearance in women?",
+    "back": "$$CrCl = \\left(\\frac{(140-Age)\\times Weight\\,(kg)\\times1.3}{Serum\\ Creatinine\\,(\\mu mol/L)}\\right)\\times0.85$$\nThe additional factor of 0.85 corrects for lower average muscle mass."
+  },
+  {
+    "front": "How does age affect the Cockcroft-Gault creatinine clearance estimate?",
+    "back": "$$CrCl \\propto (140-Age)$$\nAs age increases, estimated creatinine clearance decreases."
+  },
+  {
+    "front": "How does body weight affect the Cockcroft-Gault creatinine clearance estimate?",
+    "back": "$$CrCl \\propto Weight$$\nHigher body weight increases estimated creatinine clearance."
+  },
+  {
+    "front": "How does serum creatinine affect the Cockcroft-Gault creatinine clearance estimate?",
+    "back": "$$CrCl \\propto \\frac{1}{Serum\\ Creatinine}$$\nHigher serum creatinine concentrations decrease estimated creatinine clearance."
+  },
+  {
+    "front": "What is the Friedewald equation for LDL cholesterol?",
+    "back": "$$LDL\\text{-}C = TC - HDL\\text{-}C - \\frac{TG}{5}$$\nApplicable when values are reported in mg/dL and triglycerides are less than 400 mg/dL."
+  },
+  {
+    "front": "What is the Friedewald equation for LDL cholesterol in SI units?",
+    "back": "$$LDL\\text{-}C = TC - HDL\\text{-}C - \\frac{TG}{2.2}$$\nApplicable when values are reported in mmol/L."
+  },
+  {
+    "front": "What is the major limitation of the Friedewald LDL-C calculation?",
+    "back": "The Friedewald equation becomes unreliable when triglycerides are ≥400 mg/dL (4.5 mmol/L), in dysbetalipoproteinemia, and often underestimates LDL-C when LDL concentrations are low."
+  },
+  {
+    "front": "What is the NIH/Sampson equation for LDL cholesterol?",
+    "back": "$$LDL\\text{-}C = \\frac{TC}{0.948}-\\frac{HDL\\text{-}C}{0.971}-\\left(\\frac{TG}{8.56}+\\frac{TG\\times NonHDL}{2140}-\\frac{TG^2}{16100}\\right)-9.44$$\nAll lipid concentrations are expressed in mg/dL."
+  },
+  {
+    "front": "What is Non-HDL cholesterol?",
+    "back": "$$NonHDL = TC - HDL\\text{-}C$$\nNon-HDL cholesterol represents the cholesterol carried by all atherogenic lipoproteins."
+  },
+  {
+    "front": "Why was the NIH/Sampson LDL-C equation developed?",
+    "back": "The Sampson equation improves LDL-C estimation in patients with elevated triglycerides and low LDL-C concentrations and remains valid over a wider triglyceride range than the Friedewald equation."
+  },
+{
+  "front": "What is the formula for Diagnostic Odds Ratio (DOR) using sensitivity and specificity?",
+  "back": "$$DOR = \\frac{Sensitivity \\times Specificity}{(1-Sensitivity) \\times (1-Specificity)}$$\nEquivalent form: $$DOR = \\frac{TP \\times TN}{FP \\times FN}$$\nDiagnostic Odds Ratio combines sensitivity and specificity into a single measure of diagnostic performance. A DOR of 1 indicates no discrimination; higher values indicate better test performance."
+},
+{
+  "front": "What is the formula for Reference Change Value (RCV)?",
+  "back": "$$RCV = \\sqrt{2} \\times Z \\times \\sqrt{CV_A^2 + CV_I^2}$$\nWhere CVA = analytical variation, CVI = within-subject biological variation, and Z is the z-score corresponding to the desired probability level.\n\nCommon Z values:\n• 1.65 = 90% confidence\n• 1.96 = 95% confidence\n• 2.58 = 99% confidence\n\nRCV represents the minimum percentage change between two consecutive results required to indicate a statistically significant difference."
+},
+{
+  "front": "What is the expected bicarbonate compensation in acute respiratory acidosis?",
+  "back": "$$Expected\\ HCO_3^- = 24 + \\left(\\frac{PCO_2-40}{10}\\right)\\times1$$\nFor acute respiratory acidosis, bicarbonate increases by approximately 1 mEq/L for every 10 mmHg increase in PCO2 above 40 mmHg."
+},
+{
+  "front": "What is the expected bicarbonate compensation in chronic respiratory acidosis?",
+  "back": "$$Expected\\ HCO_3^- = 24 + \\left(\\frac{PCO_2-40}{10}\\right)\\times4$$\nFor chronic respiratory acidosis, bicarbonate increases by approximately 4 mEq/L for every 10 mmHg increase in PCO2 above 40 mmHg due to renal compensation."
+},
+{
+  "front": "What is the expected bicarbonate compensation in acute respiratory alkalosis?",
+  "back": "$$Expected\\ HCO_3^- = 24 - \\left(\\frac{40-PCO_2}{10}\\right)\\times2$$\nFor acute respiratory alkalosis, bicarbonate decreases by approximately 2 mEq/L for every 10 mmHg decrease in PCO2 below 40 mmHg."
+},
+{
+  "front": "What is the expected bicarbonate compensation in chronic respiratory alkalosis?",
+  "back": "$$Expected\\ HCO_3^- = 24 - \\left(\\frac{40-PCO_2}{10}\\right)\\times5$$\nFor chronic respiratory alkalosis, bicarbonate decreases by approximately 5 mEq/L for every 10 mmHg decrease in PCO2 below 40 mmHg due to renal compensation."
+}
+]
