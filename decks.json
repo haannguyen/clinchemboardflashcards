@@ -1,6 +1,3 @@
 {
-  "cards": [
-    {"front": "Question 1", "back": "Answer 1"},
-    {"front": "Question 2", "back": "Answer 2"}
-  ]
+  "decks": ["ccl_cards", "cvlm_cards", "formula_cards"]
 }
