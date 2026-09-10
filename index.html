@@ -239,9 +239,9 @@
         <button class="secondary" style="max-width: 120px;" onclick="toggleTheme()">Theme 🌓</button>
     </div>
 
-    <!-- 🗂️ Dynamic Topic Menu Selector -->
+    <!-- 🗂️ Dynamic Deck Menu Selector -->
     <div class="deck-selector-container">
-        <select id="topic-select" onchange="selectTopic()"></select>
+        <select id="deck-select" onchange="selectDeck()"></select>
     </div>
 
     <div class="flashcard-container" onclick="handleCardClick()">
@@ -265,7 +265,6 @@
 </div>
 
 <script>
-    let masterData = {};
     let activeDeck = [];
     let originalDeck = [];
     let reviewPile = [];
@@ -274,6 +273,7 @@
     let isReviewMode = false;
     let isShuffled = false;
     let currentTheme = 'light';
+    let availableDecks = []; // List of deck names
 
     const lightPastels = ['#FFEBEE', '#E8F5E9', '#E3F2FD', '#FFF3E0', '#F3E5F5', '#FFFDE7'];
     const darkPastels = ['#2D1F21', '#1B281E', '#1A2332', '#2C2214', '#24192B', '#2B2B1A'];
@@ -289,50 +289,60 @@
     const overlayTitleEl = document.getElementById('overlay-title');
     const overlayDescEl = document.getElementById('overlay-desc');
     const overlayBtnEl = document.getElementById('overlay-btn');
-    const topicSelectEl = document.getElementById('topic-select');
+    const deckSelectEl = document.getElementById('deck-select');
     const shuffleBtnEl = document.getElementById('shuffle-btn');
 
-    async function loadDeck() {
+    async function loadDeckList() {
         try {
-            // Append timestamp query parameter to bypass browser caching
-            const response = await fetch('./cards.json?v=' + new Date().getTime());
+            // Load the decks.json file that lists all available decks
+            const response = await fetch('./decks.json?v=' + new Date().getTime());
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            masterData = await response.json();
-            populateTopicDropdown();
-            selectTopic();
+            const data = await response.json();
+            availableDecks = data.decks || [];
+            populateDeckDropdown();
+            
+            // Load the first deck by default
+            if (availableDecks.length > 0) {
+                deckSelectEl.value = availableDecks[0];
+                selectDeck();
+            }
         } catch (error) {
-            frontEl.textContent = "Error loading cards.json. Check file placement and network request access.";
+            frontEl.textContent = "Error loading decks.json. Check file placement and network request access.";
             console.error(error);
         }
     }
 
-    function populateTopicDropdown() {
-        topicSelectEl.innerHTML = '';
+    function populateDeckDropdown() {
+        deckSelectEl.innerHTML = '';
         
-        const allOption = document.createElement('option');
-        allOption.value = 'all_mixed';
-        allOption.textContent = 'All Topics (Mixed)';
-        topicSelectEl.appendChild(allOption);
-
-        for (const topic in masterData) {
+        for (const deck of availableDecks) {
             const option = document.createElement('option');
-            option.value = topic;
-            option.textContent = topic;
-            topicSelectEl.appendChild(option);
+            option.value = deck;
+            option.textContent = deck;
+            deckSelectEl.appendChild(option);
         }
     }
 
-    function selectTopic() {
-        const selected = topicSelectEl.value;
-        if (selected === 'all_mixed') {
-            originalDeck = Object.values(masterData).flat();
-        } else {
-            originalDeck = [...(masterData[selected] || [])];
+    async function selectDeck() {
+        const selectedDeck = deckSelectEl.value;
+        if (!selectedDeck) return;
+
+        try {
+            // Load the specific deck JSON file
+            const response = await fetch(`./decks/${selectedDeck}.json?v=` + new Date().getTime());
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const deckData = await response.json();
+            
+            // Assuming the JSON file has a "cards" array
+            originalDeck = deckData.cards || deckData || [];
+            
+            isShuffled = false;
+            updateShuffleButton();
+            resetState();
+        } catch (error) {
+            frontEl.textContent = `Error loading deck: ${selectedDeck}`;
+            console.error(error);
         }
-        
-        isShuffled = false;
-        updateShuffleButton();
-        resetState();
     }
 
     function resetState() {
@@ -480,7 +490,7 @@
             overlayBtnEl.textContent = 'Start Review Loop';
         } else {
             overlayTitleEl.textContent = 'Perfect Score! 🌟';
-            overlayDescEl.textContent = 'You mastered all cards in this topic.';
+            overlayDescEl.textContent = 'You mastered all cards in this deck.';
             overlayBtnEl.textContent = 'Restart Session';
         }
     }
@@ -493,7 +503,7 @@
             isReviewMode = true;
             modeBadgeEl.textContent = 'Review Round';
         } else {
-            selectTopic();
+            selectDeck();
             return;
         }
         currentIndex = 0;
@@ -507,7 +517,7 @@
         applyCardColor();
     }
 
-    loadDeck();
+    loadDeckList();
 </script>
 </body>
 </html>
