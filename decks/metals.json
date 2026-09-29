@@ -1,1 +1,467 @@
 
+[
+  {
+    "front": "What are the classic clinical manifestations of lead toxicity?",
+    "back": "Developmental delay, abdominal pain, anemia, and peripheral neuropathy."
+  },
+  {
+    "front": "What is the preferred specimen for lead testing?",
+    "back": "Whole blood lead concentration."
+  },
+  {
+    "front": "What peripheral blood smear finding is associated with lead poisoning?",
+    "back": "Basophilic stippling."
+  },
+  {
+    "front": "What are common sources of lead exposure?",
+    "back": "Paint, plumbing, and ammunition."
+  },
+  {
+    "front": "What chelation therapies are commonly used for significant lead poisoning?",
+    "back": "Succimer and EDTA."
+  },
+  {
+    "front": "What is the preferred specimen for recent methylmercury (organic mercury) exposure?",
+    "back": "Whole blood."
+  },
+  {
+    "front": "What is the preferred specimen for chronic elemental or inorganic mercury exposure?",
+    "back": "Urine."
+  },
+  {
+    "front": "What neurologic symptoms are characteristic of mercury toxicity?",
+    "back": "Tremor, erethism (mad hatter syndrome), and sensory neuropathy."
+  },
+  {
+    "front": "What disease is classically associated with mercury poisoning?",
+    "back": "Minamata disease."
+  },
+  {
+    "front": "What chelating agents are commonly used for significant mercury toxicity?",
+    "back": "Succimer (DMSA) and DMPS; treatment depends on mercury species and severity."
+  },
+  {
+    "front": "What are common sources of arsenic exposure?",
+    "back": "Groundwater and pesticides."
+  },
+  {
+    "front": "What specimen is preferred for evaluation of chronic arsenic exposure?",
+    "back": "24-hour urine arsenic, often followed by arsenic speciation when exposure source is unclear."
+  },
+  {
+    "front": "What physical finding is classically associated with arsenic toxicity?",
+    "back": "Mee's lines."
+  },
+  {
+    "front": "What cardiac abnormality may occur in arsenic poisoning?",
+    "back": "QT prolongation."
+  },
+  {
+    "front": "What chelation therapies are used for arsenic poisoning?",
+    "back": "Dimercaprol and succimer."
+  },
+  {
+    "front": "When should arsenic speciation be performed?",
+    "back": "When total urine arsenic is elevated, especially after recent seafood consumption."
+  },
+  {
+    "front": "What is the preferred specimen for cadmium testing?",
+    "back": "Urine cadmium."
+  },
+  {
+    "front": "What organ system is primarily affected by cadmium toxicity?",
+    "back": "Renal proximal tubules, causing tubular injury and proteinuria."
+  },
+  {
+    "front": "What disease is classically associated with chronic cadmium toxicity?",
+    "back": "Itai-itai disease, characterized by osteomalacia and renal tubular injury."
+  },
+  {
+    "front": "What are common sources of cadmium exposure?",
+    "back": "Smoking and batteries."
+  },
+  {
+    "front": "What is the preferred specimen for thallium testing?",
+    "back": "Urine thallium."
+  },
+  {
+    "front": "What clinical presentation is highly suggestive of thallium poisoning?",
+    "back": "Painful peripheral neuropathy and alopecia."
+  },
+  {
+    "front": "What treatment is classically used for thallium poisoning?",
+    "back": "Prussian Blue."
+  },
+  {
+    "front": "What are common sources of thallium exposure?",
+    "back": "Rodenticides and industrial exposure."
+  },
+  {
+    "front": "What toxicity syndrome is associated with aluminum accumulation?",
+    "back": "Encephalopathy and osteomalacia."
+  },
+  {
+    "front": "Which patient population is at greatest risk for aluminum toxicity?",
+    "back": "Patients receiving dialysis."
+  },
+  {
+    "front": "What disease is associated with chronic beryllium exposure?",
+    "back": "Granulomatous lung disease."
+  },
+  {
+    "front": "What is the preferred test for beryllium sensitization?",
+    "back": "BeLPT (Beryllium Lymphocyte Proliferation Test)."
+  },
+  {
+    "front": "What industries commonly expose workers to beryllium?",
+    "back": "Aerospace and machining."
+  },
+  {
+    "front": "What toxicity is most commonly associated with nickel exposure?",
+    "back": "Contact dermatitis."
+  },
+  {
+    "front": "What is the preferred specimen for nickel testing?",
+    "back": "Urine nickel."
+  },
+  {
+    "front": "What condition results from chronic silver exposure?",
+    "back": "Argyria."
+  },
+  {
+    "front": "What is argyria?",
+    "back": "Blue-gray discoloration of the skin caused by silver deposition."
+  },
+  {
+    "front": "What toxicities are associated with platinum exposure?",
+    "back": "Nephrotoxicity, neuropathy, and ototoxicity."
+  },
+  {
+    "front": "What chemotherapeutic agent commonly causes platinum exposure?",
+    "back": "Cisplatin."
+  },
+  {
+    "front": "What serious complication is associated with gadolinium exposure in renal failure?",
+    "back": "Nephrogenic systemic fibrosis."
+  },
+  {
+    "front": "What is a common source of gadolinium exposure?",
+    "back": "MRI contrast agents."
+  },
+  {
+    "front": "What toxicity may occur with elevated titanium levels?",
+    "back": "Local inflammation around implants."
+  },
+  {
+    "front": "What is a common source of titanium exposure?",
+    "back": "Orthopedic or dental implants."
+  },
+  {
+    "front": "What medication is a common source of bismuth exposure?",
+    "back": "Pepto-Bismol."
+  },
+  {
+    "front": "What serious toxicity may result from excessive bismuth exposure?",
+    "back": "Encephalopathy."
+  },
+  {
+    "front": "What laboratory tests are used to evaluate iron status?",
+    "back": "Ferritin and transferrin saturation (TSAT)."
+  },
+  {
+    "front": "What deficiency syndrome is associated with iron deficiency?",
+    "back": "Microcytic anemia."
+  },
+  {
+    "front": "What disease results from iron overload?",
+    "back": "Hemochromatosis."
+  },
+  {
+    "front": "What clinical findings suggest copper deficiency?",
+    "back": "Anemia, neutropenia, peripheral neuropathy, and myelopathy."
+  },
+  {
+    "front": "Which laboratory tests are used to evaluate copper metabolism?",
+    "back": "Ceruloplasmin, serum copper, and 24-hour urine copper."
+  },
+  {
+    "front": "What laboratory pattern is typical of Wilson disease?",
+    "back": "Low ceruloplasmin with increased hepatic copper accumulation and increased 24-hour urine copper excretion."
+  },
+  {
+    "front": "What disease is associated with copper deficiency due to impaired transport?",
+    "back": "Menkes disease."
+  },
+  {
+    "front": "What clinical features are associated with zinc deficiency?",
+    "back": "Dermatitis, alopecia, and poor wound healing."
+  },
+  {
+    "front": "What trace element deficiency can result from excessive zinc supplementation?",
+    "back": "Copper deficiency."
+  },
+  {
+    "front": "What laboratory test is commonly used to assess zinc status?",
+    "back": "Serum or plasma zinc, interpreted cautiously because results are affected by inflammation and specimen contamination."
+  },
+  {
+    "front": "What inherited disorder is associated with severe zinc deficiency?",
+    "back": "Acrodermatitis enteropathica."
+  },
+  {
+    "front": "What disease is classically associated with selenium deficiency?",
+    "back": "Keshan disease."
+  },
+  {
+    "front": "What clinical findings suggest selenium toxicity?",
+    "back": "Hair changes, nail changes, and garlic breath."
+  },
+  {
+    "front": "What specimen is commonly used for selenium testing?",
+    "back": "Serum or plasma."
+  },
+  {
+    "front": "What specimen is preferred for chromium testing?",
+    "back": "Urine chromium."
+  },
+  {
+    "front": "What toxicity is associated with excess chromium exposure?",
+    "back": "Dermatitis and renal injury."
+  },
+  {
+    "front": "What neurologic syndrome is associated with manganese toxicity?",
+    "back": "Parkinsonism."
+  },
+  {
+    "front": "What specimen is preferred for manganese testing?",
+    "back": "Whole blood manganese."
+  },
+  {
+    "front": "Which occupational group is classically affected by manganese toxicity?",
+    "back": "Welders."
+  },
+  {
+    "front": "What is the preferred specimen for iodine assessment?",
+    "back": "Urine iodine."
+  },
+  {
+    "front": "What deficiency syndrome results from inadequate iodine intake?",
+    "back": "Goiter and hypothyroidism."
+  },
+  {
+    "front": "Why is urine iodine commonly measured?",
+    "back": "It reflects recent iodine intake and is widely used to assess iodine sufficiency in populations."
+  },
+  {
+    "front": "What toxicities are associated with excess cobalt exposure?",
+    "back": "Cardiomyopathy and neuropathy."
+  },
+  {
+    "front": "Which metals are monitored in patients with metal-on-metal hip prostheses?",
+    "back": "Cobalt and chromium."
+  },
+  {
+    "front": "What disease results from excessive fluoride exposure?",
+    "back": "Skeletal fluorosis."
+  },
+  {
+    "front": "What deficiency condition is associated with low fluoride intake?",
+    "back": "Dental caries."
+  },
+  {
+    "front": "Which analytical platform is considered the gold standard for multi-element trace metal testing?",
+    "back": "Inductively Coupled Plasma Mass Spectrometry (ICP-MS)."
+  },
+  {
+    "front": "What preanalytical error most commonly causes falsely elevated trace-metal results?",
+    "back": "Specimen contamination during collection, processing, or storage."
+  },
+  {
+    "front": "Why are trace-element certified collection tubes required for ICP-MS testing?",
+    "back": "To minimize contamination that can falsely elevate measured metal concentrations."
+  },
+  {
+    "front": "Why are trace-element free collection tubes important?",
+    "back": "They minimize contamination and prevent falsely elevated trace metal results."
+  },
+  {
+    "front": "Why is whole blood preferred over serum for lead testing?",
+    "back": "Approximately 95–99% of circulating lead is associated with erythrocytes, making whole blood the preferred specimen."
+  },
+  {
+    "front": "What laboratory pattern is characteristic of Wilson disease?",
+    "back": "Low ceruloplasmin, increased hepatic copper accumulation, and increased 24-hour urine copper excretion."
+  },
+  {
+    "front": "Why is serum copper alone a poor screening test for Wilson disease?",
+    "back": "Serum copper may be decreased despite total body copper overload because ceruloplasmin concentrations are reduced."
+  },
+  {
+    "front": "What is the principal preanalytical concern in trace metal testing?",
+    "back": "Specimen contamination from collection tubes, needles, processing equipment, or environmental exposure."
+  },
+  {
+    "front": "Why are trace-element certified collection tubes required for ICP-MS testing?",
+    "back": "To minimize contamination that may cause falsely elevated metal concentrations."
+  },
+  {
+    "front": "Why should elevated urine arsenic results be interpreted cautiously after seafood consumption?",
+    "back": "Seafood contains relatively nontoxic organic arsenic compounds that can cause marked elevations in total urine arsenic."
+  },
+  {
+    "front": "What is the purpose of arsenic speciation testing?",
+    "back": "To distinguish toxic inorganic arsenic from relatively nontoxic organic arsenic species."
+  },
+  {
+    "front": "Why is urine preferred over blood for chronic inorganic mercury exposure assessment?",
+    "back": "Urine better reflects the body burden of elemental and inorganic mercury accumulated in the kidneys."
+  },
+  {
+    "front": "Why is blood preferred over urine for methylmercury exposure assessment?",
+    "back": "Methylmercury is distributed primarily in blood and reflects recent exposure from seafood consumption."
+  },
+  {
+    "front": "What analytical method is considered the gold standard for multi-element trace metal analysis?",
+    "back": "Inductively Coupled Plasma Mass Spectrometry (ICP-MS)."
+  },
+  {
+    "front": "What is a major advantage of ICP-MS compared with atomic absorption spectroscopy?",
+    "back": "ICP-MS provides simultaneous multi-element analysis with excellent sensitivity and low detection limits."
+  },
+  {
+    "front": "Why are internal standards used in ICP-MS assays?",
+    "back": "To compensate for matrix effects, instrument drift, and variability during ionization and detection."
+  },
+  {
+    "front": "What are matrix effects in ICP-MS?",
+    "back": "Alterations in analyte signal caused by sample composition that affect ionization efficiency or transport."
+  },
+  {
+    "front": "Why is hemolysis problematic for some trace-metal measurements?",
+    "back": "Intracellular metals such as manganese may be released from erythrocytes, producing inaccurate results."
+  },
+  {
+    "front": "Which trace element is most commonly associated with metal-on-metal hip prosthesis monitoring?",
+    "back": "Cobalt, typically measured alongside chromium."
+  },
+  {
+    "front": "What systemic toxicities are associated with significant cobalt exposure?",
+    "back": "Cardiomyopathy, peripheral neuropathy, and other systemic toxicities reported from prosthesis-associated cobalt excess."
+  },
+  {
+    "front": "Why is whole blood preferred for manganese testing?",
+    "back": "Manganese is predominantly distributed within erythrocytes rather than plasma."
+  },
+  {
+    "front": "What neurologic syndrome is associated with chronic manganese toxicity?",
+    "back": "Manganism, a Parkinson-like movement disorder."
+  },
+  {
+    "front": "What laboratory findings may suggest copper deficiency rather than iron deficiency anemia?",
+    "back": "Anemia accompanied by neutropenia and neurologic abnormalities."
+  },
+  {
+    "front": "Why can excessive zinc supplementation cause copper deficiency?",
+    "back": "Zinc induces intestinal metallothionein, which preferentially binds copper and reduces copper absorption."
+  },
+  {
+    "front": "What findings are commonly associated with selenium toxicity?",
+    "back": "Elevated selenium concentrations accompanied by brittle nails, alopecia, and garlic breath."
+  },
+  {
+    "front": "What is the pathophysiologic basis of lead-associated anemia?",
+    "back": "Lead inhibits key enzymes in heme synthesis, including ALA dehydratase and ferrochelatase."
+  },
+  {
+    "front": "Which metals are most commonly monitored in occupational toxicology laboratories?",
+    "back": "Lead, mercury, arsenic, cadmium, manganese, chromium, and cobalt."
+  },
+  {
+    "front": "Why are spot urine trace-metal concentrations frequently normalized to creatinine?",
+    "back": "To reduce variability caused by urine dilution, although interpretation may be affected by abnormal muscle mass or kidney disease."
+  },
+  {
+    "front": "What is the most common reason for unexpectedly elevated trace-metal results in an asymptomatic patient?",
+    "back": "Specimen contamination rather than true toxic exposure."
+  },
+  {
+    "front": "What are the four major categories of kidney stones?",
+    "back": "Calcium stones (calcium oxalate and calcium phosphate), uric acid stones, struvite stones, and cystine stones."
+  },
+  {
+    "front": "What is the most common type of kidney stone?",
+    "back": "Calcium oxalate stones are the most common kidney stone type."
+  },
+  {
+    "front": "What is the fundamental physicochemical process underlying kidney stone formation?",
+    "back": "Urinary supersaturation leading to nucleation, crystal growth, aggregation, and stone formation."
+  },
+  {
+    "front": "What urinary abnormalities are among the strongest risk factors for calcium oxalate stone formation?",
+    "back": "Hyperoxaluria, hypercalciuria, low urine volume, and hypocitraturia."
+  },
+  {
+    "front": "What urinary component is a major natural inhibitor of calcium stone formation?",
+    "back": "Citrate."
+  },
+  {
+    "front": "How does citrate inhibit kidney stone formation?",
+    "back": "It complexes with calcium and inhibits calcium oxalate and calcium phosphate crystal nucleation and growth."
+  },
+  {
+    "front": "What urinary pH is typically associated with uric acid stones?",
+    "back": "Acidic urine, usually below approximately pH 5.5."
+  },
+  {
+    "front": "What urinary pH is typically associated with calcium phosphate stones?",
+    "back": "Relatively alkaline urine, often above approximately pH 6.5."
+  },
+  {
+    "front": "What urinary pH is commonly associated with struvite stones?",
+    "back": "Alkaline urine due to urease-producing bacterial infections."
+  },
+  {
+    "front": "Which organisms are classically associated with struvite stone formation?",
+    "back": "Urease-producing bacteria such as Proteus species, Klebsiella species, and some Staphylococcus species."
+  },
+  {
+    "front": "What is the chemical composition of struvite stones?",
+    "back": "Magnesium ammonium phosphate."
+  },
+  {
+    "front": "Why are struvite stones often called infection stones?",
+    "back": "They form in the setting of chronic urinary tract infection with urease-producing organisms and may form staghorn calculi."
+  },
+  {
+    "front": "Which inherited disorder causes recurrent cystine kidney stones?",
+    "back": "Cystinuria."
+  },
+  {
+    "front": "What amino acids are affected in cystinuria?",
+    "back": "Cystine, ornithine, lysine, and arginine (COLA)."
+  },
+  {
+    "front": "What urinary crystal morphology is characteristic of cystinuria?",
+    "back": "Hexagonal cystine crystals."
+  },
+  {
+    "front": "What is the classic screening test for cystinuria?",
+    "back": "The cyanide-nitroprusside test."
+  },
+  {
+    "front": "What is the reference method for laboratory kidney stone analysis?",
+    "back": "Fourier-transform infrared spectroscopy (FTIR) is considered the current reference method for stone composition analysis."
+  },
+  {
+    "front": "What is an acceptable alternative to FTIR for kidney stone composition analysis?",
+    "back": "X-ray diffraction (XRD)."
+  },
+  {
+    "front": "Why is accurate stone composition analysis important?",
+    "back": "It identifies underlying metabolic risk factors, guides treatment decisions, and helps prevent recurrence."
+  },
+  {
+    "front": "How should a stone be prepared before submission for FTIR analysis?",
+    "back": "The stone should be cleaned of blood or debris, completely dried, and the entire stone submitted in an appropriate clean container for analysis."
+  }
+]
